@@ -1,0 +1,18 @@
+{
+  "source_zip": "fkge_tuned_repro_with_data_PRIVATE.zip",
+  "zip_sha256": "292d84931a1655c7ddd8962d3e337fe9fa1c08035d0dbb868b750e7a712dcc38",
+  "reference_source": "FKGMM_BRSET3_nested_20261102/ma_nguon/fkge_branch (02/11/2026: merged duplicate rules with weights, split_unit patient_only)",
+  "reference_files": {
+    "fkge.py": "9e9efffd62529f686bfb5763f37e0a9ba6b223c8eef5a48c30eb893c5e90df84",
+    "fisa.py": "da5aae7da3b28c78e7a15d5c289b7f476c25eed7d21665855996f598e5589976",
+    "sfkgs.py": "71a20287791223bedf08060ee724456c7d30835e8b184f2363c8353b18fe0560"
+  },
+  "previous_reference_files": {
+    "note": "31/10/2026 versions (no rule weights) used by the first release; the 02/11 files reproduce them when every weight is 1",
+    "fkge.py": "27f7b4f9e78ca8e0d622b0626d01ed44113f393207ef0d8b9cd9f25429f395ac",
+    "fisa.py": "491ffb3df54afa89fe535cbecee8c484f1a8adcdfdf44a91591e684a7ec2f95e",
+    "sfkgs.py": "a32b581b9bca11e9280c871e4f989e3cd54ed7877227c16925830437e74910e5"
+  },
+  "data_source_commit": "fe16ae53de668fedd54d0f067f91729dcd4bad36",
+  "note": "Reference model files copied unchanged from models/fkge.py, models/fisa.py and tools/sfkgs.py for numerical comparison; the package's cleaned rule base (conflicting rules removed, duplicates kept once) is compared with them as weight-1 rules (tests/test_pipeline.py::reference_rulebase). No private source datasets or historical results included."
+}

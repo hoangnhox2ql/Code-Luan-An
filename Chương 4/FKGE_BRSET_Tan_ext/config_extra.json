@@ -1,0 +1,10 @@
+{
+  "sfkgs_theta": 0.3,
+  "kb5_K": [2, 5, 10],
+  "kb6_ratios": [0.2, 0.4, 0.6, 0.8, 1.0],
+  "kb6_seed": 7,
+  "kge": {"d_grid": [6, 8, 16], "k_grid": [5, 25], "epochs": 30, "lr": 0.01, "batch": 4096,
+          "negatives": 5, "margin": 1.0, "walks_per_node": 10, "walk_length": 20, "window": 2},
+  "ml": {"lr_C": [0.01, 0.1, 1.0, 10.0, 100.0], "rf_trees": 500, "rf_min_samples_leaf": [1, 5, 20],
+         "xgb_trees": 400, "xgb_max_depth": [3, 6], "xgb_learning_rate": [0.05, 0.1], "n_jobs": 2}
+}
