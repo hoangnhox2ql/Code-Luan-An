@@ -1,0 +1,201 @@
+RUN 20261023T133236-4c271b25 | dataset=diabetes | quick=False | steps=['PREPROCESS', 'E1', 'E2', 'E3', 'E4', 'PUB', 'REPORT']
+
+############################################################
+# PREPROCESS
+############################################################
+  Nguồn: real (data/diabetes/Data.csv), sha256=5236d580bcdeef7e7228d750705e5d2dac416ee97a3378536c803caedb4458db
+  18536 dòng -> 15778 sau loại 2758 trùng; nhãn {'0': 10506, '1': 5272}; X trùng khác nhãn: 0
+
+############################################################
+# E1
+############################################################
+  E1 n=10 xong
+  E1 n=14 xong
+  E1 n=18 xong
+  Vi phạm: {'greedy': 0, 'sfkgs': 0, 'cfkgs': 0, 'sfkgs_decomposition': 0, 'cfkgs_negative_g': 0, 'chain': 0, 'classdev_sfkgs': np.int64(0), 'classdev_cfkgs': np.int64(0), 'greedy_above_opt': 0, 'size_mismatch': 0}
+
+############################################################
+# E2
+############################################################
+  E2 fold 0 theta=0.05 xong
+  E2 fold 0 theta=0.1 xong
+  E2 fold 0 theta=0.2 xong
+  E2 fold 0 theta=0.3 xong
+  E2 fold 0 theta=0.5 xong
+  E2 fold 1 theta=0.05 xong
+  E2 fold 1 theta=0.1 xong
+  E2 fold 1 theta=0.2 xong
+  E2 fold 1 theta=0.3 xong
+  E2 fold 1 theta=0.5 xong
+  E2 fold 2 theta=0.05 xong
+  E2 fold 2 theta=0.1 xong
+  E2 fold 2 theta=0.2 xong
+  E2 fold 2 theta=0.3 xong
+  E2 fold 2 theta=0.5 xong
+  E2 fold 3 theta=0.05 xong
+  E2 fold 3 theta=0.1 xong
+  E2 fold 3 theta=0.2 xong
+  E2 fold 3 theta=0.3 xong
+  E2 fold 3 theta=0.5 xong
+  E2 fold 4 theta=0.05 xong
+  E2 fold 4 theta=0.1 xong
+  E2 fold 4 theta=0.2 xong
+  E2 fold 4 theta=0.3 xong
+  E2 fold 4 theta=0.5 xong
+
+############################################################
+# E3
+############################################################
+  E3 fold 0 GreedyFKGS: theta*=0.2, test AUC=0.8510 (FKG đầy đủ 0.8574)
+  E3 fold 0 SFKGS: theta*=0.1, test AUC=0.8498 (FKG đầy đủ 0.8574)
+  E3 fold 0 CFKGS: theta*=0.4, test AUC=0.8572 (FKG đầy đủ 0.8574)
+  E3 fold 1 GreedyFKGS: theta*=0.2, test AUC=0.9066 (FKG đầy đủ 0.9001)
+  E3 fold 1 SFKGS: theta*=0.2, test AUC=0.9025 (FKG đầy đủ 0.9001)
+  E3 fold 1 CFKGS: theta*=0.15, test AUC=0.9017 (FKG đầy đủ 0.9001)
+  E3 fold 2 GreedyFKGS: theta*=0.4, test AUC=0.8694 (FKG đầy đủ 0.8672)
+  E3 fold 2 SFKGS: theta*=0.4, test AUC=0.8817 (FKG đầy đủ 0.8672)
+  E3 fold 2 CFKGS: theta*=0.2, test AUC=0.8898 (FKG đầy đủ 0.8672)
+  E3 fold 3 GreedyFKGS: theta*=0.3, test AUC=0.8748 (FKG đầy đủ 0.8624)
+  E3 fold 3 SFKGS: theta*=0.4, test AUC=0.8662 (FKG đầy đủ 0.8624)
+  E3 fold 3 CFKGS: theta*=0.4, test AUC=0.8863 (FKG đầy đủ 0.8624)
+  E3 fold 4 GreedyFKGS: theta*=0.1, test AUC=0.8972 (FKG đầy đủ 0.8903)
+  E3 fold 4 SFKGS: theta*=0.1, test AUC=0.8903 (FKG đầy đủ 0.8903)
+  E3 fold 4 CFKGS: theta*=0.1, test AUC=0.8637 (FKG đầy đủ 0.8903)
+
+############################################################
+# E4
+############################################################
+  E4 fold 0 xong
+  E4 fold 1 xong
+  E4 fold 2 xong
+  E4 fold 3 xong
+  E4 fold 4 xong
+
+############################################################
+# PUB
+############################################################
+  PUB orig q1090 seed=42: argmax acc=0.6648, calib acc=0.6564, AUC=0.6837
+  PUB orig tertile seed=42: argmax acc=0.7585, calib acc=0.8018, AUC=0.8768
+  PUB orig tertile seed=1: argmax acc=0.7628, calib acc=0.7950, AUC=0.8745
+  PUB orig tertile seed=2: argmax acc=0.7578, calib acc=0.7997, AUC=0.8812
+  PUB orig tertile seed=3: argmax acc=0.7623, calib acc=0.8015, AUC=0.8752
+  PUB orig tertile seed=4: argmax acc=0.7430, calib acc=0.8124, AUC=0.8876
+  PUB pair q1090 seed=42: argmax acc=0.6644, calib acc=0.6858, AUC=0.6896
+  PUB pair q1090 seed=1: argmax acc=0.6644, calib acc=0.6441, AUC=0.6783
+  PUB pair q1090 seed=2: argmax acc=0.6644, calib acc=0.6738, AUC=0.7044
+  PUB pair q1090 seed=3: argmax acc=0.6644, calib acc=0.6466, AUC=0.6670
+  PUB pair q1090 seed=4: argmax acc=0.6644, calib acc=0.6601, AUC=0.6810
+  PUB pair tertile seed=42: argmax acc=0.6644, calib acc=0.7966, AUC=0.8272
+  PUB pair tertile seed=1: argmax acc=0.6644, calib acc=0.7749, AUC=0.8295
+  PUB pair tertile seed=2: argmax acc=0.6644, calib acc=0.7745, AUC=0.8336
+  PUB pair tertile seed=3: argmax acc=0.6644, calib acc=0.7986, AUC=0.8272
+  PUB pair tertile seed=4: argmax acc=0.6644, calib acc=0.8067, AUC=0.8353
+
+############################################################
+# REPORT
+############################################################
+  Đã tạo /content/fkgs_v3.1/results/diabetes/report_tong_hop.md
+
+HOÀN TẤT 20261023T133236-4c271b25 trong 23.4 phút
+RUN 20261023T135603-b9455fdf | dataset=heart | quick=False | steps=['PREPROCESS', 'E1', 'E2', 'E3', 'E4', 'PUB', 'REPORT']
+
+############################################################
+# PREPROCESS
+############################################################
+  Nguồn: real (data/heart/Data.csv), sha256=948420b084d8a3a0ca42b8419fce9aee175879e43f8aedf712377899a67aa49b
+  918 dòng -> 918 sau loại 0 trùng; nhãn {'0': 410, '1': 508}; X trùng khác nhãn: 0
+
+############################################################
+# E1
+############################################################
+  E1 n=10 xong
+  E1 n=14 xong
+  E1 n=18 xong
+  Vi phạm: {'greedy': 0, 'sfkgs': 0, 'cfkgs': 0, 'sfkgs_decomposition': 0, 'cfkgs_negative_g': 0, 'chain': 0, 'classdev_sfkgs': np.int64(0), 'classdev_cfkgs': np.int64(0), 'greedy_above_opt': 0, 'size_mismatch': 0}
+
+############################################################
+# E2
+############################################################
+  E2 fold 0 theta=0.05 xong
+  E2 fold 0 theta=0.1 xong
+  E2 fold 0 theta=0.2 xong
+  E2 fold 0 theta=0.3 xong
+  E2 fold 0 theta=0.5 xong
+  E2 fold 1 theta=0.05 xong
+  E2 fold 1 theta=0.1 xong
+  E2 fold 1 theta=0.2 xong
+  E2 fold 1 theta=0.3 xong
+  E2 fold 1 theta=0.5 xong
+  E2 fold 2 theta=0.05 xong
+  E2 fold 2 theta=0.1 xong
+  E2 fold 2 theta=0.2 xong
+  E2 fold 2 theta=0.3 xong
+  E2 fold 2 theta=0.5 xong
+  E2 fold 3 theta=0.05 xong
+  E2 fold 3 theta=0.1 xong
+  E2 fold 3 theta=0.2 xong
+  E2 fold 3 theta=0.3 xong
+  E2 fold 3 theta=0.5 xong
+  E2 fold 4 theta=0.05 xong
+  E2 fold 4 theta=0.1 xong
+  E2 fold 4 theta=0.2 xong
+  E2 fold 4 theta=0.3 xong
+  E2 fold 4 theta=0.5 xong
+
+############################################################
+# E3
+############################################################
+  E3 fold 0 GreedyFKGS: theta*=0.05, test AUC=0.8222 (FKG đầy đủ 0.8480)
+  E3 fold 0 SFKGS: theta*=0.2, test AUC=0.8209 (FKG đầy đủ 0.8480)
+  E3 fold 0 CFKGS: theta*=0.1, test AUC=0.8549 (FKG đầy đủ 0.8480)
+  E3 fold 1 GreedyFKGS: theta*=0.05, test AUC=0.8234 (FKG đầy đủ 0.8196)
+  E3 fold 1 SFKGS: theta*=0.05, test AUC=0.8005 (FKG đầy đủ 0.8196)
+  E3 fold 1 CFKGS: theta*=0.2, test AUC=0.8216 (FKG đầy đủ 0.8196)
+  E3 fold 2 GreedyFKGS: theta*=0.05, test AUC=0.8019 (FKG đầy đủ 0.8000)
+  E3 fold 2 SFKGS: theta*=0.05, test AUC=0.7976 (FKG đầy đủ 0.8000)
+  E3 fold 2 CFKGS: theta*=0.05, test AUC=0.8263 (FKG đầy đủ 0.8000)
+  E3 fold 3 GreedyFKGS: theta*=0.1, test AUC=0.8128 (FKG đầy đủ 0.8006)
+  E3 fold 3 SFKGS: theta*=0.1, test AUC=0.8037 (FKG đầy đủ 0.8006)
+  E3 fold 3 CFKGS: theta*=0.1, test AUC=0.8225 (FKG đầy đủ 0.8006)
+  E3 fold 4 GreedyFKGS: theta*=0.1, test AUC=0.8205 (FKG đầy đủ 0.8217)
+  E3 fold 4 SFKGS: theta*=0.1, test AUC=0.7976 (FKG đầy đủ 0.8217)
+  E3 fold 4 CFKGS: theta*=0.05, test AUC=0.8175 (FKG đầy đủ 0.8217)
+
+############################################################
+# E4
+############################################################
+  E4 fold 0 xong
+  E4 fold 1 xong
+  E4 fold 2 xong
+  E4 fold 3 xong
+  E4 fold 4 xong
+
+############################################################
+# PUB
+############################################################
+  PUB orig q1090 seed=42: argmax acc=0.5652, calib acc=0.7174, AUC=0.8067
+  PUB orig tertile seed=42: argmax acc=0.8478, calib acc=0.8514, AUC=0.9184
+  PUB orig tertile seed=1: argmax acc=0.8478, calib acc=0.8370, AUC=0.9056
+  PUB orig tertile seed=2: argmax acc=0.8043, calib acc=0.8261, AUC=0.8951
+  PUB orig tertile seed=3: argmax acc=0.8152, calib acc=0.8152, AUC=0.8966
+  PUB orig tertile seed=4: argmax acc=0.8370, calib acc=0.8225, AUC=0.8744
+  PUB pair q1090 seed=42: argmax acc=0.5543, calib acc=0.7971, AUC=0.8199
+  PUB pair q1090 seed=1: argmax acc=0.5580, calib acc=0.7464, AUC=0.8030
+  PUB pair q1090 seed=2: argmax acc=0.5543, calib acc=0.7645, AUC=0.8295
+  PUB pair q1090 seed=3: argmax acc=0.5543, calib acc=0.7355, AUC=0.8231
+  PUB pair q1090 seed=4: argmax acc=0.5543, calib acc=0.6957, AUC=0.7289
+  PUB pair tertile seed=42: argmax acc=0.6920, calib acc=0.7935, AUC=0.8464
+  PUB pair tertile seed=1: argmax acc=0.6848, calib acc=0.7536, AUC=0.8121
+  PUB pair tertile seed=2: argmax acc=0.6667, calib acc=0.7645, AUC=0.8285
+  PUB pair tertile seed=3: argmax acc=0.6739, calib acc=0.7971, AUC=0.8521
+  PUB pair tertile seed=4: argmax acc=0.6449, calib acc=0.6884, AUC=0.7896
+
+############################################################
+# REPORT
+############################################################
+  Đã tạo /content/fkgs_v3.1/results/heart/report_tong_hop.md
+
+HOÀN TẤT 20261023T135603-b9455fdf trong 2.9 phút
+[ĐẠT] diabetes: run 20261023T133236-4c271b25, mã b2f66e1e147a, K=5, quick=False
+[ĐẠT] heart: run 20261023T135603-b9455fdf, mã b2f66e1e147a, K=5, quick=False
+KẾT LUẬN: ĐỦ ĐIỀU KIỆN BÁO CÁO

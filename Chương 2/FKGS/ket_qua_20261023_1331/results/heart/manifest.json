@@ -1,0 +1,226 @@
+{
+ "run_id": "20261023T135603-b9455fdf",
+ "started": "2026-10-23T13:56:03",
+ "dataset": "heart",
+ "code_sha256": "b2f66e1e147afe736b1dea1bcdfcdce118d05edad7667cf1c25a37c7dcdf66be",
+ "code_files": {
+  "config.py": "cfa816325ff158a057f5331f99aba1157d196b01c9d5d3f2cc7f6da5044608db",
+  "experiments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "experiments/common.py": "7ddf5127f2ee72e576d973278ce2eb0bfdf405c7736d9cc3dc228a01551049d3",
+  "experiments/run_00_preprocess.py": "a540a34f176c8bc8610797ecbc425be29cf1bdc1f0076b8a558f33816819b71f",
+  "experiments/run_01_E1_theory_validation.py": "a5edf17fc73d5e9ef64942bf6d98c01fabc368b3a5461b1883f9ee1bcff3c902",
+  "experiments/run_02_E2_greedy_vs_random.py": "8746bf373f8ffaf5da48fa05d71ab4f2d87f39aec19eae36b3c4ae1157860bb0",
+  "experiments/run_03_E3_theta_curve.py": "56026ab1b9878d5471d56ab20693d76ac0d186e99a17167d7cc2b92d853cd3df",
+  "experiments/run_04_E4_four_strategies.py": "20ad69372385863106c3df14761839012d24b24be255351fe6af5c3d16a87797",
+  "experiments/run_05_generate_report.py": "ea73cb0217914c168cd56ef9bd6fce9e9027501a2b18c289097c3fe465a7211b",
+  "experiments/run_06_published_protocol.py": "ed34a80c4c922019b4cccbdb5ee1440cada554f58610bacd7e0fb2c14aaa065c",
+  "experiments/synthetic.py": "03b6cd01c31f095a5a5563327306ac76f6ecdaf3242a30c86033c79c60b021e0",
+  "run_all.py": "db3bf294953e524f074d67e86749d67407c2ac7b9d578471791fb25f1104bcae",
+  "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/fisa_corrected.py": "83952ecc730657c23e24fc65bce44ccacef75e73fcb7385e09704a35aa6604e3",
+  "src/fkg_fast.py": "325c463904a418108729ebc3d01da8910c96bd3f07bdfb2816bf0f63952841ca",
+  "src/fkg_original.py": "2b6d96f728c5b62c0c66b4c55a9879e0997fcb494a1a0fc30615d87761580985",
+  "src/fkg_sim_rep.py": "4fd4b9e88321696573df165cb2115d3301858496c59a8bf0772f2163438ba551",
+  "src/fkgs_algorithms.py": "2764afe28e85dbee91aa7a50c89bb5114c8d46bf169055705f681c545039c5d5",
+  "src/fuzzification.py": "d2352fecf196b79549991a373a45c76fc53d3da1b486af48ef2033165683e27e",
+  "src/kfold_utils.py": "6c03bbf9f5099863cf455c3c187f12419a7f4d35b330e6048398ed555794c9f7",
+  "src/utils_stats.py": "56ced71427926c18e488416b763f18d325e9e695f4e15f22deecac613a4d28f8"
+ },
+ "config": {
+  "dataset": "heart",
+  "features": [
+   "Age",
+   "Sex",
+   "ChestPainType",
+   "RestingBP",
+   "Cholesterol",
+   "FastingBS",
+   "RestingECG",
+   "MaxHR",
+   "ExerciseAngina",
+   "Oldpeak",
+   "ST_Slope"
+  ],
+  "label": "HeartDisease",
+  "zero_missing": [
+   "RestingBP",
+   "Cholesterol"
+  ],
+  "categorical": [
+   "Sex",
+   "ChestPainType",
+   "FastingBS",
+   "RestingECG",
+   "ExerciseAngina",
+   "ST_Slope"
+  ],
+  "clinical": {},
+  "fuzzy_levels": [
+   "Low",
+   "Medium",
+   "High"
+  ],
+  "fuzzy_quantiles": [
+   0.3333333333333333,
+   0.6666666666666666
+  ],
+  "scale": {
+   "N_EXP": 1500
+  },
+  "kfold": {
+   "K": 5,
+   "SEED": 42
+  },
+  "fisa": {
+   "PAIR_SCOPE": "global",
+   "SCORE": "logratio",
+   "DECISION": "calibrated",
+   "CALIB_CRITERION": "bacc",
+   "VAL_FRACTION": 0.2
+  },
+  "sampling": {
+   "BUDGET_MODE": "exact",
+   "ALLOC_METHOD": "proportional",
+   "N_CLUSTERS_PER_LABEL": 5,
+   "CLUSTER_WITHIN_LABEL": true
+  },
+  "e1": {
+   "N_VALUES": [
+    10,
+    14,
+    18
+   ],
+   "RATIO_VALUES": [
+    0.2,
+    0.4
+   ],
+   "N_REPEATS": 20
+  },
+  "e2": {
+   "THETA_VALUES": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5
+   ],
+   "N_SEEDS_RANDOM": 30
+  },
+  "e3": {
+   "THETA_GRID": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+   ],
+   "REP_MEAN_THRESHOLD": 0.85,
+   "COVER_DELTA": 0.85,
+   "INNER_VAL_FRACTION": 0.25,
+   "INNER_SEED": 7,
+   "METHODS": [
+    "GreedyFKGS",
+    "SFKGS",
+    "CFKGS"
+   ],
+   "COST": "size"
+  },
+  "e4": {
+   "N_BLOCKS": 10,
+   "BLOCK_SIZE": 500,
+   "THETA": 0.2,
+   "METHODS": [
+    "GreedyFKGS",
+    "Random",
+    "SFKGS",
+    "CFKGS",
+    "StratRandom"
+   ]
+  },
+  "stats": {
+   "ALPHA": 0.05,
+   "N_BOOTSTRAP": 10000,
+   "CI_LEVEL": 0.95
+  },
+  "pub": {
+   "SEEDS": [
+    42,
+    1,
+    2,
+    3,
+    4
+   ],
+   "PUBLISHED_ACC": {
+    "diabetes": 0.7613
+   }
+  },
+  "allow_synthetic": false,
+  "quick": false
+ },
+ "environment": {
+  "python": "3.13.16",
+  "numpy": "2.1.3",
+  "pandas": "2.2.3",
+  "scipy": "1.16.3",
+  "sklearn": "1.6.1",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "cpu_count": 2
+ },
+ "steps": {
+  "PREPROCESS": {
+   "finished": "2026-10-23T13:56:03",
+   "seconds": 0.02
+  },
+  "E1": {
+   "finished": "2026-10-23T13:56:13",
+   "seconds": 10.32
+  },
+  "E2": {
+   "finished": "2026-10-23T13:58:15",
+   "seconds": 122.29
+  },
+  "E3": {
+   "finished": "2026-10-23T13:58:31",
+   "seconds": 16.0
+  },
+  "E4": {
+   "finished": "2026-10-23T13:58:38",
+   "seconds": 6.46
+  },
+  "PUB": {
+   "finished": "2026-10-23T13:58:58",
+   "seconds": 20.33
+  },
+  "REPORT": {
+   "finished": "2026-10-23T13:58:59",
+   "seconds": 1.15
+  }
+ },
+ "data": {
+  "source": "real",
+  "path": "data/heart/Data.csv",
+  "sha256": "948420b084d8a3a0ca42b8419fce9aee175879e43f8aedf712377899a67aa49b"
+ },
+ "preprocess": {
+  "n_raw": 918,
+  "n_clean": 918,
+  "n_duplicates_removed": 0,
+  "n_conflicting_X": 0,
+  "label_counts": {
+   "0": 410,
+   "1": 508
+  },
+  "zero_or_nan_counts": {
+   "RestingBP": 1,
+   "Cholesterol": 172
+  }
+ }
+}
