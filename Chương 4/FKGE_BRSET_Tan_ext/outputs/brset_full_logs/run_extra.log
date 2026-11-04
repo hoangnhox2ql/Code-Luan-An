@@ -1,0 +1,620 @@
+===== 2026-11-03 03:44:02 extra.py 
+fold 1: [1/32] trial_021 done in 3s
+fold 1: [2/32] trial_001 done in 0s
+fold 1: [3/32] trial_018 done in 0s
+fold 1: [4/32] trial_019 done in 0s
+fold 1: [5/32] trial_012 done in 0s
+fold 1: [6/32] trial_009 done in 0s
+fold 1: [7/32] fisa__full done in 1s
+fold 1: [8/32] fisa__fkgs done in 14s
+fold 1: [9/32] fisa__ratio_0.2 done in 1s
+fold 1: [10/32] fisa__ratio_0.4 done in 1s
+fold 1: [11/32] fisa__ratio_0.6 done in 1s
+fold 1: [12/32] fisa__ratio_0.8 done in 1s
+fold 1: [13/32] ml__Logistic_regression done in 1s
+fold 1: [14/32] ml__Random_forest done in 14s
+fold 1: [15/32] ml__XGBoost done in 3s
+fold 1: [16/32] kge__Node2Vec done in 17s
+fold 1: [17/32] kge__TransE done in 22s
+fold 1: [18/32] kge__DistMult done in 18s
+TEACHER part=1/5 unique_queries=2176 rules=1877 elapsed=2.3s
+TEACHER part=2/5 unique_queries=2186 rules=1868 elapsed=4.0s
+TEACHER part=3/5 unique_queries=2216 rules=1842 elapsed=5.6s
+TEACHER part=4/5 unique_queries=2288 rules=1831 elapsed=7.2s
+TEACHER part=5/5 unique_queries=2227 rules=1872 elapsed=9.0s
+START fold_01 fkge__fkgs__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.657002 val=0.365646 elapsed=1.3s
+EPOCH 10: loss=5.345904 val=0.377203 elapsed=6.4s
+fold 1: [19/32] fkge__fkgs__default done in 19s
+TEACHER part=1/5 unique_queries=2176 rules=1238 elapsed=2.4s
+TEACHER part=2/5 unique_queries=2186 rules=1228 elapsed=3.5s
+TEACHER part=3/5 unique_queries=2216 rules=1224 elapsed=4.7s
+TEACHER part=4/5 unique_queries=2288 rules=1250 elapsed=6.1s
+TEACHER part=5/5 unique_queries=2227 rules=1257 elapsed=7.3s
+START fold_01 fkge__ratio_0.2__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.639694 val=0.412941 elapsed=0.9s
+EPOCH 10: loss=5.330348 val=0.436460 elapsed=4.5s
+fold 1: [20/32] fkge__ratio_0.2__default done in 15s
+TEACHER part=1/5 unique_queries=2176 rules=2499 elapsed=4.3s
+TEACHER part=2/5 unique_queries=2186 rules=2494 elapsed=6.3s
+TEACHER part=3/5 unique_queries=2216 rules=2459 elapsed=8.2s
+TEACHER part=4/5 unique_queries=2288 rules=2454 elapsed=10.5s
+TEACHER part=5/5 unique_queries=2227 rules=2457 elapsed=12.5s
+START fold_01 fkge__ratio_0.4__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.645490 val=0.377311 elapsed=1.0s
+EPOCH 10: loss=5.320402 val=0.294025 elapsed=5.6s
+fold 1: [21/32] fkge__ratio_0.4__default done in 21s
+TEACHER part=1/5 unique_queries=2176 rules=3775 elapsed=5.5s
+TEACHER part=2/5 unique_queries=2186 rules=3714 elapsed=8.7s
+TEACHER part=3/5 unique_queries=2216 rules=3719 elapsed=11.6s
+TEACHER part=4/5 unique_queries=2288 rules=3664 elapsed=14.6s
+TEACHER part=5/5 unique_queries=2227 rules=3718 elapsed=18.2s
+START fold_01 fkge__ratio_0.6__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.642098 val=0.394950 elapsed=1.0s
+EPOCH 10: loss=5.326761 val=0.351722 elapsed=6.2s
+fold 1: [22/32] fkge__ratio_0.6__default done in 28s
+TEACHER part=1/5 unique_queries=2176 rules=5011 elapsed=7.6s
+TEACHER part=2/5 unique_queries=2186 rules=4963 elapsed=11.3s
+TEACHER part=3/5 unique_queries=2216 rules=4952 elapsed=15.3s
+TEACHER part=4/5 unique_queries=2288 rules=4899 elapsed=19.2s
+TEACHER part=5/5 unique_queries=2227 rules=4929 elapsed=23.1s
+START fold_01 fkge__ratio_0.8__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.642417 val=0.395014 elapsed=1.4s
+EPOCH 10: loss=5.324880 val=0.358974 elapsed=6.6s
+fold 1: [23/32] fkge__ratio_0.8__default done in 33s
+START fold_01 fkge__full__K=2: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'K': 2}
+EPOCH 1: loss=3.561862 val=0.380494 elapsed=1.7s
+EPOCH 10: loss=3.248476 val=0.270842 elapsed=7.6s
+fold 1: [24/32] fkge__full__K=2 done in 12s
+START fold_01 fkge__full__K=10: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'K': 10}
+EPOCH 1: loss=9.111530 val=0.380981 elapsed=1.3s
+EPOCH 10: loss=8.787973 val=0.296061 elapsed=7.7s
+fold 1: [25/32] fkge__full__K=10 done in 12s
+START fold_01 fkge__full__lam_P=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.0}
+EPOCH 1: loss=5.501620 val=0.221360 elapsed=1.5s
+EPOCH 10: loss=5.180954 val=0.360257 elapsed=7.6s
+fold 1: [26/32] fkge__full__lam_P=0.0 done in 8s
+START fold_01 fkge__full__lam_I=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.0, 'lam_P': 0.3}
+EPOCH 1: loss=5.639649 val=0.276123 elapsed=1.3s
+EPOCH 10: loss=5.283820 val=0.314773 elapsed=7.1s
+fold 1: [27/32] fkge__full__lam_I=0.0 done in 8s
+START fold_01 fkge__full__lam_R=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_R': 0.0}
+EPOCH 1: loss=5.085315 val=0.523855 elapsed=1.6s
+EPOCH 10: loss=4.971582 val=0.344838 elapsed=7.8s
+EPOCH 20: loss=4.954126 val=0.328608 elapsed=13.5s
+EPOCH 30: loss=4.947190 val=0.293806 elapsed=20.3s
+EPOCH 40: loss=4.942979 val=0.286829 elapsed=26.3s
+fold 1: [28/32] fkge__full__lam_R=0.0 done in 29s
+START fold_01 fkge__full__lam_E=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_E': 0.0}
+EPOCH 1: loss=1.481839 val=0.380412 elapsed=1.3s
+EPOCH 10: loss=1.185630 val=0.347853 elapsed=7.4s
+fold 1: [29/32] fkge__full__lam_E=0.0 done in 11s
+START fold_01 fkge__full__lam_N=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_N': 0.0}
+EPOCH 1: loss=4.951313 val=0.383925 elapsed=1.4s
+EPOCH 10: loss=4.639003 val=0.270887 elapsed=7.3s
+fold 1: [30/32] fkge__full__lam_N=0.0 done in 11s
+START fold_01 fkge__full__lam_E=0.0,lam_N=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_E': 0.0, 'lam_N': 0.0}
+EPOCH 1: loss=0.790072 val=0.383648 elapsed=1.3s
+EPOCH 10: loss=0.480833 val=0.309842 elapsed=6.7s
+fold 1: [31/32] fkge__full__lam_E=0.0,lam_N=0.0 done in 11s
+START fold_01 fkge__full__alpha=mean: {'alpha': 'mean', 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.699476 val=0.276485 elapsed=1.7s
+EPOCH 10: loss=5.298734 val=0.239208 elapsed=7.2s
+EPOCH 20: loss=5.238101 val=0.239127 elapsed=13.5s
+fold 1: [32/32] fkge__full__alpha=mean done in 17s
+Scope: BRSET_FULL_16266_IMAGES_8524_PATIENTS
+Mean and sample SD (ddof=1) across outer folds; n_folds is shown per row.
+Every configuration was locked on validation; test metrics never chose anything.
+KB3/KB4: sensitivity of the main grid; each value uses its best-validation trial.
+kb2_fkgs: 1 outer fold(s) complete — INCOMPLETE, do not report
+kb3_d_e: 1 outer fold(s) complete — INCOMPLETE, do not report
+kb4_lambda: 1 outer fold(s) complete — INCOMPLETE, do not report
+profile_alpha: 1 outer fold(s) complete — INCOMPLETE, do not report
+kb5_K: 1 outer fold(s) complete — INCOMPLETE, do not report
+kb6_rules: 1 outer fold(s) complete — INCOMPLETE, do not report
+ablation: 1 outer fold(s) complete — INCOMPLETE, do not report
+baseline: 1 outer fold(s) complete — INCOMPLETE, do not report
+fold 2: [1/31] trial_009 done in 0s
+fold 2: [2/31] trial_013 done in 0s
+fold 2: [3/31] trial_018 done in 0s
+fold 2: [4/31] trial_023 done in 0s
+fold 2: [5/31] trial_024 done in 0s
+fold 2: [6/31] fisa__full done in 1s
+fold 2: [7/31] fisa__fkgs done in 7s
+fold 2: [8/31] fisa__ratio_0.2 done in 1s
+fold 2: [9/31] fisa__ratio_0.4 done in 1s
+fold 2: [10/31] fisa__ratio_0.6 done in 1s
+fold 2: [11/31] fisa__ratio_0.8 done in 1s
+fold 2: [12/31] ml__Logistic_regression done in 0s
+fold 2: [13/31] ml__Random_forest done in 13s
+fold 2: [14/31] ml__XGBoost done in 2s
+fold 2: [15/31] kge__Node2Vec done in 12s
+fold 2: [16/31] kge__TransE done in 11s
+fold 2: [17/31] kge__DistMult done in 13s
+TEACHER part=1/5 unique_queries=2039 rules=1268 elapsed=1.8s
+TEACHER part=2/5 unique_queries=2012 rules=1272 elapsed=3.2s
+TEACHER part=3/5 unique_queries=1963 rules=1266 elapsed=4.6s
+TEACHER part=4/5 unique_queries=1973 rules=1305 elapsed=6.0s
+TEACHER part=5/5 unique_queries=1975 rules=1304 elapsed=7.2s
+START fold_02 fkge__fkgs__default: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.607564 val=0.508007 elapsed=0.8s
+EPOCH 10: loss=5.401335 val=0.331710 elapsed=5.4s
+EPOCH 20: loss=5.296604 val=0.307515 elapsed=9.3s
+fold 2: [18/31] fkge__fkgs__default done in 17s
+TEACHER part=1/5 unique_queries=2039 rules=830 elapsed=1.2s
+TEACHER part=2/5 unique_queries=2012 rules=874 elapsed=2.1s
+TEACHER part=3/5 unique_queries=1963 rules=844 elapsed=3.0s
+TEACHER part=4/5 unique_queries=1973 rules=861 elapsed=3.9s
+TEACHER part=5/5 unique_queries=1975 rules=840 elapsed=4.7s
+START fold_02 fkge__ratio_0.2__default: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.618849 val=0.663647 elapsed=0.8s
+EPOCH 10: loss=5.411692 val=0.360282 elapsed=4.9s
+EPOCH 20: loss=5.309166 val=0.333245 elapsed=9.6s
+fold 2: [19/31] fkge__ratio_0.2__default done in 15s
+TEACHER part=1/5 unique_queries=2039 rules=1672 elapsed=2.9s
+TEACHER part=2/5 unique_queries=2012 rules=1701 elapsed=4.6s
+TEACHER part=3/5 unique_queries=1963 rules=1688 elapsed=6.2s
+TEACHER part=4/5 unique_queries=1973 rules=1729 elapsed=7.7s
+TEACHER part=5/5 unique_queries=1975 rules=1692 elapsed=9.1s
+START fold_02 fkge__ratio_0.4__default: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.595085 val=0.364211 elapsed=0.8s
+EPOCH 10: loss=5.355569 val=0.269674 elapsed=5.2s
+fold 2: [20/31] fkge__ratio_0.4__default done in 15s
+TEACHER part=1/5 unique_queries=2039 rules=2509 elapsed=4.1s
+TEACHER part=2/5 unique_queries=2012 rules=2539 elapsed=6.2s
+TEACHER part=3/5 unique_queries=1963 rules=2550 elapsed=8.3s
+TEACHER part=4/5 unique_queries=1973 rules=2602 elapsed=10.7s
+TEACHER part=5/5 unique_queries=1975 rules=2565 elapsed=13.1s
+START fold_02 fkge__ratio_0.6__default: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.597619 val=0.477865 elapsed=0.8s
+EPOCH 10: loss=5.399452 val=0.423634 elapsed=4.6s
+EPOCH 20: loss=5.301108 val=0.247845 elapsed=9.0s
+fold 2: [21/31] fkge__ratio_0.6__default done in 25s
+TEACHER part=1/5 unique_queries=2039 rules=3373 elapsed=4.4s
+TEACHER part=2/5 unique_queries=2012 rules=3403 elapsed=7.1s
+TEACHER part=3/5 unique_queries=1963 rules=3389 elapsed=9.8s
+TEACHER part=4/5 unique_queries=1973 rules=3440 elapsed=12.4s
+TEACHER part=5/5 unique_queries=1975 rules=3418 elapsed=15.5s
+START fold_02 fkge__ratio_0.8__default: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.607867 val=0.573591 elapsed=0.9s
+EPOCH 10: loss=5.404459 val=0.331970 elapsed=5.0s
+EPOCH 20: loss=5.299427 val=0.329102 elapsed=9.4s
+fold 2: [22/31] fkge__ratio_0.8__default done in 26s
+START fold_02 fkge__full__K=2: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'K': 2}
+EPOCH 1: loss=3.523257 val=0.514649 elapsed=1.0s
+EPOCH 10: loss=3.326020 val=0.318816 elapsed=5.7s
+EPOCH 20: loss=3.218178 val=0.294493 elapsed=10.2s
+fold 2: [23/31] fkge__full__K=2 done in 11s
+START fold_02 fkge__full__K=10: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'K': 10}
+EPOCH 1: loss=9.066511 val=0.527473 elapsed=1.1s
+EPOCH 10: loss=8.867591 val=0.325992 elapsed=5.3s
+EPOCH 20: loss=8.766482 val=0.296759 elapsed=10.0s
+fold 2: [24/31] fkge__full__K=10 done in 11s
+START fold_02 fkge__full__lam_P=0.0: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.0}
+EPOCH 1: loss=5.388977 val=0.279386 elapsed=0.7s
+EPOCH 10: loss=5.167107 val=0.238506 elapsed=5.2s
+fold 2: [25/31] fkge__full__lam_P=0.0 done in 8s
+START fold_02 fkge__full__lam_I=0.0: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.0, 'lam_P': 0.3}
+EPOCH 1: loss=5.593779 val=0.533388 elapsed=1.1s
+EPOCH 10: loss=5.357688 val=0.308079 elapsed=6.0s
+fold 2: [26/31] fkge__full__lam_I=0.0 done in 8s
+START fold_02 fkge__full__lam_R=0.0: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_R': 0.0}
+EPOCH 1: loss=5.016042 val=0.559433 elapsed=1.0s
+EPOCH 10: loss=4.955206 val=0.307478 elapsed=5.6s
+EPOCH 20: loss=4.943988 val=0.293390 elapsed=10.1s
+EPOCH 30: loss=4.937556 val=0.290618 elapsed=15.3s
+fold 2: [27/31] fkge__full__lam_R=0.0 done in 18s
+START fold_02 fkge__full__lam_E=0.0: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_E': 0.0}
+EPOCH 1: loss=1.443343 val=0.512923 elapsed=1.1s
+EPOCH 10: loss=1.246056 val=0.311397 elapsed=6.1s
+fold 2: [28/31] fkge__full__lam_E=0.0 done in 11s
+START fold_02 fkge__full__lam_N=0.0: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_N': 0.0}
+EPOCH 1: loss=4.912028 val=0.537592 elapsed=1.1s
+EPOCH 10: loss=4.712938 val=0.327091 elapsed=6.1s
+EPOCH 20: loss=4.610013 val=0.328876 elapsed=10.9s
+fold 2: [29/31] fkge__full__lam_N=0.0 done in 12s
+START fold_02 fkge__full__lam_E=0.0,lam_N=0.0: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_E': 0.0, 'lam_N': 0.0}
+EPOCH 1: loss=0.753191 val=0.530852 elapsed=1.0s
+EPOCH 10: loss=0.554733 val=0.323528 elapsed=5.3s
+EPOCH 20: loss=0.447922 val=0.369144 elapsed=10.1s
+fold 2: [30/31] fkge__full__lam_E=0.0,lam_N=0.0 done in 11s
+START fold_02 fkge__full__alpha=mean: {'alpha': 'mean', 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.604598 val=0.305339 elapsed=1.1s
+EPOCH 10: loss=5.227965 val=0.242447 elapsed=5.5s
+EPOCH 20: loss=5.167905 val=0.236641 elapsed=10.9s
+fold 2: [31/31] fkge__full__alpha=mean done in 13s
+Scope: BRSET_FULL_16266_IMAGES_8524_PATIENTS
+Mean and sample SD (ddof=1) across outer folds; n_folds is shown per row.
+Every configuration was locked on validation; test metrics never chose anything.
+KB3/KB4: sensitivity of the main grid; each value uses its best-validation trial.
+kb2_fkgs: 2 outer fold(s) complete — INCOMPLETE, do not report
+kb3_d_e: 2 outer fold(s) complete — INCOMPLETE, do not report
+kb4_lambda: 2 outer fold(s) complete — INCOMPLETE, do not report
+profile_alpha: 2 outer fold(s) complete — INCOMPLETE, do not report
+kb5_K: 2 outer fold(s) complete — INCOMPLETE, do not report
+kb6_rules: 2 outer fold(s) complete — INCOMPLETE, do not report
+ablation: 2 outer fold(s) complete — INCOMPLETE, do not report
+baseline: 2 outer fold(s) complete — INCOMPLETE, do not report
+fold 3: [1/33] trial_021 done in 0s
+fold 3: [2/33] trial_013 done in 0s
+fold 3: [3/33] trial_019 done in 0s
+fold 3: [4/33] trial_022 done in 0s
+fold 3: [5/33] trial_023 done in 0s
+fold 3: [6/33] trial_012 done in 0s
+fold 3: [7/33] trial_009 done in 0s
+fold 3: [8/33] fisa__full done in 1s
+fold 3: [9/33] fisa__fkgs done in 10s
+fold 3: [10/33] fisa__ratio_0.2 done in 1s
+fold 3: [11/33] fisa__ratio_0.4 done in 1s
+fold 3: [12/33] fisa__ratio_0.6 done in 1s
+fold 3: [13/33] fisa__ratio_0.8 done in 2s
+fold 3: [14/33] ml__Logistic_regression done in 0s
+fold 3: [15/33] ml__Random_forest done in 14s
+fold 3: [16/33] ml__XGBoost done in 2s
+fold 3: [17/33] kge__Node2Vec done in 24s
+fold 3: [18/33] kge__TransE done in 28s
+fold 3: [19/33] kge__DistMult done in 36s
+TEACHER part=1/5 unique_queries=2035 rules=1453 elapsed=1.9s
+TEACHER part=2/5 unique_queries=2061 rules=1471 elapsed=3.3s
+TEACHER part=3/5 unique_queries=2002 rules=1462 elapsed=4.6s
+TEACHER part=4/5 unique_queries=2076 rules=1431 elapsed=5.9s
+TEACHER part=5/5 unique_queries=2045 rules=1457 elapsed=7.4s
+START fold_03 fkge__fkgs__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.562018 val=0.281797 elapsed=0.9s
+EPOCH 10: loss=5.306344 val=0.329474 elapsed=4.7s
+fold 3: [20/33] fkge__fkgs__default done in 16s
+TEACHER part=1/5 unique_queries=2035 rules=972 elapsed=1.6s
+TEACHER part=2/5 unique_queries=2061 rules=988 elapsed=2.8s
+TEACHER part=3/5 unique_queries=2002 rules=979 elapsed=3.8s
+TEACHER part=4/5 unique_queries=2076 rules=956 elapsed=4.9s
+TEACHER part=5/5 unique_queries=2045 rules=948 elapsed=6.0s
+START fold_03 fkge__ratio_0.2__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.554417 val=0.268076 elapsed=0.9s
+EPOCH 10: loss=5.326331 val=0.285491 elapsed=5.1s
+fold 3: [21/33] fkge__ratio_0.2__default done in 14s
+TEACHER part=1/5 unique_queries=2035 rules=1931 elapsed=2.6s
+TEACHER part=2/5 unique_queries=2061 rules=1952 elapsed=4.5s
+TEACHER part=3/5 unique_queries=2002 rules=1930 elapsed=6.0s
+TEACHER part=4/5 unique_queries=2076 rules=1910 elapsed=8.0s
+TEACHER part=5/5 unique_queries=2045 rules=1923 elapsed=9.9s
+START fold_03 fkge__ratio_0.4__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.559724 val=0.254152 elapsed=0.9s
+EPOCH 10: loss=5.318591 val=0.276185 elapsed=4.8s
+fold 3: [22/33] fkge__ratio_0.4__default done in 19s
+TEACHER part=1/5 unique_queries=2035 rules=2896 elapsed=3.1s
+TEACHER part=2/5 unique_queries=2061 rules=2898 elapsed=5.4s
+TEACHER part=3/5 unique_queries=2002 rules=2911 elapsed=7.9s
+TEACHER part=4/5 unique_queries=2076 rules=2886 elapsed=10.2s
+TEACHER part=5/5 unique_queries=2045 rules=2875 elapsed=12.7s
+START fold_03 fkge__ratio_0.6__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.546670 val=0.424378 elapsed=1.0s
+EPOCH 10: loss=5.319131 val=0.254511 elapsed=5.7s
+fold 3: [23/33] fkge__ratio_0.6__default done in 20s
+TEACHER part=1/5 unique_queries=2035 rules=3878 elapsed=5.0s
+TEACHER part=2/5 unique_queries=2061 rules=3874 elapsed=8.5s
+TEACHER part=3/5 unique_queries=2002 rules=3861 elapsed=11.6s
+TEACHER part=4/5 unique_queries=2076 rules=3858 elapsed=14.6s
+TEACHER part=5/5 unique_queries=2045 rules=3853 elapsed=18.1s
+START fold_03 fkge__ratio_0.8__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.554563 val=0.285727 elapsed=1.3s
+EPOCH 10: loss=5.303847 val=0.308675 elapsed=5.9s
+fold 3: [24/33] fkge__ratio_0.8__default done in 27s
+START fold_03 fkge__full__K=2: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'K': 2}
+EPOCH 1: loss=3.474745 val=0.291570 elapsed=1.3s
+EPOCH 10: loss=3.224292 val=0.216178 elapsed=6.2s
+fold 3: [25/33] fkge__full__K=2 done in 9s
+START fold_03 fkge__full__K=10: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'K': 10}
+EPOCH 1: loss=9.013119 val=0.297140 elapsed=1.0s
+EPOCH 10: loss=8.761803 val=0.219479 elapsed=5.4s
+fold 3: [26/33] fkge__full__K=10 done in 9s
+START fold_03 fkge__full__lam_P=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.0}
+EPOCH 1: loss=5.450341 val=0.327292 elapsed=1.1s
+EPOCH 10: loss=5.154998 val=0.279144 elapsed=6.3s
+fold 3: [27/33] fkge__full__lam_P=0.0 done in 8s
+START fold_03 fkge__full__lam_I=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.0, 'lam_P': 0.3}
+EPOCH 1: loss=5.547363 val=0.330522 elapsed=1.3s
+EPOCH 10: loss=5.272742 val=0.337680 elapsed=6.4s
+fold 3: [28/33] fkge__full__lam_I=0.0 done in 9s
+START fold_03 fkge__full__lam_R=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_R': 0.0}
+EPOCH 1: loss=5.001042 val=0.344506 elapsed=1.1s
+EPOCH 10: loss=4.936514 val=0.248320 elapsed=5.5s
+fold 3: [29/33] fkge__full__lam_R=0.0 done in 7s
+START fold_03 fkge__full__lam_E=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_E': 0.0}
+EPOCH 1: loss=1.395511 val=0.290836 elapsed=1.2s
+EPOCH 10: loss=1.144811 val=0.215834 elapsed=6.6s
+fold 3: [30/33] fkge__full__lam_E=0.0 done in 10s
+START fold_03 fkge__full__lam_N=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_N': 0.0}
+EPOCH 1: loss=4.859903 val=0.300030 elapsed=1.4s
+EPOCH 10: loss=4.611514 val=0.216953 elapsed=6.6s
+fold 3: [31/33] fkge__full__lam_N=0.0 done in 10s
+START fold_03 fkge__full__lam_E=0.0,lam_N=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_E': 0.0, 'lam_N': 0.0}
+EPOCH 1: loss=0.703607 val=0.297128 elapsed=1.1s
+EPOCH 10: loss=0.454734 val=0.215365 elapsed=7.0s
+fold 3: [32/33] fkge__full__lam_E=0.0,lam_N=0.0 done in 10s
+START fold_03 fkge__full__alpha=mean: {'alpha': 'mean', 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.624432 val=0.289573 elapsed=1.2s
+EPOCH 10: loss=5.237959 val=0.222984 elapsed=5.3s
+EPOCH 20: loss=5.181515 val=0.219992 elapsed=11.1s
+fold 3: [33/33] fkge__full__alpha=mean done in 14s
+Scope: BRSET_FULL_16266_IMAGES_8524_PATIENTS
+Mean and sample SD (ddof=1) across outer folds; n_folds is shown per row.
+Every configuration was locked on validation; test metrics never chose anything.
+KB3/KB4: sensitivity of the main grid; each value uses its best-validation trial.
+kb2_fkgs: 3 outer fold(s) complete — INCOMPLETE, do not report
+kb3_d_e: 3 outer fold(s) complete — INCOMPLETE, do not report
+kb4_lambda: 3 outer fold(s) complete — INCOMPLETE, do not report
+profile_alpha: 3 outer fold(s) complete — INCOMPLETE, do not report
+kb5_K: 3 outer fold(s) complete — INCOMPLETE, do not report
+kb6_rules: 3 outer fold(s) complete — INCOMPLETE, do not report
+ablation: 3 outer fold(s) complete — INCOMPLETE, do not report
+baseline: 3 outer fold(s) complete — INCOMPLETE, do not report
+fold 4: [1/32] trial_022 done in 0s
+fold 4: [2/32] trial_013 done in 0s
+fold 4: [3/32] trial_018 done in 0s
+fold 4: [4/32] trial_015 done in 0s
+fold 4: [5/32] trial_016 done in 0s
+fold 4: [6/32] trial_002 done in 0s
+fold 4: [7/32] fisa__full done in 1s
+fold 4: [8/32] fisa__fkgs done in 13s
+fold 4: [9/32] fisa__ratio_0.2 done in 1s
+fold 4: [10/32] fisa__ratio_0.4 done in 1s
+fold 4: [11/32] fisa__ratio_0.6 done in 1s
+fold 4: [12/32] fisa__ratio_0.8 done in 1s
+fold 4: [13/32] ml__Logistic_regression done in 0s
+fold 4: [14/32] ml__Random_forest done in 14s
+fold 4: [15/32] ml__XGBoost done in 2s
+fold 4: [16/32] kge__Node2Vec done in 15s
+fold 4: [17/32] kge__TransE done in 15s
+fold 4: [18/32] kge__DistMult done in 16s
+TEACHER part=1/5 unique_queries=2189 rules=1779 elapsed=2.7s
+TEACHER part=2/5 unique_queries=2172 rules=1795 elapsed=4.2s
+TEACHER part=3/5 unique_queries=2157 rules=1765 elapsed=5.6s
+TEACHER part=4/5 unique_queries=2264 rules=1759 elapsed=7.3s
+TEACHER part=5/5 unique_queries=2244 rules=1747 elapsed=8.8s
+START fold_04 fkge__fkgs__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.083981 val=0.535845 elapsed=1.1s
+EPOCH 10: loss=5.569285 val=0.295646 elapsed=5.7s
+EPOCH 20: loss=5.440501 val=0.260137 elapsed=10.5s
+fold 4: [19/32] fkge__fkgs__default done in 23s
+TEACHER part=1/5 unique_queries=2189 rules=1194 elapsed=1.9s
+TEACHER part=2/5 unique_queries=2172 rules=1171 elapsed=3.0s
+TEACHER part=3/5 unique_queries=2157 rules=1166 elapsed=4.2s
+TEACHER part=4/5 unique_queries=2264 rules=1171 elapsed=5.3s
+TEACHER part=5/5 unique_queries=2244 rules=1155 elapsed=6.4s
+START fold_04 fkge__ratio_0.2__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.074493 val=0.535495 elapsed=1.1s
+EPOCH 10: loss=5.580559 val=0.300679 elapsed=5.3s
+EPOCH 20: loss=5.456643 val=0.275448 elapsed=9.3s
+EPOCH 30: loss=5.400472 val=0.269425 elapsed=13.4s
+EPOCH 40: loss=5.369772 val=0.262419 elapsed=17.7s
+fold 4: [20/32] fkge__ratio_0.2__default done in 26s
+TEACHER part=1/5 unique_queries=2189 rules=2341 elapsed=3.5s
+TEACHER part=2/5 unique_queries=2172 rules=2351 elapsed=5.5s
+TEACHER part=3/5 unique_queries=2157 rules=2383 elapsed=7.6s
+TEACHER part=4/5 unique_queries=2264 rules=2330 elapsed=9.6s
+TEACHER part=5/5 unique_queries=2244 rules=2336 elapsed=11.8s
+START fold_04 fkge__ratio_0.4__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.076512 val=0.508835 elapsed=1.1s
+EPOCH 10: loss=5.568462 val=0.290623 elapsed=5.3s
+EPOCH 20: loss=5.442294 val=0.266000 elapsed=10.6s
+EPOCH 30: loss=5.385660 val=0.260089 elapsed=16.2s
+fold 4: [21/32] fkge__ratio_0.4__default done in 30s
+TEACHER part=1/5 unique_queries=2189 rules=3532 elapsed=5.9s
+TEACHER part=2/5 unique_queries=2172 rules=3519 elapsed=8.9s
+TEACHER part=3/5 unique_queries=2157 rules=3537 elapsed=11.5s
+TEACHER part=4/5 unique_queries=2264 rules=3503 elapsed=14.2s
+TEACHER part=5/5 unique_queries=2244 rules=3490 elapsed=17.4s
+START fold_04 fkge__ratio_0.6__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.077620 val=0.518943 elapsed=1.3s
+EPOCH 10: loss=5.568645 val=0.294809 elapsed=5.9s
+EPOCH 20: loss=5.443341 val=0.270868 elapsed=11.5s
+EPOCH 30: loss=5.387188 val=0.264363 elapsed=17.0s
+EPOCH 40: loss=5.356514 val=0.258268 elapsed=22.4s
+fold 4: [22/32] fkge__ratio_0.6__default done in 42s
+TEACHER part=1/5 unique_queries=2189 rules=4710 elapsed=6.5s
+TEACHER part=2/5 unique_queries=2172 rules=4691 elapsed=9.9s
+TEACHER part=3/5 unique_queries=2157 rules=4703 elapsed=13.7s
+TEACHER part=4/5 unique_queries=2264 rules=4688 elapsed=18.0s
+TEACHER part=5/5 unique_queries=2244 rules=4682 elapsed=22.1s
+START fold_04 fkge__ratio_0.8__default: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.078596 val=0.519473 elapsed=1.8s
+EPOCH 10: loss=5.567014 val=0.294711 elapsed=7.2s
+EPOCH 20: loss=5.441189 val=0.271177 elapsed=13.0s
+EPOCH 30: loss=5.384678 val=0.266227 elapsed=18.8s
+fold 4: [23/32] fkge__ratio_0.8__default done in 44s
+START fold_04 fkge__full__K=2: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7, 'K': 2}
+EPOCH 1: loss=3.999306 val=0.535010 elapsed=2.1s
+EPOCH 10: loss=3.488839 val=0.300170 elapsed=8.1s
+EPOCH 20: loss=3.363438 val=0.275041 elapsed=14.5s
+EPOCH 30: loss=3.307302 val=0.269741 elapsed=21.1s
+EPOCH 40: loss=3.276756 val=0.263395 elapsed=28.4s
+fold 4: [24/32] fkge__full__K=2 done in 33s
+START fold_04 fkge__full__K=10: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7, 'K': 10}
+EPOCH 1: loss=9.542944 val=0.535526 elapsed=1.6s
+EPOCH 10: loss=9.033444 val=0.301024 elapsed=7.3s
+EPOCH 20: loss=8.907000 val=0.277341 elapsed=13.8s
+EPOCH 30: loss=8.849592 val=0.272701 elapsed=22.0s
+EPOCH 40: loss=8.817837 val=0.268630 elapsed=29.0s
+fold 4: [25/32] fkge__full__K=10 done in 31s
+START fold_04 fkge__full__lam_P=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.0}
+EPOCH 1: loss=5.488344 val=1.065221 elapsed=1.4s
+EPOCH 10: loss=5.169737 val=0.413392 elapsed=6.7s
+EPOCH 20: loss=5.129946 val=0.383344 elapsed=12.5s
+fold 4: [26/32] fkge__full__lam_P=0.0 done in 18s
+START fold_04 fkge__full__lam_I=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.0, 'lam_P': 0.7}
+EPOCH 1: loss=6.036579 val=0.575456 elapsed=1.5s
+EPOCH 10: loss=5.542258 val=0.333426 elapsed=6.8s
+EPOCH 20: loss=5.404119 val=0.301440 elapsed=13.2s
+fold 4: [27/32] fkge__full__lam_I=0.0 done in 14s
+START fold_04 fkge__full__lam_R=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7, 'lam_R': 0.0}
+EPOCH 1: loss=5.435159 val=0.520774 elapsed=1.5s
+EPOCH 10: loss=5.092907 val=0.340629 elapsed=6.7s
+EPOCH 20: loss=5.053447 val=0.314584 elapsed=13.3s
+EPOCH 30: loss=5.038221 val=0.295981 elapsed=19.3s
+EPOCH 40: loss=5.030200 val=0.283538 elapsed=25.4s
+EPOCH 50: loss=5.025385 val=0.276669 elapsed=31.4s
+fold 4: [28/32] fkge__full__lam_R=0.0 done in 32s
+START fold_04 fkge__full__lam_E=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7, 'lam_E': 0.0}
+EPOCH 1: loss=1.919571 val=0.534960 elapsed=1.5s
+EPOCH 10: loss=1.408770 val=0.300088 elapsed=7.2s
+EPOCH 20: loss=1.283357 val=0.274828 elapsed=12.8s
+EPOCH 30: loss=1.227275 val=0.269061 elapsed=18.8s
+EPOCH 40: loss=1.196785 val=0.262249 elapsed=25.9s
+fold 4: [29/32] fkge__full__lam_E=0.0 done in 30s
+START fold_04 fkge__full__lam_N=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7, 'lam_N': 0.0}
+EPOCH 1: loss=5.387092 val=0.537758 elapsed=1.5s
+EPOCH 10: loss=4.877915 val=0.300388 elapsed=6.8s
+EPOCH 20: loss=4.752326 val=0.273411 elapsed=12.4s
+EPOCH 30: loss=4.696035 val=0.266870 elapsed=18.2s
+fold 4: [30/32] fkge__full__lam_N=0.0 done in 22s
+START fold_04 fkge__full__lam_E=0.0,lam_N=0.0: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7, 'lam_E': 0.0, 'lam_N': 0.0}
+EPOCH 1: loss=1.228458 val=0.537511 elapsed=1.5s
+EPOCH 10: loss=0.718238 val=0.299959 elapsed=6.6s
+EPOCH 20: loss=0.592831 val=0.272151 elapsed=12.8s
+EPOCH 30: loss=0.536919 val=0.264655 elapsed=18.9s
+fold 4: [31/32] fkge__full__lam_E=0.0,lam_N=0.0 done in 23s
+START fold_04 fkge__full__alpha=mean: {'alpha': 'mean', 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=5.899857 val=0.349623 elapsed=1.8s
+EPOCH 10: loss=5.366554 val=0.264991 elapsed=7.1s
+EPOCH 20: loss=5.292004 val=0.262106 elapsed=13.1s
+EPOCH 30: loss=5.275076 val=0.266436 elapsed=19.5s
+EPOCH 40: loss=5.265234 val=0.257111 elapsed=26.4s
+fold 4: [32/32] fkge__full__alpha=mean done in 29s
+Scope: BRSET_FULL_16266_IMAGES_8524_PATIENTS
+Mean and sample SD (ddof=1) across outer folds; n_folds is shown per row.
+Every configuration was locked on validation; test metrics never chose anything.
+KB3/KB4: sensitivity of the main grid; each value uses its best-validation trial.
+kb2_fkgs: 4 outer fold(s) complete — INCOMPLETE, do not report
+kb3_d_e: 4 outer fold(s) complete — INCOMPLETE, do not report
+kb4_lambda: 4 outer fold(s) complete — INCOMPLETE, do not report
+profile_alpha: 4 outer fold(s) complete — INCOMPLETE, do not report
+kb5_K: 4 outer fold(s) complete — INCOMPLETE, do not report
+kb6_rules: 4 outer fold(s) complete — INCOMPLETE, do not report
+ablation: 4 outer fold(s) complete — INCOMPLETE, do not report
+baseline: 4 outer fold(s) complete — INCOMPLETE, do not report
+fold 5: [1/33] trial_013 done in 0s
+fold 5: [2/33] trial_017 done in 0s
+fold 5: [3/33] trial_021 done in 0s
+fold 5: [4/33] trial_014 done in 0s
+fold 5: [5/33] trial_023 done in 0s
+fold 5: [6/33] trial_020 done in 0s
+fold 5: [7/33] trial_005 done in 0s
+fold 5: [8/33] fisa__full done in 1s
+fold 5: [9/33] fisa__fkgs done in 20s
+fold 5: [10/33] fisa__ratio_0.2 done in 1s
+fold 5: [11/33] fisa__ratio_0.4 done in 1s
+fold 5: [12/33] fisa__ratio_0.6 done in 1s
+fold 5: [13/33] fisa__ratio_0.8 done in 1s
+fold 5: [14/33] ml__Logistic_regression done in 0s
+fold 5: [15/33] ml__Random_forest done in 14s
+fold 5: [16/33] ml__XGBoost done in 2s
+fold 5: [17/33] kge__Node2Vec done in 19s
+fold 5: [18/33] kge__TransE done in 21s
+fold 5: [19/33] kge__DistMult done in 23s
+TEACHER part=1/5 unique_queries=2364 rules=2097 elapsed=2.9s
+TEACHER part=2/5 unique_queries=2330 rules=2056 elapsed=4.7s
+TEACHER part=3/5 unique_queries=2274 rules=2114 elapsed=6.4s
+TEACHER part=4/5 unique_queries=2298 rules=2104 elapsed=8.3s
+TEACHER part=5/5 unique_queries=2313 rules=2127 elapsed=10.0s
+START fold_05 fkge__fkgs__default: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.855064 val=0.624094 elapsed=1.3s
+EPOCH 10: loss=5.515772 val=0.373292 elapsed=7.2s
+fold 5: [20/33] fkge__fkgs__default done in 22s
+TEACHER part=1/5 unique_queries=2364 rules=1396 elapsed=2.6s
+TEACHER part=2/5 unique_queries=2330 rules=1373 elapsed=4.3s
+TEACHER part=3/5 unique_queries=2274 rules=1398 elapsed=5.9s
+TEACHER part=4/5 unique_queries=2298 rules=1428 elapsed=7.5s
+TEACHER part=5/5 unique_queries=2313 rules=1385 elapsed=9.1s
+START fold_05 fkge__ratio_0.2__default: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.941992 val=0.624729 elapsed=1.7s
+EPOCH 10: loss=5.538611 val=0.306195 elapsed=7.2s
+EPOCH 20: loss=5.458279 val=0.344339 elapsed=13.4s
+fold 5: [21/33] fkge__ratio_0.2__default done in 26s
+TEACHER part=1/5 unique_queries=2364 rules=2758 elapsed=4.8s
+TEACHER part=2/5 unique_queries=2330 rules=2757 elapsed=7.6s
+TEACHER part=3/5 unique_queries=2274 rules=2826 elapsed=10.5s
+TEACHER part=4/5 unique_queries=2298 rules=2808 elapsed=13.3s
+TEACHER part=5/5 unique_queries=2313 rules=2825 elapsed=16.2s
+START fold_05 fkge__ratio_0.4__default: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.830346 val=0.667942 elapsed=1.6s
+EPOCH 10: loss=5.527257 val=0.306391 elapsed=8.1s
+fold 5: [22/33] fkge__ratio_0.4__default done in 31s
+TEACHER part=1/5 unique_queries=2364 rules=4175 elapsed=8.8s
+TEACHER part=2/5 unique_queries=2330 rules=4168 elapsed=12.4s
+TEACHER part=3/5 unique_queries=2274 rules=4213 elapsed=15.8s
+TEACHER part=4/5 unique_queries=2298 rules=4185 elapsed=19.7s
+TEACHER part=5/5 unique_queries=2313 rules=4210 elapsed=23.3s
+START fold_05 fkge__ratio_0.6__default: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.930529 val=0.629165 elapsed=4.0s
+EPOCH 10: loss=5.503821 val=0.346107 elapsed=10.8s
+fold 5: [23/33] fkge__ratio_0.6__default done in 42s
+TEACHER part=1/5 unique_queries=2364 rules=5537 elapsed=8.2s
+TEACHER part=2/5 unique_queries=2330 rules=5552 elapsed=12.5s
+TEACHER part=3/5 unique_queries=2274 rules=5617 elapsed=17.3s
+TEACHER part=4/5 unique_queries=2298 rules=5630 elapsed=22.1s
+TEACHER part=5/5 unique_queries=2313 rules=5593 elapsed=26.7s
+START fold_05 fkge__ratio_0.8__default: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.935905 val=0.621627 elapsed=2.1s
+EPOCH 10: loss=5.500239 val=0.406498 elapsed=8.0s
+EPOCH 20: loss=5.441905 val=0.286299 elapsed=15.3s
+fold 5: [24/33] fkge__ratio_0.8__default done in 46s
+START fold_05 fkge__full__K=2: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3, 'K': 2}
+EPOCH 1: loss=3.851115 val=0.626385 elapsed=3.8s
+EPOCH 10: loss=3.411995 val=0.352859 elapsed=11.7s
+fold 5: [25/33] fkge__full__K=2 done in 16s
+START fold_05 fkge__full__K=10: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3, 'K': 10}
+EPOCH 1: loss=9.402406 val=0.627362 elapsed=2.0s
+EPOCH 10: loss=8.970255 val=0.298210 elapsed=8.2s
+EPOCH 20: loss=8.911811 val=0.293335 elapsed=15.7s
+fold 5: [26/33] fkge__full__K=10 done in 19s
+START fold_05 fkge__full__lam_P=0.0: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.0}
+EPOCH 1: loss=5.637856 val=0.616856 elapsed=1.7s
+EPOCH 10: loss=5.397320 val=0.445483 elapsed=7.7s
+EPOCH 20: loss=5.338007 val=0.363551 elapsed=14.8s
+EPOCH 30: loss=5.311163 val=0.334262 elapsed=22.8s
+EPOCH 40: loss=5.293679 val=0.338553 elapsed=30.9s
+fold 5: [27/33] fkge__full__lam_P=0.0 done in 34s
+START fold_05 fkge__full__lam_I=0.0: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.0, 'lam_P': 0.3}
+EPOCH 1: loss=5.807653 val=0.606162 elapsed=2.1s
+EPOCH 10: loss=5.516902 val=0.377839 elapsed=9.0s
+EPOCH 20: loss=5.414666 val=0.329599 elapsed=15.3s
+fold 5: [28/33] fkge__full__lam_I=0.0 done in 20s
+START fold_05 fkge__full__lam_R=0.0: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_R': 0.0}
+EPOCH 1: loss=5.140060 val=0.783132 elapsed=1.8s
+EPOCH 10: loss=4.974313 val=0.353179 elapsed=7.6s
+EPOCH 20: loss=4.952872 val=0.332537 elapsed=14.3s
+EPOCH 30: loss=4.944929 val=0.333371 elapsed=21.1s
+fold 5: [29/33] fkge__full__lam_R=0.0 done in 24s
+START fold_05 fkge__full__lam_E=0.0: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_E': 0.0}
+EPOCH 1: loss=1.770713 val=0.626237 elapsed=1.8s
+EPOCH 10: loss=1.331896 val=0.352228 elapsed=8.1s
+fold 5: [30/33] fkge__full__lam_E=0.0 done in 12s
+START fold_05 fkge__full__lam_N=0.0: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_N': 0.0}
+EPOCH 1: loss=5.241396 val=0.628202 elapsed=1.7s
+EPOCH 10: loss=4.815922 val=0.295232 elapsed=7.4s
+EPOCH 20: loss=4.755000 val=0.322082 elapsed=14.3s
+fold 5: [31/33] fkge__full__lam_N=0.0 done in 20s
+START fold_05 fkge__full__lam_E=0.0,lam_N=0.0: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3, 'lam_E': 0.0, 'lam_N': 0.0}
+EPOCH 1: loss=1.079245 val=0.627687 elapsed=2.0s
+EPOCH 10: loss=0.655091 val=0.297728 elapsed=8.0s
+EPOCH 20: loss=0.596315 val=0.307084 elapsed=15.2s
+fold 5: [32/33] fkge__full__lam_E=0.0,lam_N=0.0 done in 20s
+START fold_05 fkge__full__alpha=mean: {'alpha': 'mean', 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.866991 val=0.388235 elapsed=2.1s
+EPOCH 10: loss=5.491738 val=0.248957 elapsed=7.3s
+EPOCH 20: loss=5.415341 val=0.243885 elapsed=14.2s
+fold 5: [33/33] fkge__full__alpha=mean done in 17s
+Scope: BRSET_FULL_16266_IMAGES_8524_PATIENTS
+Mean and sample SD (ddof=1) across outer folds; n_folds is shown per row.
+Every configuration was locked on validation; test metrics never chose anything.
+KB3/KB4: sensitivity of the main grid; each value uses its best-validation trial.
+kb2_fkgs: 5 outer fold(s) complete
+kb3_d_e: 5 outer fold(s) complete
+kb4_lambda: 5 outer fold(s) complete
+profile_alpha: 5 outer fold(s) complete
+kb5_K: 5 outer fold(s) complete
+kb6_rules: 5 outer fold(s) complete
+ablation: 5 outer fold(s) complete
+baseline: 5 outer fold(s) complete
+DONE: /home/dev/FKGE_BRSET_Tan_ext/outputs/brset_full/extra
+ALL_DONE 2026-11-03 04:15:56

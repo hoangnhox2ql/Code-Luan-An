@@ -1,0 +1,44 @@
+{
+  "kind": "ml",
+  "method": "Random forest",
+  "selected": {
+    "min_samples_leaf": 1
+  },
+  "validation_log_loss": 0.13714141211734174,
+  "threshold": 0.046,
+  "train_seconds": 4.755504369735718,
+  "train_rows": 10427,
+  "ms_per_query": 0.01666559358506525,
+  "trials": [
+    {
+      "min_samples_leaf": 1,
+      "validation_log_loss": 0.13714141211734174,
+      "train_seconds": 4.755504369735718
+    },
+    {
+      "min_samples_leaf": 5,
+      "validation_log_loss": 0.15253402132450508,
+      "train_seconds": 4.269735097885132
+    },
+    {
+      "min_samples_leaf": 20,
+      "validation_log_loss": 0.2109165241300742,
+      "train_seconds": 4.442377805709839
+    }
+  ],
+  "test": {
+    "accuracy": 0.850384024577573,
+    "balanced_accuracy": 0.8652997088707656,
+    "precision": 0.27993779160186627,
+    "recall": 0.8823529411764706,
+    "f1": 0.42502951593860683,
+    "f1_macro": 0.6695163472329446,
+    "roc_auc": 0.9213814499906814,
+    "average_precision": 0.5327912295003412,
+    "pr_auc_trapezoidal": 0.52946585072099,
+    "sensitivity": 0.8823529411764706,
+    "specificity": 0.8482464765650606
+  },
+  "job": "ml__Random_forest",
+  "fold": 4
+}

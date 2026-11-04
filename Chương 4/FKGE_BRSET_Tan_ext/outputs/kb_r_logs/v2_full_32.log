@@ -1,0 +1,40 @@
+TEACHER part=1/5 unique_queries=2889 rules=10813 elapsed=75.0s
+TEACHER part=2/5 unique_queries=2892 rules=10805 elapsed=128.8s
+TEACHER part=3/5 unique_queries=2903 rules=10808 elapsed=191.6s
+TEACHER part=4/5 unique_queries=2970 rules=10730 elapsed=257.7s
+TEACHER part=5/5 unique_queries=2902 rules=10814 elapsed=321.9s
+r=32 fold 1: |R|=13331 r=32 | AUC FISA 0.9178 FKG-E(a) 0.9144 (b) 0.9266 | R2 0.937 Dev 0.266 | ops E/tab 6.92 | ms lô FISA 0.0880 FKG-E 0.0407 | 945s
+TEACHER part=1/5 unique_queries=2924 rules=10386 elapsed=81.2s
+TEACHER part=2/5 unique_queries=2825 rules=10468 elapsed=409.7s
+TEACHER part=3/5 unique_queries=2890 rules=10420 elapsed=480.5s
+TEACHER part=4/5 unique_queries=2697 rules=10641 elapsed=551.0s
+TEACHER part=5/5 unique_queries=2882 rules=10443 elapsed=621.7s
+r=32 fold 2: |R|=12912 r=32 | AUC FISA 0.9257 FKG-E(a) 0.6970 (b) 0.9298 | R2 0.924 Dev 0.284 | ops E/tab 6.70 | ms lô FISA 0.0950 FKG-E 0.0557 | 1198s
+TEACHER part=1/5 unique_queries=2931 rules=10929 elapsed=85.8s
+TEACHER part=2/5 unique_queries=2894 rules=10985 elapsed=650.0s
+TEACHER part=3/5 unique_queries=2908 rules=10960 elapsed=1380.4s
+TEACHER part=4/5 unique_queries=2979 rules=10869 elapsed=1640.5s
+TEACHER part=5/5 unique_queries=2900 rules=10936 elapsed=2260.4s
+Traceback (most recent call last):
+  File "/home/dev/FKGE_BRSET_Tan_ext/kb_r.py", line 498, in <module>
+    main()
+  File "/home/dev/FKGE_BRSET_Tan_ext/kb_r.py", line 485, in main
+    res = run_case(data, assignments, spec, fold, output, cfg, device, args.block_size, args.seed, cache_root)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/FKGE_BRSET_Tan_ext/kb_r.py", line 291, in run_case
+    fisa, seconds = build_teacher({**queries, "Rval": Rval, "yval": yval}, cache, rules)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/FKGE_BRSET_Tan_ext/train_fkge.py", line 80, in build_teacher
+    np.savez(directory / "teacher_small.npz", pF=pF, yF=chosen, Dlog=log_values,
+  File "/home/dev/FKGMM_BRSET3/.venv_tan_ext_gpu/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 683, in savez
+    _savez(file, args, kwds, False, allow_pickle=allow_pickle)
+  File "/home/dev/FKGMM_BRSET3/.venv_tan_ext_gpu/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 789, in _savez
+    zipf = zipfile_factory(file, mode="w", compression=compression)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/FKGMM_BRSET3/.venv_tan_ext_gpu/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 103, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/zipfile/__init__.py", line 1347, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/fkge_kb_r/76cb8c32349e7be49390/r32/fold_03/teacher_small.npz'

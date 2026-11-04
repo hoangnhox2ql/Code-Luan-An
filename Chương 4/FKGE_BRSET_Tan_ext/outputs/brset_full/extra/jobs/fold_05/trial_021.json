@@ -1,0 +1,30 @@
+{
+  "kind": "fkge_grid_trial",
+  "rulebase": "full",
+  "parameters": {
+    "alpha": 0.7,
+    "d_e": 16,
+    "lam_I": 0.1,
+    "lam_P": 0.3
+  },
+  "validation_log_loss": 0.2876777685216065,
+  "epochs": 15,
+  "train_seconds": 11.052189826965332,
+  "n_rules": 8409,
+  "ms_per_query": 0.006869598313299775,
+  "test": {
+    "accuracy": 0.790218394340203,
+    "balanced_accuracy": 0.8413186451825058,
+    "precision": 0.2223529411764706,
+    "recall": 0.9,
+    "f1": 0.35660377358490564,
+    "f1_macro": 0.6156411003168923,
+    "roc_auc": 0.9220995599818356,
+    "average_precision": 0.5550394194943986,
+    "pr_auc_trapezoidal": 0.5536831068743148,
+    "sensitivity": 0.9,
+    "specificity": 0.7826372903650115
+  },
+  "job": "trial_021",
+  "fold": 5
+}

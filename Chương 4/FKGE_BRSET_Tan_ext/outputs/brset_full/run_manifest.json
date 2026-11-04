@@ -1,0 +1,177 @@
+{
+  "identity": {
+    "scope": "BRSET_FULL_16266_IMAGES_8524_PATIENTS",
+    "config": {
+      "k_img": 7,
+      "k_tab": 9,
+      "max_epochs": 50,
+      "patience": 10,
+      "grid": {
+        "alpha": [
+          0.5,
+          0.7
+        ],
+        "d_e": [
+          6,
+          8,
+          16
+        ],
+        "lam_I": [
+          0.1,
+          0.5
+        ],
+        "lam_P": [
+          0.3,
+          0.7
+        ]
+      }
+    },
+    "seed": 42,
+    "folds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "device": "cuda",
+    "block_size": 128,
+    "code_sha256": {
+      "baselines.py": "c7c31c314c6da70819beb1b23bc508783b7ed45b8b9d70fa555669df07e46a34",
+      "build.py": "c2ba592327eccba6a48db4bec3566636fa485fd51c346033da94557693bff8c9",
+      "compact_fkge.py": "98cd20aa1f6eb47aba4102120982f3c3c5ef39dcfa1d0a31d51dc1e523008290",
+      "extra.py": "749970df108b18ea9b4612983d473a3e79f93ebdd6bb9ae31caf1e95eee2c2ef",
+      "portable_folds.py": "df737c3bfdf44071d100c0c8cc1e29b534baf9ad8ae7922490b914cbbc06169e",
+      "preprocess.py": "9d5a5b562b95d9f45775fbe961fe7ca86ceca73d844a05520aae77ef17f73cc1",
+      "reference/fisa.py": "da5aae7da3b28c78e7a15d5c289b7f476c25eed7d21665855996f598e5589976",
+      "reference/fkge.py": "9e9efffd62529f686bfb5763f37e0a9ba6b223c8eef5a48c30eb893c5e90df84",
+      "reference/sfkgs.py": "71a20287791223bedf08060ee724456c7d30835e8b184f2363c8353b18fe0560",
+      "report.py": "e24d1952a9a513d916530fa42a82e82d0c7979fe31f758aa0606c00a0c84a6eb",
+      "run.py": "8e1c2d0f6331f40f0f689c7e2c64bd04c2b8dd8d26b46a01dbfcca4110702d86",
+      "sfkgs.py": "9dd9491ee403e3416e06b6bd10e961b8cf3c1d75da7bce4a6a47dfa238c76628",
+      "tests/test_extra.py": "7dae9288aee601b37b0d4e8eb61223a0604045abc24631c406ca8602f28e88be",
+      "tests/test_pipeline.py": "5fcce3d65fc7890e0393046b182ac549bdfb9d4274b6e9def3a66ea668d5fbdc",
+      "train_fkge.py": "f046c46042c2592d68637824ca87d2b726ee071f74d9b64150d80b4e8d623e26"
+    },
+    "data_sha256": "69746167df630980d132fdfd41f705932d36e4ad1992b1ea5f2bb8aa46e398fe",
+    "split_sha256": "b84b16415543907a4017756644dcdd8025e3970957827849f8d89402b9bbc16a",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scipy": "1.16.2",
+      "scikit-learn": "1.7.2",
+      "imbalanced-learn": "0.14.2",
+      "torch": "2.11.0+cu130",
+      "matplotlib": "3.10.8"
+    }
+  },
+  "repository": {
+    "code_commit": "be477374306c7eac63d79c10bc7faa7b44c23198",
+    "images": 16266,
+    "patients": 8524,
+    "outer_folds": 5,
+    "sha256": {
+      ".gitattributes": "61fc8be92ad315dc5d000ea9372c50b30c70627fb87c099f2e85569320a238f3",
+      ".gitignore": "3dd5550367b836dfbd37a772ef0c56f7fca52e2dba5c363a60f35c82c11e3f3b",
+      "CHAY_CHUONG4_COLAB.ipynb": "e03c53c69c9fb121b0ec5cb3b784509dd082ebdd4954cdf3ea9bad982c2cff1b",
+      "CHAY_TREN_COLAB.ipynb": "a54c7188425a18e0615cba92ab0155125d9e761fc659ada1cc2e8f121eea2161",
+      "CHECKED_FOLD_COUNTS.csv": "b86fcba3779f27e9800588b8ddea3ffb5845809df185838cef79ce857c8d343b",
+      "CHECKED_FOLD_COUNTS.png": "fd0e70a3eb9351f83127618e51c5cdf1fc8390c44cea767c32fc0ac8fde06127",
+      "README.md": "10f00201c64c6c5194230910a367d5bae8d9a715a7fb1ca37990176c3f2cf4fd",
+      "SOURCE_PROVENANCE.json": "7cec32660318dc77ff6af0987121a8af5448aaba80a7d33a45fa441009893739",
+      "VERIFICATION.md": "0f4151e87828b6cd6ed675a7a0d884036fc45631b755410091068f2444e5366c",
+      "baselines.py": "c7c31c314c6da70819beb1b23bc508783b7ed45b8b9d70fa555669df07e46a34",
+      "build.py": "c2ba592327eccba6a48db4bec3566636fa485fd51c346033da94557693bff8c9",
+      "compact_fkge.py": "98cd20aa1f6eb47aba4102120982f3c3c5ef39dcfa1d0a31d51dc1e523008290",
+      "config.json": "a6f43e6a1bf0e71231acc6804d3da7d632eef506e38bcce6062ed8d39934a134",
+      "config_extra.json": "b603f8559c200bea346d28bae3a2423028a81b1034945746bfe4ba6a35b5d8f8",
+      "data/fold_01/test_ids.csv": "be5b237a38d406ce1bdb69d8706c3533d6a6e0f909f46c5fb7b8647da812a9aa",
+      "data/fold_01/train_ids.csv": "fe1a34de45ecd7e6a378fb8b0cf4489eb146eded3627d82246279e5002b31efe",
+      "data/fold_02/test_ids.csv": "926dfabcabcd13d015476137cf1e8af6a45485c8ca24be4de2a4830b7513ae82",
+      "data/fold_02/train_ids.csv": "868769bdac4bad5099cfc51a29facb34427d4c591eaf6dee19ccc217bd52a5d8",
+      "data/fold_03/test_ids.csv": "63082abebe6010d8be50b753cd0ff1f07d4bf1852857f2e4c1cbbd068bb865fc",
+      "data/fold_03/train_ids.csv": "115ae93b2b942c3e7f51a3a8bc93d7492e0a1f4da971bec630f3fe4ebeb1a115",
+      "data/fold_04/test_ids.csv": "b628521bd92b63565f15f9fa5d4355f8cf0823d7aea2664a475dacc89e002f02",
+      "data/fold_04/train_ids.csv": "56c1ad132cbef5500eaf9be00834e67940ca7967fc24b0d1130285c7c0a6c840",
+      "data/fold_05/test_ids.csv": "e287166d2cea5c9335b8f34765709efe42e49892e06d2185755abf42c54a833e",
+      "data/fold_05/train_ids.csv": "73f8db95458cdef197255070a4ec11575aafbcd689c17a03dbd4cc23fe2aa682",
+      "data/fold_assignments.csv": "b84b16415543907a4017756644dcdd8025e3970957827849f8d89402b9bbc16a",
+      "data/fusion_features.csv": "1d8ecce93c4dd38a03d493e55902965efb1fdb55fdd09847dc95bfbac5a716c6",
+      "data/image_features.csv": "abb3e54560721b99b26bfe9f4a670864917ac17d191dda0877c0981c65fd0bda",
+      "data/release_manifest.json": "bf153d3fb33f18c9c8af9cd5391788a585c5bfcef8dc9eac3161beab00df6ec9",
+      "data/table_features.csv": "fd793e019e4732d6b3966bc9f36c68ac2840a4a3fc0530176164b04a7e163841",
+      "extra.py": "749970df108b18ea9b4612983d473a3e79f93ebdd6bb9ae31caf1e95eee2c2ef",
+      "portable_folds.py": "df737c3bfdf44071d100c0c8cc1e29b534baf9ad8ae7922490b914cbbc06169e",
+      "preprocess.py": "9d5a5b562b95d9f45775fbe961fe7ca86ceca73d844a05520aae77ef17f73cc1",
+      "reference/fisa.py": "da5aae7da3b28c78e7a15d5c289b7f476c25eed7d21665855996f598e5589976",
+      "reference/fkge.py": "9e9efffd62529f686bfb5763f37e0a9ba6b223c8eef5a48c30eb893c5e90df84",
+      "reference/sfkgs.py": "71a20287791223bedf08060ee724456c7d30835e8b184f2363c8353b18fe0560",
+      "report.py": "e24d1952a9a513d916530fa42a82e82d0c7979fe31f758aa0606c00a0c84a6eb",
+      "requirements-colab.txt": "7bb5e8dc8611e9c95a9db8e5adbc1ccb769685fbab9425fa67718f39afb6bb6b",
+      "requirements-common.txt": "9201a36d3e79987b40c886d4ef1e268ecb14052f8e33b1fb0df0b53f1771b8ab",
+      "requirements.txt": "88780646f6d97c61ee525b1c475a373225148e0aff26a4ceb36b9efc41677a28",
+      "run.py": "8e1c2d0f6331f40f0f689c7e2c64bd04c2b8dd8d26b46a01dbfcca4110702d86",
+      "sfkgs.py": "9dd9491ee403e3416e06b6bd10e961b8cf3c1d75da7bce4a6a47dfa238c76628",
+      "tests/test_extra.py": "7dae9288aee601b37b0d4e8eb61223a0604045abc24631c406ca8602f28e88be",
+      "tests/test_pipeline.py": "5fcce3d65fc7890e0393046b182ac549bdfb9d4274b6e9def3a66ea668d5fbdc",
+      "train_fkge.py": "f046c46042c2592d68637824ca87d2b726ee071f74d9b64150d80b4e8d623e26"
+    },
+    "extension": {
+      "base_package": "FKGE_BRSET_Tan (code_commit above)",
+      "added": "extra.py, baselines.py, sfkgs.py, config_extra.json, reference/sfkgs.py, tests/test_extra.py, CHAY_BO_SUNG_COLAB.ipynb",
+      "date": "2026-11-02",
+      "revision_20261102_clean_rules": {
+        "source": "FKGMM_BRSET3_nested_20261102/ma_nguon/fkge_branch (02/11/2026); reference/*.py copied unchanged",
+        "rule_base": "conflicting rules removed, duplicates kept once (weight 1); queries = kept (rule, unit) rows with row weights",
+        "config": "grid 24 = alpha {0.5,0.7} x d_e {6,8,16} x lam_I {0.1,0.5} x lam_P {0.3,0.7}; max_epochs 50; patience 10; KGE d {6,8,16}",
+        "notebook": "CHAY_CHUONG4_COLAB.ipynb (full Chapter 4) replaces CHAY_BO_SUNG_COLAB.ipynb",
+        "data_unchanged": "data/ byte-identical; prepared.npz keys as in the first release",
+        "superseded_zips": {
+          "FKGE_BRSET_Tan_ext_truoc_gop_luat.zip": "bac156db49afec51fae453821e0ba21c9a303c56b2fed4a26b139744bb404bdd",
+          "FKGE_BRSET_Tan_ext_gop_luat_trong_so.zip": "3cd50b9bf320526dac1625cf7483457d5be04fc47b6ffbf7e46ae6770a5cf8d9"
+        }
+      }
+    },
+    "package_dirty": false
+  },
+  "hardware": {
+    "system": "Linux-5.15.0-139-generic-x86_64-with-glibc2.39",
+    "cpu": "x86_64",
+    "logical_cpus": 8,
+    "device": "cuda",
+    "torch_cuda_build": "13.0",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA RTX 5880 Ada Generation",
+    "gpu_memory_bytes": 50865307648,
+    "ram_bytes": 25769803776
+  },
+  "exact_argv": [
+    "/home/dev/FKGMM_BRSET3/.venv_tan_ext_gpu/bin/python",
+    "run.py",
+    "--device",
+    "cuda",
+    "--block-size",
+    "128",
+    "--output",
+    "/home/dev/FKGE_BRSET_Tan_ext/outputs/brset_full",
+    "--resume",
+    "--folds",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "cwd": "/home/dev/FKGE_BRSET_Tan_ext",
+  "selection": "validation only; outer test after selecting all trials; no refit on validation",
+  "statistical_unit": "five outer patient-disjoint folds, never teacher partitions or blocks",
+  "status": "complete",
+  "temporary_teacher_cache": "/tmp/fkge_brset_teacher/c58b65e58ad069c30dc8",
+  "completed_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

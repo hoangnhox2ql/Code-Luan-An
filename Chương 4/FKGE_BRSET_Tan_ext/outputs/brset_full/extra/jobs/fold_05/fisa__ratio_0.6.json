@@ -1,0 +1,31 @@
+{
+  "kind": "fisa",
+  "rulebase": {
+    "key": "ratio_0.6",
+    "rules_after_cleaning": 8409,
+    "method": "random rules without replacement",
+    "ratio": 0.6,
+    "seed": 7,
+    "n_rules": 5046
+  },
+  "threshold": -2.372043986632517,
+  "fit_seconds": 0.16637841891497374,
+  "n_rules": 5046,
+  "ms_per_query": 0.02735853553281238,
+  "matched_rate": 1.0,
+  "test": {
+    "accuracy": 0.7966779452476161,
+    "balanced_accuracy": 0.8580706534504627,
+    "precision": 0.2318668252080856,
+    "recall": 0.9285714285714286,
+    "f1": 0.37107516650808753,
+    "f1_macro": 0.6249065063874137,
+    "roc_auc": 0.9312248477161333,
+    "average_precision": 0.5917452286890008,
+    "pr_auc_trapezoidal": 0.5907401904908639,
+    "sensitivity": 0.9285714285714286,
+    "specificity": 0.7875698783294969
+  },
+  "job": "fisa__ratio_0.6",
+  "fold": 5
+}

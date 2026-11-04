@@ -1,0 +1,32 @@
+TEACHER part=1/5 unique_queries=3056 rules=12069 elapsed=847.7s
+TEACHER part=2/5 unique_queries=3121 rules=11999 elapsed=1601.8s
+TEACHER part=3/5 unique_queries=3106 rules=12026 elapsed=2229.6s
+TEACHER part=4/5 unique_queries=3122 rules=11983 elapsed=2807.5s
+TEACHER part=5/5 unique_queries=3089 rules=12040 elapsed=3495.7s
+r=48 fold 1: |R|=14944 r=48 | AUC FISA 0.9059 FKG-E(a) 0.9047 (b) 0.9236 | R2 0.926 Dev 0.285 | ops E/tab 2.23 | ms lô FISA 0.3919 FKG-E 0.0638 | 3947s
+TEACHER part=1/5 unique_queries=3124 rules=11466 elapsed=688.1s
+TEACHER part=2/5 unique_queries=3059 rules=11525 elapsed=1306.2s
+TEACHER part=3/5 unique_queries=3098 rules=11479 elapsed=1887.2s
+TEACHER part=4/5 unique_queries=2966 rules=11660 elapsed=2500.2s
+TEACHER part=5/5 unique_queries=3068 rules=11548 elapsed=3151.9s
+r=48 fold 2: |R|=14284 r=48 | AUC FISA 0.9260 FKG-E(a) 0.8962 (b) 0.9335 | R2 0.912 Dev 0.292 | ops E/tab 2.13 | ms lô FISA 0.4812 FKG-E 0.0672 | 3737s
+TEACHER part=1/5 unique_queries=3139 rules=11785 elapsed=1158.3s
+TEACHER part=2/5 unique_queries=3063 rules=11853 elapsed=2056.8s
+TEACHER part=3/5 unique_queries=3048 rules=11888 elapsed=2972.9s
+TEACHER part=4/5 unique_queries=3192 rules=11740 elapsed=3709.7s
+TEACHER part=5/5 unique_queries=3069 rules=11851 elapsed=4285.5s
+r=48 fold 3: |R|=14656 r=48 | AUC FISA 0.8877 FKG-E(a) 0.9149 (b) 0.9158 | R2 0.910 Dev 0.297 | ops E/tab 2.18 | ms lô FISA 0.3893 FKG-E 0.0625 | 4715s
+TEACHER part=1/5 unique_queries=3119 rules=11658 elapsed=621.6s
+TEACHER part=2/5 unique_queries=3064 rules=11727 elapsed=1195.1s
+TEACHER part=3/5 unique_queries=3014 rules=11757 elapsed=1719.8s
+TEACHER part=4/5 unique_queries=3027 rules=11756 elapsed=2229.3s
+TEACHER part=5/5 unique_queries=3094 rules=11700 elapsed=2696.8s
+r=48 fold 4: |R|=14540 r=48 | AUC FISA 0.8906 FKG-E(a) 0.8510 (b) 0.9142 | R2 0.926 Dev 0.299 | ops E/tab 2.16 | ms lô FISA 0.4091 FKG-E 0.0628 | 3128s
+TEACHER part=1/5 unique_queries=3130 rules=11651 elapsed=534.3s
+TEACHER part=2/5 unique_queries=3112 rules=11677 elapsed=1134.7s
+TEACHER part=3/5 unique_queries=2962 rules=11852 elapsed=1686.2s
+TEACHER part=4/5 unique_queries=3029 rules=11780 elapsed=2131.0s
+TEACHER part=5/5 unique_queries=3112 rules=11648 elapsed=2534.2s
+r=48 fold 5: |R|=14546 r=48 | AUC FISA 0.9186 FKG-E(a) 0.9126 (b) 0.9308 | R2 0.934 Dev 0.281 | ops E/tab 2.17 | ms lô FISA 0.4100 FKG-E 0.0621 | 2946s
+DONE: /home/dev/FKGE_BRSET_Tan_ext/outputs/kb_r
+R48_DONE 2026-11-03 20:29:56

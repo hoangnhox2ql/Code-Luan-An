@@ -1,0 +1,33 @@
+{
+  "kind": "fisa",
+  "rulebase": {
+    "key": "fkgs",
+    "rules_after_cleaning": 5021,
+    "method": "S-FKGS",
+    "theta": 0.3,
+    "budget_m": 1506,
+    "rep": 0.950955984863573,
+    "select_seconds": 6.110305547714233,
+    "n_rules": 1506
+  },
+  "threshold": -1.8411382767970614,
+  "fit_seconds": 0.08924697618931532,
+  "n_rules": 1506,
+  "ms_per_query": 0.03789759442659248,
+  "matched_rate": 1.0,
+  "test": {
+    "accuracy": 0.8560885608856088,
+    "balanced_accuracy": 0.8656558676476566,
+    "precision": 0.3033175355450237,
+    "recall": 0.8767123287671232,
+    "f1": 0.4507042253521127,
+    "f1_macro": 0.6839508387907061,
+    "roc_auc": 0.9282007506469927,
+    "average_precision": 0.5622051531186038,
+    "pr_auc_trapezoidal": 0.5611281552779521,
+    "sensitivity": 0.8767123287671232,
+    "specificity": 0.8545994065281899
+  },
+  "job": "fisa__fkgs",
+  "fold": 2
+}

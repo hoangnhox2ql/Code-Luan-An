@@ -1,0 +1,52 @@
+r=32 fold 1: |R|=13331 r=32 | AUC FISA 0.9178 FKG-E(a) 0.9144 (b) 0.9266 | R2 0.937 Dev 0.266 | ops E/tab 6.92 | ms lô FISA 0.0880 FKG-E 0.0407 | 0s
+r=32 fold 2: |R|=12912 r=32 | AUC FISA 0.9257 FKG-E(a) 0.6970 (b) 0.9298 | R2 0.924 Dev 0.284 | ops E/tab 6.70 | ms lô FISA 0.0950 FKG-E 0.0557 | 0s
+TEACHER part=1/5 unique_queries=2931 rules=10929 elapsed=71.2s
+TEACHER part=2/5 unique_queries=2894 rules=10985 elapsed=128.8s
+TEACHER part=3/5 unique_queries=2908 rules=10960 elapsed=192.0s
+TEACHER part=4/5 unique_queries=2979 rules=10869 elapsed=248.7s
+TEACHER part=5/5 unique_queries=2900 rules=10936 elapsed=307.2s
+r=32 fold 3: |R|=13515 r=32 | AUC FISA 0.8904 FKG-E(a) 0.6116 (b) 0.9154 | R2 0.935 Dev 0.272 | ops E/tab 7.01 | ms lô FISA 0.0877 FKG-E 0.0411 | 460s
+TEACHER part=1/5 unique_queries=2883 rules=10332 elapsed=69.8s
+TEACHER part=2/5 unique_queries=2764 rules=10427 elapsed=125.4s
+TEACHER part=3/5 unique_queries=2837 rules=10321 elapsed=180.1s
+TEACHER part=4/5 unique_queries=2851 rules=10339 elapsed=236.6s
+TEACHER part=5/5 unique_queries=2862 rules=10343 elapsed=293.1s
+r=32 fold 4: |R|=12760 r=32 | AUC FISA 0.9005 FKG-E(a) 0.8912 (b) 0.9159 | R2 0.921 Dev 0.282 | ops E/tab 6.62 | ms lô FISA 0.0836 FKG-E 0.0393 | 447s
+TEACHER part=1/5 unique_queries=2929 rules=10596 elapsed=61.7s
+TEACHER part=2/5 unique_queries=2948 rules=10556 elapsed=111.5s
+TEACHER part=3/5 unique_queries=2844 rules=10702 elapsed=160.3s
+TEACHER part=4/5 unique_queries=2810 rules=10768 elapsed=208.8s
+TEACHER part=5/5 unique_queries=2923 rules=10593 elapsed=258.3s
+r=32 fold 5: |R|=13135 r=32 | AUC FISA 0.9193 FKG-E(a) 0.9133 (b) 0.9281 | R2 0.926 Dev 0.273 | ops E/tab 6.82 | ms lô FISA 0.0872 FKG-E 0.0419 | 400s
+TEACHER part=1/5 unique_queries=2962 rules=11361 elapsed=139.3s
+TEACHER part=2/5 unique_queries=2978 rules=11346 elapsed=254.8s
+TEACHER part=3/5 unique_queries=3006 rules=11331 elapsed=371.5s
+TEACHER part=4/5 unique_queries=3016 rules=11321 elapsed=487.3s
+TEACHER part=5/5 unique_queries=2999 rules=11334 elapsed=605.1s
+r=40 fold 1: |R|=14044 r=40 | AUC FISA 0.9093 FKG-E(a) 0.8692 (b) 0.9203 | R2 0.924 Dev 0.281 | ops E/tab 3.66 | ms lô FISA 0.2689 FKG-E 0.0486 | 847s
+TEACHER part=1/5 unique_queries=2973 rules=10958 elapsed=161.4s
+TEACHER part=2/5 unique_queries=2948 rules=10994 elapsed=302.9s
+TEACHER part=3/5 unique_queries=3018 rules=10885 elapsed=446.7s
+TEACHER part=4/5 unique_queries=2852 rules=11112 elapsed=585.2s
+TEACHER part=5/5 unique_queries=2995 rules=10948 elapsed=727.9s
+r=40 fold 2: |R|=13558 r=40 | AUC FISA 0.9347 FKG-E(a) 0.9285 (b) 0.9313 | R2 0.914 Dev 0.283 | ops E/tab 3.53 | ms lô FISA 0.1950 FKG-E 0.0444 | 1023s
+TEACHER part=1/5 unique_queries=3049 rules=11330 elapsed=150.3s
+TEACHER part=2/5 unique_queries=3003 rules=11384 elapsed=279.7s
+TEACHER part=3/5 unique_queries=2969 rules=11408 elapsed=406.0s
+TEACHER part=4/5 unique_queries=3125 rules=11255 elapsed=534.1s
+TEACHER part=5/5 unique_queries=2976 rules=11378 elapsed=658.9s
+r=40 fold 3: |R|=14045 r=40 | AUC FISA 0.8892 FKG-E(a) 0.8974 (b) 0.9144 | R2 0.913 Dev 0.282 | ops E/tab 3.66 | ms lô FISA 0.1865 FKG-E 0.0424 | 927s
+TEACHER part=1/5 unique_queries=2956 rules=10943 elapsed=154.7s
+TEACHER part=2/5 unique_queries=2931 rules=10930 elapsed=278.3s
+TEACHER part=3/5 unique_queries=2926 rules=10935 elapsed=403.5s
+TEACHER part=4/5 unique_queries=2934 rules=10935 elapsed=528.5s
+TEACHER part=5/5 unique_queries=2979 rules=10921 elapsed=654.0s
+r=40 fold 4: |R|=13507 r=40 | AUC FISA 0.8981 FKG-E(a) 0.7559 (b) 0.9152 | R2 0.917 Dev 0.284 | ops E/tab 3.52 | ms lô FISA 0.2036 FKG-E 0.0431 | 920s
+TEACHER part=1/5 unique_queries=3047 rules=11340 elapsed=135.7s
+TEACHER part=2/5 unique_queries=3077 rules=11318 elapsed=254.9s
+TEACHER part=3/5 unique_queries=2920 rules=11521 elapsed=371.9s
+TEACHER part=4/5 unique_queries=2964 rules=11476 elapsed=489.2s
+TEACHER part=5/5 unique_queries=3060 rules=11332 elapsed=610.2s
+r=40 fold 5: |R|=14118 r=40 | AUC FISA 0.9242 FKG-E(a) 0.9237 (b) 0.9321 | R2 0.913 Dev 0.297 | ops E/tab 3.68 | ms lô FISA 0.2056 FKG-E 0.0454 | 863s
+DONE: /home/dev/FKGE_BRSET_Tan_ext/outputs/kb_r
+R32_40_DONE 2026-11-03 15:21:17

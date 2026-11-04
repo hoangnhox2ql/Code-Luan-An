@@ -1,0 +1,54 @@
+{
+  "kind": "ml",
+  "method": "Logistic regression",
+  "selected": {
+    "C": 10.0
+  },
+  "validation_log_loss": 0.3500496374410995,
+  "threshold": 0.5455684789186979,
+  "train_seconds": 0.014086484909057617,
+  "train_rows": 10410,
+  "ms_per_query": 2.8104777934733058e-05,
+  "trials": [
+    {
+      "C": 0.01,
+      "validation_log_loss": 0.3561566151046384,
+      "train_seconds": 0.011008739471435547
+    },
+    {
+      "C": 0.1,
+      "validation_log_loss": 0.3520079302883675,
+      "train_seconds": 0.013148069381713867
+    },
+    {
+      "C": 1.0,
+      "validation_log_loss": 0.3503588091777483,
+      "train_seconds": 0.01334238052368164
+    },
+    {
+      "C": 10.0,
+      "validation_log_loss": 0.3500496374410995,
+      "train_seconds": 0.014086484909057617
+    },
+    {
+      "C": 100.0,
+      "validation_log_loss": 0.35009662333916597,
+      "train_seconds": 0.015336036682128906
+    }
+  ],
+  "test": {
+    "accuracy": 0.8683886838868389,
+    "balanced_accuracy": 0.8955507680356264,
+    "precision": 0.3300813008130081,
+    "recall": 0.9269406392694064,
+    "f1": 0.486810551558753,
+    "f1_macro": 0.7056627713702054,
+    "roc_auc": 0.9518839192023207,
+    "average_precision": 0.6690305576323874,
+    "pr_auc_trapezoidal": 0.6681702677981644,
+    "sensitivity": 0.9269406392694064,
+    "specificity": 0.8641608968018464
+  },
+  "job": "ml__Logistic_regression",
+  "fold": 2
+}

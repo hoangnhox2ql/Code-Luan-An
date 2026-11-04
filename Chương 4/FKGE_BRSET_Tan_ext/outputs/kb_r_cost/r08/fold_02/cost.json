@@ -1,0 +1,41 @@
+{
+  "r_nominal": 8,
+  "r": 8,
+  "fold": 2,
+  "spec": {
+    "r": 8,
+    "k_img": 4,
+    "k_tab": 4,
+    "n_tensor": 0
+  },
+  "cost_only": true,
+  "selected_features": [
+    "Contrast Feature",
+    "Dissimilarity Feature",
+    "Correlation Feature",
+    "ASM Feature",
+    "diabetes_time_y",
+    "diabetes",
+    "vessels",
+    "macula"
+  ],
+  "n_rules": 412,
+  "d_e": 16,
+  "nodes": 56,
+  "ops_fisa_sequential": 184800,
+  "ops_fisa_table": 784,
+  "ops_fkge": 14992,
+  "mem_fisa_table": 14000,
+  "mem_fisa_rule_weights": 23072,
+  "mem_fkge": 7056,
+  "ms_fisa_package_batch": 0.003473848664725665,
+  "ms_fisa_table_batch": 0.0014706115507578943,
+  "ms_fkge_batch": 0.0026781503947859164,
+  "ms_fisa_table_query": 0.03619929309934378,
+  "ms_fkge_query": 0.054379909609754876,
+  "ms_fisa_sequential_query": 0.7905140519142151,
+  "timing_batch_fisa": 256,
+  "timing_batch_fkge": 256,
+  "timing_batch_queries": 1024,
+  "case_seconds": 0.322786808013916
+}

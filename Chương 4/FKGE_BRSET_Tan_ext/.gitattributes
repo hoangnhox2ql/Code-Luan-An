@@ -2,3 +2,6 @@
 data/** text eol=lf
 reference/*.py -text
 *.png -text
+*.npz binary
+*.pkl binary
+*.zip binary

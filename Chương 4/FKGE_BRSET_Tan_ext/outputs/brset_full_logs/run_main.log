@@ -1,0 +1,653 @@
+===== 2026-11-03 03:10:21 run.py (GPU 2)
+Prepared fold 1: 5455 real training patients, 19390 rules
+TEACHER part=1/5 unique_queries=2176 rules=6254 elapsed=5.6s
+TEACHER part=2/5 unique_queries=2186 rules=6199 elapsed=9.8s
+TEACHER part=3/5 unique_queries=2216 rules=6186 elapsed=14.1s
+TEACHER part=4/5 unique_queries=2288 rules=6120 elapsed=18.3s
+TEACHER part=5/5 unique_queries=2227 rules=6196 elapsed=22.6s
+START fold_01 trial 1/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=6.185377 val=1.061116 elapsed=4.5s
+EPOCH 10: loss=5.893976 val=0.509089 elapsed=10.2s
+EPOCH 20: loss=5.764326 val=0.451148 elapsed=15.9s
+EPOCH 30: loss=5.623586 val=0.398856 elapsed=21.4s
+EPOCH 40: loss=5.532987 val=0.340049 elapsed=27.1s
+EPOCH 50: loss=5.470827 val=0.306543 elapsed=33.2s
+fold_01: trial 1/24, validation loss=0.259757
+START fold_01 trial 2/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.778109 val=0.790435 elapsed=1.8s
+EPOCH 10: loss=6.240388 val=0.526701 elapsed=7.1s
+EPOCH 20: loss=6.085919 val=0.389804 elapsed=12.6s
+EPOCH 30: loss=5.963751 val=0.415382 elapsed=18.6s
+EPOCH 40: loss=5.864617 val=0.361998 elapsed=24.2s
+fold_01: trial 2/24, validation loss=0.316397
+START fold_01 trial 3/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.612213 val=0.886959 elapsed=1.7s
+EPOCH 10: loss=6.114898 val=0.527706 elapsed=7.4s
+fold_01: trial 3/24, validation loss=0.432544
+START fold_01 trial 4/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=7.121531 val=0.697521 elapsed=2.0s
+EPOCH 10: loss=6.450393 val=0.623772 elapsed=7.4s
+EPOCH 20: loss=6.294451 val=0.517488 elapsed=13.4s
+EPOCH 30: loss=6.163784 val=0.442561 elapsed=19.1s
+EPOCH 40: loss=6.058054 val=0.393636 elapsed=25.2s
+fold_01: trial 4/24, validation loss=0.363259
+START fold_01 trial 5/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.981030 val=0.961648 elapsed=1.2s
+EPOCH 10: loss=5.589176 val=0.274262 elapsed=6.4s
+EPOCH 20: loss=5.478344 val=0.288890 elapsed=12.7s
+fold_01: trial 5/24, validation loss=0.268606
+START fold_01 trial 6/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.467186 val=1.162760 elapsed=1.3s
+EPOCH 10: loss=5.814147 val=0.340863 elapsed=6.8s
+EPOCH 20: loss=5.671659 val=0.282842 elapsed=12.5s
+fold_01: trial 6/24, validation loss=0.279653
+START fold_01 trial 7/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.342439 val=1.217995 elapsed=1.3s
+EPOCH 10: loss=5.740949 val=0.338675 elapsed=7.1s
+EPOCH 20: loss=5.620283 val=0.367809 elapsed=12.8s
+fold_01: trial 7/24, validation loss=0.280111
+START fold_01 trial 8/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.797036 val=0.874469 elapsed=1.5s
+EPOCH 10: loss=5.947071 val=0.377477 elapsed=6.9s
+EPOCH 20: loss=5.758792 val=0.336603 elapsed=12.4s
+fold_01: trial 8/24, validation loss=0.259218
+START fold_01 trial 9/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.776324 val=0.897528 elapsed=1.2s
+EPOCH 10: loss=5.456617 val=0.310007 elapsed=7.0s
+fold_01: trial 9/24, validation loss=0.250550
+START fold_01 trial 10/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.088429 val=0.878779 elapsed=1.4s
+EPOCH 10: loss=5.676477 val=0.326409 elapsed=7.0s
+EPOCH 20: loss=5.522033 val=0.272074 elapsed=13.1s
+EPOCH 30: loss=5.461642 val=0.290024 elapsed=19.3s
+fold_01: trial 10/24, validation loss=0.272074
+START fold_01 trial 11/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=5.951493 val=0.798195 elapsed=1.4s
+EPOCH 10: loss=5.592915 val=0.369513 elapsed=6.9s
+EPOCH 20: loss=5.483311 val=0.336407 elapsed=12.7s
+EPOCH 30: loss=5.415755 val=0.338714 elapsed=18.7s
+fold_01: trial 11/24, validation loss=0.263477
+START fold_01 trial 12/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.206024 val=0.459910 elapsed=1.5s
+EPOCH 10: loss=5.717257 val=0.383890 elapsed=6.7s
+EPOCH 20: loss=5.578077 val=0.275442 elapsed=12.6s
+EPOCH 30: loss=5.513786 val=0.281778 elapsed=18.4s
+fold_01: trial 12/24, validation loss=0.258851
+START fold_01 trial 13/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=6.400619 val=0.553477 elapsed=2.0s
+EPOCH 10: loss=5.614784 val=0.278487 elapsed=6.5s
+EPOCH 20: loss=5.483675 val=0.361641 elapsed=12.6s
+fold_01: trial 13/24, validation loss=0.278487
+START fold_01 trial 14/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.722828 val=0.888448 elapsed=1.7s
+EPOCH 10: loss=5.995664 val=0.568331 elapsed=6.5s
+fold_01: trial 14/24, validation loss=0.368020
+START fold_01 trial 15/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.567788 val=0.922414 elapsed=1.8s
+EPOCH 10: loss=5.868565 val=0.399840 elapsed=6.6s
+EPOCH 20: loss=5.641513 val=0.320556 elapsed=12.3s
+EPOCH 30: loss=5.539856 val=0.311496 elapsed=18.0s
+EPOCH 40: loss=5.483734 val=0.309370 elapsed=23.8s
+EPOCH 50: loss=5.451564 val=0.302594 elapsed=29.5s
+fold_01: trial 15/24, validation loss=0.276836
+START fold_01 trial 16/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=7.217727 val=0.807152 elapsed=1.9s
+EPOCH 10: loss=6.148970 val=0.408459 elapsed=6.7s
+EPOCH 20: loss=5.861835 val=0.373338 elapsed=12.7s
+EPOCH 30: loss=5.687898 val=0.337293 elapsed=18.0s
+EPOCH 40: loss=5.622743 val=0.299744 elapsed=24.3s
+EPOCH 50: loss=5.583898 val=0.292557 elapsed=30.0s
+fold_01: trial 16/24, validation loss=0.270919
+START fold_01 trial 17/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=6.001417 val=0.265014 elapsed=1.4s
+EPOCH 10: loss=5.503770 val=0.400510 elapsed=6.4s
+fold_01: trial 17/24, validation loss=0.244807
+START fold_01 trial 18/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.181398 val=0.480350 elapsed=1.4s
+EPOCH 10: loss=5.685946 val=0.324685 elapsed=6.5s
+EPOCH 20: loss=5.560115 val=0.329579 elapsed=12.1s
+fold_01: trial 18/24, validation loss=0.243392
+START fold_01 trial 19/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.056120 val=0.487700 elapsed=1.3s
+EPOCH 10: loss=5.585936 val=0.304070 elapsed=6.8s
+fold_01: trial 19/24, validation loss=0.258057
+START fold_01 trial 20/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.409362 val=1.013903 elapsed=1.4s
+EPOCH 10: loss=5.750471 val=0.329311 elapsed=6.7s
+EPOCH 20: loss=5.640469 val=0.311240 elapsed=12.5s
+fold_01: trial 20/24, validation loss=0.262233
+START fold_01 trial 21/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.643085 val=0.380682 elapsed=1.2s
+EPOCH 10: loss=5.324728 val=0.350316 elapsed=6.8s
+fold_01: trial 21/24, validation loss=0.240873
+START fold_01 trial 22/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=5.928428 val=0.442946 elapsed=1.3s
+EPOCH 10: loss=5.480121 val=0.320811 elapsed=6.7s
+fold_01: trial 22/24, validation loss=0.266241
+START fold_01 trial 23/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=5.818696 val=0.414566 elapsed=1.3s
+EPOCH 10: loss=5.442240 val=0.408905 elapsed=6.5s
+EPOCH 20: loss=5.349289 val=0.281325 elapsed=12.3s
+EPOCH 30: loss=5.313237 val=0.298218 elapsed=18.4s
+fold_01: trial 23/24, validation loss=0.274738
+START fold_01 trial 24/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.185263 val=0.963480 elapsed=1.3s
+EPOCH 10: loss=5.565165 val=0.295839 elapsed=6.9s
+EPOCH 20: loss=5.476462 val=0.279302 elapsed=12.6s
+fold_01: trial 24/24, validation loss=0.276143
+Prepared fold 2: 5454 real training patients, 19468 rules
+TEACHER part=1/5 unique_queries=2039 rules=4196 elapsed=5.1s
+TEACHER part=2/5 unique_queries=2012 rules=4250 elapsed=8.1s
+TEACHER part=3/5 unique_queries=1963 rules=4234 elapsed=11.0s
+TEACHER part=4/5 unique_queries=1973 rules=4317 elapsed=14.1s
+TEACHER part=5/5 unique_queries=1975 rules=4278 elapsed=17.3s
+START fold_02 trial 1/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.926564 val=0.562596 elapsed=0.9s
+EPOCH 10: loss=5.519373 val=0.412428 elapsed=4.9s
+EPOCH 20: loss=5.379490 val=0.359623 elapsed=9.4s
+fold_02: trial 1/24, validation loss=0.306215
+START fold_02 trial 2/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.399525 val=1.274895 elapsed=0.8s
+EPOCH 10: loss=5.687158 val=0.395402 elapsed=5.2s
+EPOCH 20: loss=5.519391 val=0.350130 elapsed=9.5s
+EPOCH 30: loss=5.476071 val=0.345891 elapsed=14.3s
+EPOCH 40: loss=5.452466 val=0.334249 elapsed=18.9s
+EPOCH 50: loss=5.436673 val=0.330948 elapsed=23.2s
+fold_02: trial 2/24, validation loss=0.312564
+START fold_02 trial 3/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.250775 val=1.051022 elapsed=0.8s
+EPOCH 10: loss=5.585199 val=0.362735 elapsed=5.1s
+fold_02: trial 3/24, validation loss=0.285096
+START fold_02 trial 4/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.705955 val=0.729235 elapsed=0.9s
+EPOCH 10: loss=5.830376 val=0.423741 elapsed=5.3s
+fold_02: trial 4/24, validation loss=0.321525
+START fold_02 trial 5/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.928689 val=0.547257 elapsed=1.2s
+EPOCH 10: loss=5.513836 val=0.357580 elapsed=5.0s
+fold_02: trial 5/24, validation loss=0.225938
+START fold_02 trial 6/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.334152 val=0.549849 elapsed=1.2s
+EPOCH 10: loss=5.746737 val=0.376704 elapsed=5.1s
+fold_02: trial 6/24, validation loss=0.288863
+START fold_02 trial 7/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.243805 val=0.512947 elapsed=1.2s
+EPOCH 10: loss=5.682814 val=0.327480 elapsed=5.3s
+EPOCH 20: loss=5.561939 val=0.268358 elapsed=9.7s
+EPOCH 30: loss=5.496066 val=0.252844 elapsed=13.9s
+fold_02: trial 7/24, validation loss=0.247788
+START fold_02 trial 8/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.692542 val=0.823979 elapsed=1.4s
+EPOCH 10: loss=5.957825 val=0.371391 elapsed=5.4s
+EPOCH 20: loss=5.749692 val=0.287916 elapsed=9.8s
+fold_02: trial 8/24, validation loss=0.277255
+START fold_02 trial 9/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.602120 val=0.519431 elapsed=0.9s
+EPOCH 10: loss=5.404444 val=0.321256 elapsed=5.0s
+EPOCH 20: loss=5.298764 val=0.379132 elapsed=9.3s
+fold_02: trial 9/24, validation loss=0.211865
+START fold_02 trial 10/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=5.804539 val=0.589184 elapsed=1.0s
+EPOCH 10: loss=5.583733 val=0.286076 elapsed=5.3s
+fold_02: trial 10/24, validation loss=0.234728
+START fold_02 trial 11/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=5.695679 val=0.433517 elapsed=1.1s
+EPOCH 10: loss=5.512526 val=0.341887 elapsed=5.1s
+fold_02: trial 11/24, validation loss=0.236107
+START fold_02 trial 12/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=5.928469 val=0.473306 elapsed=1.1s
+EPOCH 10: loss=5.667166 val=0.281103 elapsed=5.1s
+fold_02: trial 12/24, validation loss=0.271587
+START fold_02 trial 13/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.967904 val=0.367662 elapsed=1.0s
+EPOCH 10: loss=5.443331 val=0.348515 elapsed=5.0s
+fold_02: trial 13/24, validation loss=0.234687
+START fold_02 trial 14/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.320377 val=0.510094 elapsed=1.0s
+EPOCH 10: loss=5.580185 val=0.375661 elapsed=5.0s
+fold_02: trial 14/24, validation loss=0.239473
+START fold_02 trial 15/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.212352 val=0.480211 elapsed=1.0s
+EPOCH 10: loss=5.520390 val=0.365548 elapsed=4.8s
+EPOCH 20: loss=5.432336 val=0.294777 elapsed=9.5s
+fold_02: trial 15/24, validation loss=0.244631
+START fold_02 trial 16/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.553331 val=0.700184 elapsed=1.1s
+EPOCH 10: loss=5.643512 val=0.266943 elapsed=5.3s
+EPOCH 20: loss=5.551877 val=0.294165 elapsed=9.8s
+EPOCH 30: loss=5.504351 val=0.284781 elapsed=14.1s
+fold_02: trial 16/24, validation loss=0.245835
+START fold_02 trial 17/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.981301 val=0.634865 elapsed=1.2s
+EPOCH 10: loss=5.469372 val=0.316418 elapsed=5.1s
+EPOCH 20: loss=5.357698 val=0.329942 elapsed=9.6s
+fold_02: trial 17/24, validation loss=0.241975
+START fold_02 trial 18/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.407795 val=0.652044 elapsed=1.4s
+EPOCH 10: loss=5.635153 val=0.216759 elapsed=5.3s
+EPOCH 20: loss=5.517922 val=0.340057 elapsed=9.9s
+fold_02: trial 18/24, validation loss=0.216759
+START fold_02 trial 19/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.311771 val=0.629328 elapsed=1.3s
+EPOCH 10: loss=5.582633 val=0.271453 elapsed=5.3s
+EPOCH 20: loss=5.465783 val=0.271379 elapsed=9.8s
+EPOCH 30: loss=5.399189 val=0.296462 elapsed=14.0s
+fold_02: trial 19/24, validation loss=0.230117
+START fold_02 trial 20/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.624117 val=0.418339 elapsed=1.4s
+EPOCH 10: loss=5.734027 val=0.343618 elapsed=5.3s
+fold_02: trial 20/24, validation loss=0.256112
+START fold_02 trial 21/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.511928 val=0.410285 elapsed=0.9s
+EPOCH 10: loss=5.292406 val=0.254001 elapsed=4.9s
+fold_02: trial 21/24, validation loss=0.223929
+START fold_02 trial 22/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=5.746611 val=0.492574 elapsed=1.0s
+EPOCH 10: loss=5.441317 val=0.273886 elapsed=5.0s
+fold_02: trial 22/24, validation loss=0.247996
+START fold_02 trial 23/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=5.653823 val=0.400435 elapsed=1.0s
+EPOCH 10: loss=5.393728 val=0.242387 elapsed=5.1s
+fold_02: trial 23/24, validation loss=0.224704
+START fold_02 trial 24/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=5.788804 val=0.517388 elapsed=1.0s
+EPOCH 10: loss=5.487630 val=0.279335 elapsed=5.1s
+fold_02: trial 24/24, validation loss=0.245547
+Prepared fold 3: 5454 real training patients, 19480 rules
+TEACHER part=1/5 unique_queries=2035 rules=4835 elapsed=6.0s
+TEACHER part=2/5 unique_queries=2061 rules=4852 elapsed=9.8s
+TEACHER part=3/5 unique_queries=2002 rules=4843 elapsed=13.5s
+TEACHER part=4/5 unique_queries=2076 rules=4809 elapsed=17.2s
+TEACHER part=5/5 unique_queries=2045 rules=4805 elapsed=20.9s
+START fold_03 trial 1/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=6.125749 val=0.236984 elapsed=0.9s
+EPOCH 10: loss=5.467519 val=0.399229 elapsed=5.4s
+fold_03: trial 1/24, validation loss=0.236984
+START fold_03 trial 2/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.440316 val=0.422955 elapsed=0.6s
+EPOCH 10: loss=5.673166 val=0.422997 elapsed=5.4s
+EPOCH 20: loss=5.545937 val=0.308270 elapsed=10.3s
+EPOCH 30: loss=5.508299 val=0.291908 elapsed=14.9s
+fold_03: trial 2/24, validation loss=0.270041
+START fold_03 trial 3/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.345601 val=0.422327 elapsed=0.6s
+EPOCH 10: loss=5.615995 val=0.413134 elapsed=5.2s
+EPOCH 20: loss=5.477763 val=0.287903 elapsed=10.1s
+EPOCH 30: loss=5.445121 val=0.270236 elapsed=15.0s
+fold_03: trial 3/24, validation loss=0.254298
+START fold_03 trial 4/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.701275 val=0.829747 elapsed=0.6s
+EPOCH 10: loss=5.709713 val=0.350153 elapsed=5.4s
+fold_03: trial 4/24, validation loss=0.270254
+START fold_03 trial 5/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.998792 val=0.704618 elapsed=1.3s
+EPOCH 10: loss=5.658028 val=0.407892 elapsed=5.6s
+EPOCH 20: loss=5.532707 val=0.237925 elapsed=10.3s
+EPOCH 30: loss=5.470555 val=0.255822 elapsed=15.1s
+EPOCH 40: loss=5.422720 val=0.244679 elapsed=20.0s
+fold_03: trial 5/24, validation loss=0.230529
+START fold_03 trial 6/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.428481 val=0.694969 elapsed=1.4s
+EPOCH 10: loss=5.870116 val=0.341892 elapsed=5.4s
+EPOCH 20: loss=5.692637 val=0.236612 elapsed=10.0s
+EPOCH 30: loss=5.627234 val=0.283218 elapsed=14.9s
+fold_03: trial 6/24, validation loss=0.236612
+START fold_03 trial 7/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.315427 val=0.622355 elapsed=1.3s
+EPOCH 10: loss=5.763117 val=0.332098 elapsed=5.7s
+fold_03: trial 7/24, validation loss=0.292062
+START fold_03 trial 8/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.778297 val=0.303150 elapsed=1.3s
+EPOCH 10: loss=5.920348 val=0.308522 elapsed=5.6s
+EPOCH 20: loss=5.771509 val=0.246230 elapsed=10.2s
+EPOCH 30: loss=5.698994 val=0.258131 elapsed=15.3s
+fold_03: trial 8/24, validation loss=0.246230
+START fold_03 trial 9/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.630534 val=0.260554 elapsed=1.0s
+EPOCH 10: loss=5.464160 val=0.325957 elapsed=5.4s
+EPOCH 20: loss=5.335183 val=0.280153 elapsed=10.5s
+fold_03: trial 9/24, validation loss=0.208399
+START fold_03 trial 10/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=5.794050 val=0.296668 elapsed=1.1s
+EPOCH 10: loss=5.638947 val=0.305692 elapsed=5.6s
+EPOCH 20: loss=5.519790 val=0.328202 elapsed=10.2s
+EPOCH 30: loss=5.431291 val=0.315547 elapsed=14.9s
+fold_03: trial 10/24, validation loss=0.230012
+START fold_03 trial 11/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=5.746002 val=0.215303 elapsed=1.1s
+EPOCH 10: loss=5.576153 val=0.237403 elapsed=5.4s
+fold_03: trial 11/24, validation loss=0.215303
+START fold_03 trial 12/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=5.814477 val=0.212267 elapsed=1.2s
+EPOCH 10: loss=5.647175 val=0.252231 elapsed=5.8s
+fold_03: trial 12/24, validation loss=0.212267
+START fold_03 trial 13/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=6.360043 val=0.236223 elapsed=1.4s
+EPOCH 10: loss=5.483818 val=0.561710 elapsed=5.1s
+fold_03: trial 13/24, validation loss=0.232815
+START fold_03 trial 14/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.871658 val=0.235947 elapsed=1.3s
+EPOCH 10: loss=5.662908 val=0.445634 elapsed=5.5s
+fold_03: trial 14/24, validation loss=0.235181
+START fold_03 trial 15/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.741711 val=0.235908 elapsed=1.2s
+EPOCH 10: loss=5.569352 val=0.305845 elapsed=5.4s
+fold_03: trial 15/24, validation loss=0.234927
+START fold_03 trial 16/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=7.340834 val=0.236347 elapsed=1.2s
+EPOCH 10: loss=5.716870 val=0.320712 elapsed=5.6s
+fold_03: trial 16/24, validation loss=0.236347
+START fold_03 trial 17/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=6.091026 val=0.677990 elapsed=1.4s
+EPOCH 10: loss=5.515044 val=0.226700 elapsed=5.3s
+EPOCH 20: loss=5.410315 val=0.238809 elapsed=10.1s
+fold_03: trial 17/24, validation loss=0.226700
+START fold_03 trial 18/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.423166 val=0.347937 elapsed=1.4s
+EPOCH 10: loss=5.686979 val=0.258362 elapsed=5.4s
+fold_03: trial 18/24, validation loss=0.238661
+START fold_03 trial 19/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.439636 val=0.690868 elapsed=1.5s
+EPOCH 10: loss=5.633483 val=0.295645 elapsed=5.4s
+EPOCH 20: loss=5.489427 val=0.215154 elapsed=10.1s
+fold_03: trial 19/24, validation loss=0.210601
+START fold_03 trial 20/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.754095 val=0.476732 elapsed=1.5s
+EPOCH 10: loss=5.761592 val=0.234141 elapsed=5.4s
+EPOCH 20: loss=5.551719 val=0.231264 elapsed=10.2s
+EPOCH 30: loss=5.505291 val=0.249407 elapsed=15.1s
+fold_03: trial 20/24, validation loss=0.231264
+START fold_03 trial 21/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.551797 val=0.293646 elapsed=1.0s
+EPOCH 10: loss=5.301689 val=0.217300 elapsed=5.4s
+fold_03: trial 21/24, validation loss=0.198141
+START fold_03 trial 22/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=5.764625 val=0.335301 elapsed=1.2s
+EPOCH 10: loss=5.456977 val=0.291229 elapsed=5.9s
+fold_03: trial 22/24, validation loss=0.228398
+START fold_03 trial 23/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=5.690633 val=0.266388 elapsed=1.1s
+EPOCH 10: loss=5.427693 val=0.234361 elapsed=5.5s
+fold_03: trial 23/24, validation loss=0.202602
+START fold_03 trial 24/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=5.759858 val=0.271829 elapsed=1.1s
+EPOCH 10: loss=5.521410 val=0.258293 elapsed=5.9s
+fold_03: trial 24/24, validation loss=0.217215
+Prepared fold 4: 5456 real training patients, 19500 rules
+TEACHER part=1/5 unique_queries=2189 rules=5892 elapsed=8.0s
+TEACHER part=2/5 unique_queries=2172 rules=5872 elapsed=12.2s
+TEACHER part=3/5 unique_queries=2157 rules=5896 elapsed=16.5s
+TEACHER part=4/5 unique_queries=2264 rules=5834 elapsed=21.0s
+TEACHER part=5/5 unique_queries=2244 rules=5825 elapsed=25.0s
+START fold_04 trial 1/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=6.233547 val=0.338418 elapsed=1.6s
+EPOCH 10: loss=5.674401 val=0.485487 elapsed=6.6s
+fold_04: trial 1/24, validation loss=0.338418
+START fold_04 trial 2/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.674705 val=0.405718 elapsed=1.5s
+EPOCH 10: loss=5.945335 val=0.333689 elapsed=6.4s
+EPOCH 20: loss=5.772311 val=0.304228 elapsed=12.0s
+EPOCH 30: loss=5.672729 val=0.296649 elapsed=17.7s
+EPOCH 40: loss=5.614382 val=0.284859 elapsed=23.3s
+EPOCH 50: loss=5.573813 val=0.290336 elapsed=28.8s
+fold_04: trial 2/24, validation loss=0.263049
+START fold_04 trial 3/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.499717 val=0.554622 elapsed=1.3s
+EPOCH 10: loss=5.834015 val=0.392233 elapsed=6.5s
+fold_04: trial 3/24, validation loss=0.363290
+START fold_04 trial 4/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=7.050251 val=0.558956 elapsed=1.4s
+EPOCH 10: loss=6.099578 val=0.402347 elapsed=6.8s
+EPOCH 20: loss=5.856355 val=0.314270 elapsed=12.1s
+EPOCH 30: loss=5.783001 val=0.331186 elapsed=17.8s
+fold_04: trial 4/24, validation loss=0.314270
+START fold_04 trial 5/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.973557 val=0.918811 elapsed=1.5s
+EPOCH 10: loss=5.713665 val=0.444319 elapsed=6.7s
+EPOCH 20: loss=5.611637 val=0.384876 elapsed=12.2s
+EPOCH 30: loss=5.529163 val=0.392198 elapsed=17.8s
+EPOCH 40: loss=5.475083 val=0.370033 elapsed=23.4s
+fold_04: trial 5/24, validation loss=0.286843
+START fold_04 trial 6/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.384229 val=0.891099 elapsed=1.7s
+EPOCH 10: loss=5.964366 val=0.475473 elapsed=6.6s
+EPOCH 20: loss=5.831638 val=0.393991 elapsed=12.1s
+EPOCH 30: loss=5.709422 val=0.367431 elapsed=17.4s
+EPOCH 40: loss=5.652800 val=0.322934 elapsed=23.1s
+EPOCH 50: loss=5.579077 val=0.291399 elapsed=28.4s
+fold_04: trial 6/24, validation loss=0.291399
+START fold_04 trial 7/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.240087 val=1.014942 elapsed=1.7s
+EPOCH 10: loss=5.867125 val=0.570151 elapsed=6.6s
+EPOCH 20: loss=5.772464 val=0.507743 elapsed=12.1s
+EPOCH 30: loss=5.700934 val=0.480189 elapsed=17.7s
+EPOCH 40: loss=5.639532 val=0.427964 elapsed=23.3s
+EPOCH 50: loss=5.587971 val=0.407196 elapsed=28.9s
+fold_04: trial 7/24, validation loss=0.354770
+START fold_04 trial 8/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.627497 val=0.701088 elapsed=1.6s
+EPOCH 10: loss=6.102412 val=0.513659 elapsed=6.8s
+EPOCH 20: loss=5.880125 val=0.397822 elapsed=12.4s
+EPOCH 30: loss=5.806285 val=0.387506 elapsed=17.8s
+EPOCH 40: loss=5.744150 val=0.336346 elapsed=23.4s
+fold_04: trial 8/24, validation loss=0.320920
+START fold_04 trial 9/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.847321 val=0.895289 elapsed=1.4s
+EPOCH 10: loss=5.516226 val=0.332893 elapsed=6.5s
+EPOCH 20: loss=5.386107 val=0.293662 elapsed=12.2s
+fold_04: trial 9/24, validation loss=0.275734
+START fold_04 trial 10/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.197015 val=0.868595 elapsed=1.7s
+EPOCH 10: loss=5.703628 val=0.315101 elapsed=6.6s
+fold_04: trial 10/24, validation loss=0.273586
+START fold_04 trial 11/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.040794 val=0.623140 elapsed=1.6s
+EPOCH 10: loss=5.635815 val=0.441583 elapsed=6.8s
+EPOCH 20: loss=5.540712 val=0.393956 elapsed=12.5s
+EPOCH 30: loss=5.468516 val=0.390264 elapsed=18.2s
+EPOCH 40: loss=5.410276 val=0.396156 elapsed=24.0s
+fold_04: trial 11/24, validation loss=0.301066
+START fold_04 trial 12/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.383248 val=0.726679 elapsed=1.6s
+EPOCH 10: loss=5.819784 val=0.435766 elapsed=6.7s
+EPOCH 20: loss=5.694490 val=0.304166 elapsed=12.1s
+EPOCH 30: loss=5.583916 val=0.316598 elapsed=18.1s
+fold_04: trial 12/24, validation loss=0.304166
+START fold_04 trial 13/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=6.225817 val=0.299540 elapsed=1.4s
+EPOCH 10: loss=5.546091 val=0.386775 elapsed=6.4s
+EPOCH 20: loss=5.416072 val=0.304195 elapsed=12.1s
+fold_04: trial 13/24, validation loss=0.261843
+START fold_04 trial 14/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.792403 val=0.306863 elapsed=1.6s
+EPOCH 10: loss=5.798190 val=0.349383 elapsed=6.7s
+fold_04: trial 14/24, validation loss=0.263534
+START fold_04 trial 15/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.742303 val=0.307653 elapsed=1.5s
+EPOCH 10: loss=5.674977 val=0.333197 elapsed=6.3s
+fold_04: trial 15/24, validation loss=0.270706
+START fold_04 trial 16/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=7.027000 val=0.355144 elapsed=1.3s
+EPOCH 10: loss=5.806760 val=0.342055 elapsed=6.5s
+EPOCH 20: loss=5.630875 val=0.313505 elapsed=12.2s
+EPOCH 30: loss=5.561719 val=0.283471 elapsed=17.9s
+fold_04: trial 16/24, validation loss=0.262780
+START fold_04 trial 17/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.940234 val=0.600333 elapsed=1.4s
+EPOCH 10: loss=5.527569 val=0.300414 elapsed=6.2s
+EPOCH 20: loss=5.424014 val=0.277658 elapsed=12.0s
+EPOCH 30: loss=5.381824 val=0.282449 elapsed=17.6s
+fold_04: trial 17/24, validation loss=0.277529
+START fold_04 trial 18/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.335355 val=0.547121 elapsed=1.6s
+EPOCH 10: loss=5.719527 val=0.391752 elapsed=6.7s
+EPOCH 20: loss=5.582086 val=0.326024 elapsed=12.3s
+EPOCH 30: loss=5.520326 val=0.302361 elapsed=18.0s
+fold_04: trial 18/24, validation loss=0.271186
+START fold_04 trial 19/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.193704 val=0.666304 elapsed=1.6s
+EPOCH 10: loss=5.628288 val=0.365842 elapsed=6.5s
+EPOCH 20: loss=5.519370 val=0.332184 elapsed=12.2s
+EPOCH 30: loss=5.463773 val=0.338470 elapsed=17.9s
+fold_04: trial 19/24, validation loss=0.332184
+START fold_04 trial 20/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.593348 val=0.745357 elapsed=1.7s
+EPOCH 10: loss=5.859616 val=0.464320 elapsed=6.8s
+EPOCH 20: loss=5.682839 val=0.372427 elapsed=12.3s
+fold_04: trial 20/24, validation loss=0.319239
+START fold_04 trial 21/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.748043 val=0.575876 elapsed=1.4s
+EPOCH 10: loss=5.372207 val=0.418119 elapsed=6.4s
+fold_04: trial 21/24, validation loss=0.277709
+START fold_04 trial 22/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.078207 val=0.535204 elapsed=2.1s
+EPOCH 10: loss=5.568455 val=0.300495 elapsed=9.0s
+EPOCH 20: loss=5.442911 val=0.275909 elapsed=16.8s
+EPOCH 30: loss=5.386541 val=0.270627 elapsed=24.8s
+EPOCH 40: loss=5.355737 val=0.265094 elapsed=32.6s
+fold_04: trial 22/24, validation loss=0.256988
+START fold_04 trial 23/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=5.953335 val=0.663324 elapsed=2.2s
+EPOCH 10: loss=5.483234 val=0.297607 elapsed=7.9s
+EPOCH 20: loss=5.378251 val=0.374573 elapsed=15.5s
+fold_04: trial 23/24, validation loss=0.297607
+START fold_04 trial 24/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.295632 val=0.738852 elapsed=2.1s
+EPOCH 10: loss=5.618190 val=0.376011 elapsed=7.9s
+EPOCH 20: loss=5.491868 val=0.326066 elapsed=14.8s
+EPOCH 30: loss=5.436056 val=0.312848 elapsed=21.8s
+fold_04: trial 24/24, validation loss=0.274792
+Prepared fold 5: 5457 real training patients, 19454 rules
+TEACHER part=1/5 unique_queries=2364 rules=6898 elapsed=9.2s
+TEACHER part=2/5 unique_queries=2330 rules=6965 elapsed=14.5s
+TEACHER part=3/5 unique_queries=2274 rules=7019 elapsed=19.9s
+TEACHER part=4/5 unique_queries=2298 rules=7015 elapsed=25.1s
+TEACHER part=5/5 unique_queries=2313 rules=6991 elapsed=30.7s
+START fold_05 trial 1/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.942666 val=1.094528 elapsed=1.8s
+EPOCH 10: loss=5.678658 val=0.436521 elapsed=9.3s
+EPOCH 20: loss=5.570719 val=0.351937 elapsed=16.1s
+fold_05: trial 1/24, validation loss=0.319624
+START fold_05 trial 2/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.315226 val=1.058189 elapsed=2.2s
+EPOCH 10: loss=5.869593 val=0.433182 elapsed=8.8s
+EPOCH 20: loss=5.738376 val=0.341753 elapsed=15.7s
+fold_05: trial 2/24, validation loss=0.314125
+START fold_05 trial 3/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.268739 val=0.864261 elapsed=2.3s
+EPOCH 10: loss=5.768290 val=0.487389 elapsed=8.8s
+EPOCH 20: loss=5.661442 val=0.490189 elapsed=15.9s
+fold_05: trial 3/24, validation loss=0.373065
+START fold_05 trial 4/24: {'alpha': 0.5, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.591912 val=1.029726 elapsed=2.2s
+EPOCH 10: loss=6.040063 val=0.520483 elapsed=8.4s
+EPOCH 20: loss=5.878699 val=0.478381 elapsed=15.3s
+EPOCH 30: loss=5.786761 val=0.395833 elapsed=22.1s
+EPOCH 40: loss=5.737570 val=0.378240 elapsed=29.4s
+EPOCH 50: loss=5.705834 val=0.351115 elapsed=36.5s
+fold_05: trial 4/24, validation loss=0.336004
+START fold_05 trial 5/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.959696 val=0.660738 elapsed=1.9s
+EPOCH 10: loss=5.530974 val=0.309283 elapsed=7.7s
+EPOCH 20: loss=5.460253 val=0.348671 elapsed=15.2s
+fold_05: trial 5/24, validation loss=0.309283
+START fold_05 trial 6/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.340144 val=0.671685 elapsed=1.6s
+EPOCH 10: loss=5.774042 val=0.486364 elapsed=8.4s
+EPOCH 20: loss=5.653261 val=0.372244 elapsed=16.1s
+EPOCH 30: loss=5.591544 val=0.354292 elapsed=23.1s
+fold_05: trial 6/24, validation loss=0.326662
+START fold_05 trial 7/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.061454 val=0.485096 elapsed=1.8s
+EPOCH 10: loss=5.687045 val=0.482058 elapsed=7.8s
+EPOCH 20: loss=5.582120 val=0.401747 elapsed=15.0s
+EPOCH 30: loss=5.531611 val=0.384558 elapsed=22.0s
+fold_05: trial 7/24, validation loss=0.330073
+START fold_05 trial 8/24: {'alpha': 0.5, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.424352 val=0.575863 elapsed=1.6s
+EPOCH 10: loss=5.899475 val=0.469657 elapsed=7.7s
+EPOCH 20: loss=5.765286 val=0.349107 elapsed=14.0s
+EPOCH 30: loss=5.692267 val=0.355795 elapsed=21.7s
+fold_05: trial 8/24, validation loss=0.326532
+START fold_05 trial 9/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.744834 val=0.861387 elapsed=1.5s
+EPOCH 10: loss=5.459741 val=0.387900 elapsed=7.4s
+fold_05: trial 9/24, validation loss=0.326916
+START fold_05 trial 10/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.007758 val=0.844939 elapsed=1.9s
+EPOCH 10: loss=5.665912 val=0.359650 elapsed=8.2s
+EPOCH 20: loss=5.536982 val=0.356180 elapsed=15.7s
+EPOCH 30: loss=5.481320 val=0.325043 elapsed=21.9s
+EPOCH 40: loss=5.450683 val=0.334329 elapsed=28.7s
+fold_05: trial 10/24, validation loss=0.313373
+START fold_05 trial 11/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=5.932663 val=0.709012 elapsed=1.9s
+EPOCH 10: loss=5.582731 val=0.469557 elapsed=7.5s
+EPOCH 20: loss=5.483760 val=0.406445 elapsed=14.8s
+fold_05: trial 11/24, validation loss=0.359751
+START fold_05 trial 12/24: {'alpha': 0.5, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.173488 val=0.798933 elapsed=1.8s
+EPOCH 10: loss=5.789107 val=0.444902 elapsed=7.7s
+EPOCH 20: loss=5.659512 val=0.384807 elapsed=15.1s
+fold_05: trial 12/24, validation loss=0.325262
+START fold_05 trial 13/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.932865 val=0.626751 elapsed=1.7s
+EPOCH 10: loss=5.500027 val=0.260691 elapsed=7.7s
+EPOCH 20: loss=5.439879 val=0.293528 elapsed=14.8s
+fold_05: trial 13/24, validation loss=0.260691
+START fold_05 trial 14/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.179036 val=0.710316 elapsed=1.6s
+EPOCH 10: loss=5.745088 val=0.340944 elapsed=7.3s
+EPOCH 20: loss=5.613332 val=0.304087 elapsed=13.8s
+fold_05: trial 14/24, validation loss=0.280142
+START fold_05 trial 15/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.049047 val=0.883231 elapsed=1.6s
+EPOCH 10: loss=5.631208 val=0.397322 elapsed=7.8s
+EPOCH 20: loss=5.534861 val=0.363116 elapsed=14.6s
+EPOCH 30: loss=5.487013 val=0.384839 elapsed=21.4s
+fold_05: trial 15/24, validation loss=0.318689
+START fold_05 trial 16/24: {'alpha': 0.7, 'd_e': 6, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.447331 val=0.738208 elapsed=1.9s
+EPOCH 10: loss=5.766178 val=0.315588 elapsed=7.5s
+EPOCH 20: loss=5.680029 val=0.330538 elapsed=14.0s
+EPOCH 30: loss=5.629423 val=0.319432 elapsed=20.9s
+fold_05: trial 16/24, validation loss=0.306882
+START fold_05 trial 17/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=6.092659 val=0.789038 elapsed=1.7s
+EPOCH 10: loss=5.478965 val=0.376915 elapsed=8.2s
+EPOCH 20: loss=5.412934 val=0.362461 elapsed=15.0s
+fold_05: trial 17/24, validation loss=0.296160
+START fold_05 trial 18/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=6.336012 val=0.534876 elapsed=1.7s
+EPOCH 10: loss=5.680462 val=0.394478 elapsed=7.4s
+EPOCH 20: loss=5.571919 val=0.353656 elapsed=14.0s
+EPOCH 30: loss=5.523541 val=0.349901 elapsed=21.1s
+fold_05: trial 18/24, validation loss=0.297168
+START fold_05 trial 19/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=6.202355 val=0.664638 elapsed=1.8s
+EPOCH 10: loss=5.591420 val=0.387103 elapsed=8.1s
+EPOCH 20: loss=5.487229 val=0.354402 elapsed=15.0s
+fold_05: trial 19/24, validation loss=0.324758
+START fold_05 trial 20/24: {'alpha': 0.7, 'd_e': 8, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.387290 val=0.472992 elapsed=1.9s
+EPOCH 10: loss=5.717791 val=0.297643 elapsed=8.2s
+EPOCH 20: loss=5.628029 val=0.333433 elapsed=15.6s
+fold_05: trial 20/24, validation loss=0.297643
+START fold_05 trial 21/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.3}
+EPOCH 1: loss=5.593040 val=0.735385 elapsed=1.4s
+EPOCH 10: loss=5.373858 val=0.346835 elapsed=7.6s
+fold_05: trial 21/24, validation loss=0.287678
+START fold_05 trial 22/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.1, 'lam_P': 0.7}
+EPOCH 1: loss=5.881215 val=0.821161 elapsed=1.5s
+EPOCH 10: loss=5.537573 val=0.354008 elapsed=7.8s
+fold_05: trial 22/24, validation loss=0.300240
+START fold_05 trial 23/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.3}
+EPOCH 1: loss=5.849349 val=0.748194 elapsed=1.8s
+EPOCH 10: loss=5.479982 val=0.375643 elapsed=8.3s
+fold_05: trial 23/24, validation loss=0.309481
+START fold_05 trial 24/24: {'alpha': 0.7, 'd_e': 16, 'lam_I': 0.5, 'lam_P': 0.7}
+EPOCH 1: loss=6.076150 val=0.855560 elapsed=1.8s
+EPOCH 10: loss=5.643922 val=0.408350 elapsed=7.9s
+EPOCH 20: loss=5.512099 val=0.354566 elapsed=14.6s
+fold_05: trial 24/24, validation loss=0.306145
+DONE: /home/dev/FKGE_BRSET_Tan_ext/outputs/brset_full

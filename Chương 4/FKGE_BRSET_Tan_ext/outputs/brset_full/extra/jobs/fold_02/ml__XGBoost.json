@@ -1,0 +1,54 @@
+{
+  "kind": "ml",
+  "method": "XGBoost",
+  "selected": {
+    "max_depth": 6,
+    "learning_rate": 0.1
+  },
+  "validation_log_loss": 0.1640738844871521,
+  "threshold": 0.016618728786706928,
+  "train_seconds": 0.6476907730102539,
+  "train_rows": 10410,
+  "ms_per_query": 0.003305736781403807,
+  "trials": [
+    {
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "validation_log_loss": 0.2759632468223572,
+      "train_seconds": 0.3904914855957031
+    },
+    {
+      "max_depth": 3,
+      "learning_rate": 0.1,
+      "validation_log_loss": 0.24184304475784302,
+      "train_seconds": 0.33663415908813477
+    },
+    {
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "validation_log_loss": 0.16981293261051178,
+      "train_seconds": 0.6839308738708496
+    },
+    {
+      "max_depth": 6,
+      "learning_rate": 0.1,
+      "validation_log_loss": 0.1640738844871521,
+      "train_seconds": 0.6476907730102539
+    }
+  ],
+  "test": {
+    "accuracy": 0.8041205412054121,
+    "balanced_accuracy": 0.8610964323943471,
+    "precision": 0.24635922330097088,
+    "recall": 0.9269406392694064,
+    "f1": 0.38926174496644295,
+    "f1_macro": 0.6363082209541975,
+    "roc_auc": 0.9334685280785032,
+    "average_precision": 0.5679145118707347,
+    "pr_auc_trapezoidal": 0.5666957111590094,
+    "sensitivity": 0.9269406392694064,
+    "specificity": 0.7952522255192879
+  },
+  "job": "ml__XGBoost",
+  "fold": 2
+}

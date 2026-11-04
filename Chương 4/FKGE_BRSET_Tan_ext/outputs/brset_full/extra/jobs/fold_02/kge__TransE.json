@@ -1,0 +1,65 @@
+{
+  "kind": "kge",
+  "method": "TransE",
+  "selected": {
+    "d": 16,
+    "k": 25
+  },
+  "validation_log_loss": 0.24151308245374792,
+  "threshold": 0.18518518518518517,
+  "train_seconds": 0.46686625480651855,
+  "ms_per_query": 0.3521186051899418,
+  "trials": [
+    {
+      "d": 6,
+      "k": 5,
+      "validation_log_loss": 0.30957934492542605,
+      "train_seconds": 0.4530067443847656
+    },
+    {
+      "d": 6,
+      "k": 25,
+      "validation_log_loss": 0.28444974546005153,
+      "train_seconds": 0.4530067443847656
+    },
+    {
+      "d": 8,
+      "k": 5,
+      "validation_log_loss": 0.30771170887683214,
+      "train_seconds": 0.4571526050567627
+    },
+    {
+      "d": 8,
+      "k": 25,
+      "validation_log_loss": 0.2518204749702552,
+      "train_seconds": 0.4571526050567627
+    },
+    {
+      "d": 16,
+      "k": 5,
+      "validation_log_loss": 0.2980012923736945,
+      "train_seconds": 0.46686625480651855
+    },
+    {
+      "d": 16,
+      "k": 25,
+      "validation_log_loss": 0.24151308245374792,
+      "train_seconds": 0.46686625480651855
+    }
+  ],
+  "test": {
+    "accuracy": 0.7890528905289053,
+    "balanced_accuracy": 0.7640520484713811,
+    "precision": 0.20405576679340937,
+    "recall": 0.7351598173515982,
+    "f1": 0.3194444444444444,
+    "f1_macro": 0.597313197476953,
+    "roc_auc": 0.8384091583148532,
+    "average_precision": 0.35109422875738555,
+    "pr_auc_trapezoidal": 0.3667279342435637,
+    "sensitivity": 0.7351598173515982,
+    "specificity": 0.7929442795911639
+  },
+  "job": "kge__TransE",
+  "fold": 2
+}

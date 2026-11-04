@@ -1,0 +1,123 @@
+{
+  "identity": {
+    "config_extra": {
+      "sfkgs_theta": 0.3,
+      "kb5_K": [
+        2,
+        5,
+        10
+      ],
+      "kb6_ratios": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ],
+      "kb6_seed": 7,
+      "kge": {
+        "d_grid": [
+          6,
+          8,
+          16
+        ],
+        "k_grid": [
+          5,
+          25
+        ],
+        "epochs": 30,
+        "lr": 0.01,
+        "batch": 4096,
+        "negatives": 5,
+        "margin": 1.0,
+        "walks_per_node": 10,
+        "walk_length": 20,
+        "window": 2
+      },
+      "ml": {
+        "lr_C": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0
+        ],
+        "rf_trees": 500,
+        "rf_min_samples_leaf": [
+          1,
+          5,
+          20
+        ],
+        "xgb_trees": 400,
+        "xgb_max_depth": [
+          3,
+          6
+        ],
+        "xgb_learning_rate": [
+          0.05,
+          0.1
+        ],
+        "n_jobs": 2
+      }
+    },
+    "main_identity_sha256": "749d00ffd1062c92f06bf8df9f0def222634aa7c27b90d7e1ba1611cbc955448",
+    "code_sha256": {
+      "baselines.py": "c7c31c314c6da70819beb1b23bc508783b7ed45b8b9d70fa555669df07e46a34",
+      "build.py": "c2ba592327eccba6a48db4bec3566636fa485fd51c346033da94557693bff8c9",
+      "compact_fkge.py": "98cd20aa1f6eb47aba4102120982f3c3c5ef39dcfa1d0a31d51dc1e523008290",
+      "extra.py": "749970df108b18ea9b4612983d473a3e79f93ebdd6bb9ae31caf1e95eee2c2ef",
+      "portable_folds.py": "df737c3bfdf44071d100c0c8cc1e29b534baf9ad8ae7922490b914cbbc06169e",
+      "preprocess.py": "9d5a5b562b95d9f45775fbe961fe7ca86ceca73d844a05520aae77ef17f73cc1",
+      "reference/fisa.py": "da5aae7da3b28c78e7a15d5c289b7f476c25eed7d21665855996f598e5589976",
+      "reference/fkge.py": "9e9efffd62529f686bfb5763f37e0a9ba6b223c8eef5a48c30eb893c5e90df84",
+      "reference/sfkgs.py": "71a20287791223bedf08060ee724456c7d30835e8b184f2363c8353b18fe0560",
+      "report.py": "e24d1952a9a513d916530fa42a82e82d0c7979fe31f758aa0606c00a0c84a6eb",
+      "run.py": "8e1c2d0f6331f40f0f689c7e2c64bd04c2b8dd8d26b46a01dbfcca4110702d86",
+      "sfkgs.py": "9dd9491ee403e3416e06b6bd10e961b8cf3c1d75da7bce4a6a47dfa238c76628",
+      "tests/test_extra.py": "7dae9288aee601b37b0d4e8eb61223a0604045abc24631c406ca8602f28e88be",
+      "tests/test_pipeline.py": "5fcce3d65fc7890e0393046b182ac549bdfb9d4274b6e9def3a66ea668d5fbdc",
+      "train_fkge.py": "f046c46042c2592d68637824ca87d2b726ee071f74d9b64150d80b4e8d623e26"
+    },
+    "device": "cuda",
+    "block_size": 128,
+    "seed": 42
+  },
+  "hardware": {
+    "system": "Linux-5.15.0-139-generic-x86_64-with-glibc2.39",
+    "cpu": "x86_64",
+    "logical_cpus": 8,
+    "device": "cuda",
+    "torch_cuda_build": "13.0",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA RTX 5880 Ada Generation",
+    "gpu_memory_bytes": 50865307648,
+    "ram_bytes": 25769803776
+  },
+  "argv": [
+    "/home/dev/FKGMM_BRSET3/.venv_tan_ext_gpu/bin/python",
+    "extra.py",
+    "--output",
+    "/home/dev/FKGE_BRSET_Tan_ext/outputs/brset_full",
+    "--device",
+    "cuda",
+    "--block-size",
+    "128",
+    "--only",
+    "kb2,kb3,kb4,kb5,kb6,ablation,baseline",
+    "--folds",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "selection": "every extra configuration starts from fold_XX/selected.json (validation only)",
+  "temporary_teacher_cache": "/tmp/fkge_brset_extra/c366ba45b1c938f40a40",
+  "completed": {
+    "fold_01": true,
+    "fold_02": true,
+    "fold_03": true,
+    "fold_04": true,
+    "fold_05": true
+  }
+}

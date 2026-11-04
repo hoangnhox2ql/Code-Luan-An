@@ -1,0 +1,65 @@
+TEACHER part=1/5 unique_queries=938 rules=441 elapsed=0.2s
+TEACHER part=2/5 unique_queries=935 rules=441 elapsed=0.3s
+TEACHER part=3/5 unique_queries=923 rules=422 elapsed=0.5s
+TEACHER part=4/5 unique_queries=982 rules=412 elapsed=0.7s
+TEACHER part=5/5 unique_queries=980 rules=434 elapsed=0.8s
+r=8 fold 1: |R|=474 r=8 | AUC FISA 0.9144 FKG-E(a) 0.9169 (b) 0.9264 | R2 0.910 Dev 0.216 | ops E/tab 21.97 | ms lô FISA 0.0012 FKG-E 0.0022 | 21s
+TEACHER part=1/5 unique_queries=867 rules=375 elapsed=0.3s
+TEACHER part=2/5 unique_queries=901 rules=375 elapsed=0.5s
+TEACHER part=3/5 unique_queries=878 rules=360 elapsed=0.7s
+TEACHER part=4/5 unique_queries=920 rules=372 elapsed=1.0s
+TEACHER part=5/5 unique_queries=870 rules=378 elapsed=1.2s
+r=8 fold 2: |R|=412 r=8 | AUC FISA 0.9032 FKG-E(a) 0.9044 (b) 0.9166 | R2 0.814 Dev 0.304 | ops E/tab 19.12 | ms lô FISA 0.0016 FKG-E 0.0030 | 23s
+TEACHER part=1/5 unique_queries=959 rules=418 elapsed=0.2s
+TEACHER part=2/5 unique_queries=984 rules=422 elapsed=0.4s
+TEACHER part=3/5 unique_queries=955 rules=420 elapsed=0.6s
+TEACHER part=4/5 unique_queries=967 rules=413 elapsed=0.9s
+TEACHER part=5/5 unique_queries=914 rules=416 elapsed=1.1s
+r=8 fold 3: |R|=457 r=8 | AUC FISA 0.8675 FKG-E(a) 0.8795 (b) 0.8864 | R2 0.951 Dev 0.209 | ops E/tab 21.19 | ms lô FISA 0.0015 FKG-E 0.0028 | 23s
+TEACHER part=1/5 unique_queries=1091 rules=605 elapsed=0.3s
+TEACHER part=2/5 unique_queries=1103 rules=590 elapsed=0.6s
+TEACHER part=3/5 unique_queries=1058 rules=614 elapsed=0.8s
+TEACHER part=4/5 unique_queries=1097 rules=600 elapsed=1.1s
+TEACHER part=5/5 unique_queries=1103 rules=602 elapsed=1.3s
+r=8 fold 4: |R|=672 r=8 | AUC FISA 0.8944 FKG-E(a) 0.8110 (b) 0.9121 | R2 0.939 Dev 0.198 | ops E/tab 31.06 | ms lô FISA 0.0014 FKG-E 0.0034 | 25s
+TEACHER part=1/5 unique_queries=1075 rules=441 elapsed=0.3s
+TEACHER part=2/5 unique_queries=1096 rules=443 elapsed=0.5s
+TEACHER part=3/5 unique_queries=1080 rules=437 elapsed=0.8s
+TEACHER part=4/5 unique_queries=1039 rules=439 elapsed=1.0s
+TEACHER part=5/5 unique_queries=1042 rules=445 elapsed=1.2s
+r=8 fold 5: |R|=478 r=8 | AUC FISA 0.8777 FKG-E(a) 0.8968 (b) 0.8966 | R2 0.957 Dev 0.221 | ops E/tab 22.15 | ms lô FISA 0.0014 FKG-E 0.0028 | 24s
+TEACHER part=1/5 unique_queries=2176 rules=6254 elapsed=46.1s
+TEACHER part=2/5 unique_queries=2186 rules=6199 elapsed=51.1s
+TEACHER part=3/5 unique_queries=2216 rules=6186 elapsed=71.5s
+TEACHER part=4/5 unique_queries=2288 rules=6120 elapsed=78.3s
+TEACHER part=5/5 unique_queries=2227 rules=6196 elapsed=85.2s
+r=16 fold 1: |R|=7433 r=16 | AUC FISA 0.9165 FKG-E(a) 0.8978 (b) 0.9361 | R2 0.933 Dev 0.261 | ops E/tab 34.17 | ms lô FISA 0.0118 FKG-E 0.0264 | 169s
+TEACHER part=1/5 unique_queries=2039 rules=4196 elapsed=42.1s
+TEACHER part=2/5 unique_queries=2012 rules=4250 elapsed=45.8s
+TEACHER part=3/5 unique_queries=1963 rules=4234 elapsed=56.9s
+TEACHER part=4/5 unique_queries=1973 rules=4317 elapsed=70.5s
+TEACHER part=5/5 unique_queries=1975 rules=4278 elapsed=77.3s
+r=16 fold 2: |R|=5021 r=16 | AUC FISA 0.9373 FKG-E(a) 0.9176 (b) 0.9412 | R2 0.951 Dev 0.223 | ops E/tab 23.09 | ms lô FISA 0.0119 FKG-E 0.0199 | 158s
+TEACHER part=1/5 unique_queries=2035 rules=4835 elapsed=17.6s
+TEACHER part=2/5 unique_queries=2061 rules=4852 elapsed=25.5s
+TEACHER part=3/5 unique_queries=2002 rules=4843 elapsed=36.7s
+TEACHER part=4/5 unique_queries=2076 rules=4809 elapsed=41.8s
+TEACHER part=5/5 unique_queries=2045 rules=4805 elapsed=46.0s
+r=16 fold 3: |R|=5721 r=16 | AUC FISA 0.9068 FKG-E(a) 0.9140 (b) 0.9259 | R2 0.952 Dev 0.230 | ops E/tab 26.31 | ms lô FISA 0.0118 FKG-E 0.0223 | 107s
+TEACHER part=1/5 unique_queries=2189 rules=5892 elapsed=19.1s
+TEACHER part=2/5 unique_queries=2172 rules=5872 elapsed=42.4s
+TEACHER part=3/5 unique_queries=2157 rules=5896 elapsed=47.1s
+TEACHER part=4/5 unique_queries=2264 rules=5834 elapsed=58.1s
+TEACHER part=5/5 unique_queries=2244 rules=5825 elapsed=68.0s
+r=16 fold 4: |R|=6999 r=16 | AUC FISA 0.9042 FKG-E(a) 0.8647 (b) 0.9266 | R2 0.915 Dev 0.276 | ops E/tab 32.17 | ms lô FISA 0.0105 FKG-E 0.0238 | 188s
+TEACHER part=1/5 unique_queries=2364 rules=6898 elapsed=47.9s
+TEACHER part=2/5 unique_queries=2330 rules=6965 elapsed=63.5s
+TEACHER part=3/5 unique_queries=2274 rules=7019 elapsed=79.1s
+TEACHER part=4/5 unique_queries=2298 rules=7015 elapsed=108.3s
+TEACHER part=5/5 unique_queries=2313 rules=6991 elapsed=121.8s
+r=16 fold 5: |R|=8409 r=16 | AUC FISA 0.9322 FKG-E(a) 0.9221 (b) 0.9469 | R2 0.944 Dev 0.270 | ops E/tab 38.65 | ms lô FISA 0.0120 FKG-E 0.0357 | 209s
+TEACHER part=1/5 unique_queries=2649 rules=9259 elapsed=1130.2s
+TEACHER part=2/5 unique_queries=2650 rules=9281 elapsed=2018.0s
+TEACHER part=3/5 unique_queries=2678 rules=9250 elapsed=3029.2s
+TEACHER part=4/5 unique_queries=2682 rules=9236 elapsed=4197.4s
+TEACHER part=5/5 unique_queries=2638 rules=9325 elapsed=5720.4s

@@ -1,0 +1,65 @@
+{
+  "kind": "kge",
+  "method": "Node2Vec",
+  "selected": {
+    "d": 16,
+    "k": 25
+  },
+  "validation_log_loss": 0.2669769368839401,
+  "threshold": 0.2222222222222222,
+  "train_seconds": 0.35454392433166504,
+  "ms_per_query": 0.5034421079226432,
+  "trials": [
+    {
+      "d": 6,
+      "k": 5,
+      "validation_log_loss": 0.3866889716515507,
+      "train_seconds": 0.7749135494232178
+    },
+    {
+      "d": 6,
+      "k": 25,
+      "validation_log_loss": 0.32952758551464745,
+      "train_seconds": 0.7749135494232178
+    },
+    {
+      "d": 8,
+      "k": 5,
+      "validation_log_loss": 0.3535156474480295,
+      "train_seconds": 0.32903265953063965
+    },
+    {
+      "d": 8,
+      "k": 25,
+      "validation_log_loss": 0.29750184643301464,
+      "train_seconds": 0.32903265953063965
+    },
+    {
+      "d": 16,
+      "k": 5,
+      "validation_log_loss": 0.3178038005052043,
+      "train_seconds": 0.35454392433166504
+    },
+    {
+      "d": 16,
+      "k": 25,
+      "validation_log_loss": 0.2669769368839401,
+      "train_seconds": 0.35454392433166504
+    }
+  ],
+  "test": {
+    "accuracy": 0.7450920245398773,
+    "balanced_accuracy": 0.7910835988889549,
+    "precision": 0.17269906928645296,
+    "recall": 0.8434343434343434,
+    "f1": 0.28669527896995706,
+    "f1_macro": 0.5657566030704126,
+    "roc_auc": 0.8569826283738761,
+    "average_precision": 0.2901979035548657,
+    "pr_auc_trapezoidal": 0.30034103828370246,
+    "sensitivity": 0.8434343434343434,
+    "specificity": 0.7387328543435663
+  },
+  "job": "kge__Node2Vec",
+  "fold": 1
+}

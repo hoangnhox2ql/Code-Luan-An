@@ -1,0 +1,108 @@
+{
+  "identity": {
+    "scope": "BRSET_FULL_16266_IMAGES_8524_PATIENTS",
+    "config": {
+      "r_grid": [
+        {
+          "r": 8,
+          "k_img": 4,
+          "k_tab": 4,
+          "n_tensor": 0
+        },
+        {
+          "r": 16,
+          "k_img": 7,
+          "k_tab": 9,
+          "n_tensor": 0
+        },
+        {
+          "r": 23,
+          "k_img": 10,
+          "k_tab": 13,
+          "n_tensor": 0
+        },
+        {
+          "r": 32,
+          "k_img": 10,
+          "k_tab": 13,
+          "n_tensor": 9
+        },
+        {
+          "r": 40,
+          "k_img": 10,
+          "k_tab": 13,
+          "n_tensor": 17
+        },
+        {
+          "r": 48,
+          "k_img": 10,
+          "k_tab": 13,
+          "n_tensor": 25
+        }
+      ],
+      "fkge": {
+        "alpha": 0.7,
+        "d_e": 16,
+        "lam_I": 0.1,
+        "lam_P": 0.3
+      },
+      "max_epochs": 50,
+      "patience": 10,
+      "timing": {
+        "repeats": 5,
+        "single_queries": 300,
+        "sequential_queries": 2
+      },
+      "rho": [
+        1.0,
+        0.5,
+        0.1
+      ]
+    },
+    "code_sha256": {
+      "baselines.py": "c7c31c314c6da70819beb1b23bc508783b7ed45b8b9d70fa555669df07e46a34",
+      "build.py": "c2ba592327eccba6a48db4bec3566636fa485fd51c346033da94557693bff8c9",
+      "compact_fkge.py": "9a5f474325af79710170c400de7096eb31e8852afc4f2a20ac5a9400d9570d6e",
+      "extra.py": "749970df108b18ea9b4612983d473a3e79f93ebdd6bb9ae31caf1e95eee2c2ef",
+      "kb_r.py": "d3330394adeacc6a45391aa19877ef36db8ab1bdc71bec5398954602ce668634",
+      "portable_folds.py": "df737c3bfdf44071d100c0c8cc1e29b534baf9ad8ae7922490b914cbbc06169e",
+      "preprocess.py": "9ea7d38a795f4a180af4414aeddb11741244c219e85323f75a4750f99627616b",
+      "reference/fisa.py": "da5aae7da3b28c78e7a15d5c289b7f476c25eed7d21665855996f598e5589976",
+      "reference/fkge.py": "9e9efffd62529f686bfb5763f37e0a9ba6b223c8eef5a48c30eb893c5e90df84",
+      "reference/sfkgs.py": "71a20287791223bedf08060ee724456c7d30835e8b184f2363c8353b18fe0560",
+      "report.py": "e24d1952a9a513d916530fa42a82e82d0c7979fe31f758aa0606c00a0c84a6eb",
+      "run.py": "926615e754a8f4b36358ff019df35c86c6562fa5d8ee6e92c40b78c53007053b",
+      "sfkgs.py": "9dd9491ee403e3416e06b6bd10e961b8cf3c1d75da7bce4a6a47dfa238c76628",
+      "tests/test_extra.py": "7dae9288aee601b37b0d4e8eb61223a0604045abc24631c406ca8602f28e88be",
+      "tests/test_kb_r.py": "525ab0dbdfeb50aa09d89112e73a5e4712f6fb2a7e851de64d5c30cfec95400e",
+      "tests/test_pipeline.py": "5fcce3d65fc7890e0393046b182ac549bdfb9d4274b6e9def3a66ea668d5fbdc",
+      "train_fkge.py": "f046c46042c2592d68637824ca87d2b726ee071f74d9b64150d80b4e8d623e26"
+    },
+    "seed": 42,
+    "device": "cpu",
+    "block_size": 128,
+    "cost_only": true,
+    "data_sha256": "69746167df630980d132fdfd41f705932d36e4ad1992b1ea5f2bb8aa46e398fe"
+  },
+  "hardware": {
+    "system": "Linux-5.15.0-139-generic-x86_64-with-glibc2.39",
+    "cpu": "x86_64",
+    "logical_cpus": 8,
+    "device": "cpu",
+    "torch_cuda_build": "13.0",
+    "cuda_available": false,
+    "ram_bytes": 25769803776
+  },
+  "argv": [
+    "/home/dev/FKGMM_BRSET3/.venv_tan_ext_gpu/bin/python",
+    "kb_r.py",
+    "--cost-only",
+    "--device",
+    "cpu",
+    "--output",
+    "outputs/kb_r_cost",
+    "--reuse-prepared",
+    "outputs/kb_r_v1_ma_cu"
+  ],
+  "selection": "fixed FKG-E parameters; epochs chosen on validation only (rules a and b)"
+}

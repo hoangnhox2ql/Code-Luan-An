@@ -1,0 +1,36 @@
+{
+  "fold": 2,
+  "selected_parameters": {
+    "alpha": 0.5,
+    "d_e": 16,
+    "lam_I": 0.1,
+    "lam_P": 0.3
+  },
+  "n_rules": 5021,
+  "rule_base": "unique rules, conflicting rules removed, duplicates kept once",
+  "validation_log_loss": 0.2118646960920456,
+  "selected_epochs": 21,
+  "prediction_seconds": 0.015261870808899403,
+  "FKG-E": {
+    "accuracy": 0.8508610086100861,
+    "balanced_accuracy": 0.8522621031665379,
+    "precision": 0.2921875,
+    "recall": 0.8538812785388128,
+    "f1": 0.43538998835855647,
+    "f1_macro": 0.6747366239401286,
+    "roc_auc": 0.9265206021435441,
+    "average_precision": 0.5686324055735005,
+    "pr_auc_trapezoidal": 0.5673190588018062
+  },
+  "FISA": {
+    "accuracy": 0.8791512915129152,
+    "balanced_accuracy": 0.8610738497531717,
+    "precision": 0.33948339483394835,
+    "recall": 0.8401826484018264,
+    "f1": 0.4835742444152431,
+    "f1_macro": 0.7075715554306756,
+    "roc_auc": 0.9372970385124363,
+    "average_precision": 0.5862163658121617,
+    "pr_auc_trapezoidal": 0.5853639586953205
+  }
+}
