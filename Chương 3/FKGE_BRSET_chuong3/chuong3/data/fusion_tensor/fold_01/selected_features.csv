@@ -1,0 +1,13 @@
+branch,selected,source_column,selected_output_column,score,p_value
+tensor_img,True,tensor_img_component_0,0,1.0267136757331918,
+tensor_img,True,tensor_img_component_1,1,0.5746846348706678,
+tensor_img,True,tensor_img_component_2,2,0.16282473887794688,
+tensor_img,True,tensor_img_component_3,3,0.11653207338079999,
+tensor_img,True,tensor_img_component_4,4,0.057413910412651224,
+tensor_img,True,tensor_img_component_5,5,0.03483040920421812,
+tensor_tab,True,tensor_tab_component_0,6,1.0267136757331918,
+tensor_tab,True,tensor_tab_component_1,7,0.5746846348706678,
+tensor_tab,True,tensor_tab_component_2,8,0.16282473887794688,
+tensor_tab,True,tensor_tab_component_3,9,0.11653207338079999,
+tensor_tab,True,tensor_tab_component_4,10,0.057413910412651224,
+tensor_tab,True,tensor_tab_component_5,11,0.03483040920421812,

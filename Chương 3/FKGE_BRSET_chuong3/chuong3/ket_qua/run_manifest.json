@@ -1,0 +1,37 @@
+{
+  "data": "/content/drive/MyDrive/FKGE_BRSET_chuong3/chuong3/data",
+  "folds": [
+    "fold_01",
+    "fold_02",
+    "fold_03",
+    "fold_04",
+    "fold_05"
+  ],
+  "config": {
+    "aggregator": "geomean_w",
+    "rule_base": "all",
+    "tie": "drop",
+    "fcm_fit": "all",
+    "n_clusters": 5,
+    "eps": 1e-09,
+    "levels": [
+      3,
+      5,
+      7
+    ],
+    "ran": [
+      15,
+      20
+    ],
+    "eps_grid": [
+      1e-12,
+      1e-09,
+      1e-06
+    ],
+    "seed": 0
+  },
+  "fcm_fit": "mọi dòng huấn luyện (gồm SMOTE)",
+  "rule_base": "mọi dòng huấn luyện (gồm SMOTE)",
+  "fisa": "FISA-GM-w: trung bình nhân có trọng số bộ ba (kfold/weighted.py), C thô, s_w > 0",
+  "time": "2026-11-03 03:31:36"
+}
