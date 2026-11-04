@@ -193,3 +193,35 @@ Kết quả: `extra/reports/` gồm `*_by_fold.csv`, `*_mean_std.csv|png` (trung
 chưa đủ 5 fold. Mỗi job lưu JSON + dự đoán test trong `extra/jobs/fold_XX/`; chạy lại cùng lệnh với `--resume`
 sẽ bỏ qua job đã xong. Khi đánh giá lại, mô hình chính phải cho đúng chỉ số trong `results.json`; nếu lệch,
 báo cáo dừng với lỗi.
+
+## Kịch bản bổ sung KB-E6 (03/11/2026): chi phí suy diễn theo số thuộc tính r (`kb_r.py`)
+
+Mục đích: kiểm chứng ràng buộc (R4) cho **FKG-E đầy đủ** theo số thuộc tính r. Chi phí FISA bảng tra tăng theo
+C(r,3), còn chi phí FKG-E tăng theo r·d_e + |R|·d_e. Đồng thời đo R1–R3 để xem lợi thế chi phí có phải trả bằng chất lượng.
+
+- **Tăng r như phép hợp nhất đa mô thức:** r = 8, 16, 23 là đặc trưng ảnh và lâm sàng chọn bằng ANOVA (23 = toàn bộ đặc trưng).
+  r = 32, 40, 48 thêm 9, 17, 25 đặc trưng **hợp nhất tensor**: tích từng đặc trưng ảnh với từng đặc trưng lâm sàng đã chuẩn
+  hoá, chuẩn hoá lại và chọn bằng ANOVA chỉ trên inner train (`FusionPreprocessor(n_tensor=...)`; với `n_tensor = 0`, gói
+  không đổi: `prepared.npz` của fold 1, r = 16 trùng từng phần tử với lượt chính).
+- **Giao thức:** như `run.py` (tách validation theo bệnh nhân, SMOTE trong từng phần giáo viên, FCM 5 mức, làm sạch cơ sở luật,
+  giáo viên FISA tính chéo). Mỗi (r, fold) huấn luyện một FKG-E đầy đủ với tham số cố định trong `config_kb_r.json`
+  (α 0,7; d_e 16; λ_I 0,1; λ_P 0,3: cấu hình được chọn nhiều nhất ở lượt chính), tối đa 50 vòng. Trên cùng quỹ đạo đọc
+  hai quy tắc dừng chỉ dùng validation: (a) log loss validation nhỏ nhất, patience 10 (= `CompactFKGE.fit`); (b) AUC
+  validation lớn nhất, patience 10.
+- **Đo:** |R|; R1 (AUC, AP, BalAcc của FISA-GM và FKG-E); R2 (đồng thuận nhãn với FISA); R3 (Dev = trung bình
+  ½‖a_E − a_F‖₁); R4: số phép tính mỗi truy vấn (FISA tuần tự, FISA bảng tra, FKG-E; mỗi phép nhân, cộng, so sánh, đọc
+  bảng, exp, log là 1), thời gian CPU 1 luồng (theo lô và từng truy vấn; FKG-E với nhúng luật tính sẵn như Thuật toán 4.2,
+  FISA bảng tra tách bảng theo nhãn; cả hai được kiểm tra trùng giá trị với cài đặt của gói) và bộ nhớ của mô hình suy diễn.
+  Thời gian chỉ so trong cùng lượt chạy trên cùng máy.
+
+```bash
+python -B -X utf8 -u kb_r.py --device auto                       # mọi r, 5 fold; chạy lại để tiếp tục
+python -B -X utf8 -u kb_r.py --device cuda --r 40 48 --folds 1 2  # một phần lưới
+python -B -X utf8 kb_r.py --stage report                         # chỉ xuất lại bảng
+python -B -X utf8 -u kb_r.py --smoke --folds 1 2 3 --device cpu --output outputs/kb_r_smoke
+```
+
+Kết quả: `outputs/kb_r/reports/` (`kb_r_by_fold.csv`, `kb_r_mean_std.csv`, `kb_r.png`, `README.txt` với tỉ số
+T_E/T_seq, T_E/T_tab và tỉ số thời gian cho từng r). Mỗi `r??/fold_??/` giữ dữ liệu chuẩn bị, dự đoán và `result.json`
+(gồm quỹ đạo validation). Thêm `kb_r.py` và nhánh tensor làm đổi hash mã của gói, nên output lượt chính và `extra/` tạo bằng
+bản trước không chạy tiếp (`--resume`) được bằng bản này; số liệu của chúng không đổi.

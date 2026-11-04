@@ -63,3 +63,12 @@ notebook `CHAY_CHUONG4_COLAB.ipynb`. Tham chiếu: `reference/*.py` = bản 02/1
   mô hình chính đánh giá lại trùng `results.json`.
 - Fold 1 BRSET thật (chỉ prepare, CPU): S-FKGS 12.128 → 5.386 luật, Rep 0,991, 16 s; KGE 5–48 s mỗi d;
   LR/RF/XGBoost 1–14 s. **Chưa chạy** các job FKG-E bổ sung trên BRSET thật.
+
+## KB-E6 (03/11/2026, `kb_r.py`)
+
+- 22/22 test đạt (17 cũ + 5 mới trong `tests/test_kb_r.py`): nhánh tensor không đổi gì khi `n_tensor = 0` (kể cả với
+  preprocessor đã pickle trước đó) và chỉ fit trên tập huấn luyện; quy tắc dừng (a) trên quỹ đạo trùng `CompactFKGE.fit`
+  (cùng validation loss, cùng tham số); FKG-E tính sẵn, FISA bảng tra tách nhãn và FISA tuần tự cho cùng giá trị với cài
+  đặt của gói; công thức đếm phép tính.
+- Hồi quy trên BRSET thật: chuẩn bị lại fold 1 với r = 16 bằng mã mới cho `prepared.npz` trùng từng phần tử với lượt chính.
+- Smoke `kb_r.py --smoke` (dữ liệu tổng hợp, 3 fold, r = 4 và 6) chạy hết và xuất báo cáo.

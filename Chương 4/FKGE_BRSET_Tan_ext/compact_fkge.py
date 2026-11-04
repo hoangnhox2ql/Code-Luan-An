@@ -216,10 +216,11 @@ class CompactFISA:
                 columns = (self.keys[ridx] + node_ids * self.n_keys).astype(np.int32)
                 values = self.B[ridx] * self.weights[ridx, None]
                 offsets = np.arange(0, values.size + 1, len(self.nodes), dtype=np.int32)
+                # Stored transposed (node-key x rule, CSR): the product below then never converts it again.
                 self._attribution_matrices[label] = sparse.csr_matrix(
                     (values.ravel(), columns.ravel(), offsets),
-                    shape=(len(ridx), len(self.nodes) * self.n_keys))
-            rule_matrix = self._attribution_matrices[label]
+                    shape=(len(ridx), len(self.nodes) * self.n_keys)).T.tocsr()
+            rule_matrix_t = self._attribution_matrices[label]
             for start in range(0, len(qidx), batch):
                 indices = qidx[start:start + batch]
                 keys = self._keys(R[indices])
@@ -231,8 +232,8 @@ class CompactFISA:
                 columns = (keys + node_ids * self.n_keys).astype(np.int32)
                 offsets = np.arange(0, values.size + 1, len(self.nodes), dtype=np.int32)
                 query_matrix = sparse.csr_matrix((values.ravel(), columns.ravel(), offsets),
-                                                 shape=(len(indices), rule_matrix.shape[1]))
-                a = (query_matrix @ rule_matrix.T).toarray()
+                                                 shape=(len(indices), rule_matrix_t.shape[0]))
+                a = (query_matrix @ rule_matrix_t).toarray()
                 totals = a.sum(1)
                 fallback = totals <= 0
                 a[~fallback] /= totals[~fallback, None]

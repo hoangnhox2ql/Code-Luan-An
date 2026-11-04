@@ -1,0 +1,15 @@
+{
+  "r_grid": [
+    {"r": 8,  "k_img": 4,  "k_tab": 4,  "n_tensor": 0},
+    {"r": 16, "k_img": 7,  "k_tab": 9,  "n_tensor": 0},
+    {"r": 23, "k_img": 10, "k_tab": 13, "n_tensor": 0},
+    {"r": 32, "k_img": 10, "k_tab": 13, "n_tensor": 9},
+    {"r": 40, "k_img": 10, "k_tab": 13, "n_tensor": 17},
+    {"r": 48, "k_img": 10, "k_tab": 13, "n_tensor": 25}
+  ],
+  "fkge": {"alpha": 0.7, "d_e": 16, "lam_I": 0.1, "lam_P": 0.3},
+  "max_epochs": 50,
+  "patience": 10,
+  "timing": {"repeats": 5, "single_queries": 300, "sequential_queries": 2},
+  "rho": [1.0, 0.5, 0.1]
+}
