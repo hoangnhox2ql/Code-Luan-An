@@ -1,0 +1,98 @@
+# FKG-MM với FISA-GM-w (trung bình nhân có trọng số bộ ba) – 5 fold theo bệnh nhân
+
+Cơ sở luật FKG: mọi dòng huấn luyện (gồm SMOTE); hàm thuộc FCM ước lượng trên mọi dòng huấn luyện (gồm SMOTE).
+
+5 fold; bệnh nhân trùng train/test = 0; Acc của bộ luôn đoán âm = 93.4% (tỉ lệ dương ≈ 6.6%) – Acc chỉ là độ đo phụ.
+AP = average precision (sklearn); PR-AUC = diện tích dưới đường Precision–Recall theo quy tắc hình thang; mốc của bộ đoán ngẫu nhiên cho cả hai là tỉ lệ dương ≈ 6.6%.
+
+## Bảng 7: So sánh tổng hợp với các phương pháp cơ sở
+
+| Method | Modality | Acc | F1 | AUC | AP | PR-AUC | Sens. | Spec. | BalAcc |
+|---|---|---|---|---|---|---|---|---|---|
+| Logistic Regression | Tabular | 78.5 ± 0.3 | 36.1 ± 1.9 | 92.8 ± 1.1 | 57.5 ± 6.0 | 57.5 ± 6.1 | 92.2 ± 1.6 | 77.6 ± 0.3 | 84.9 ± 0.8 |
+| Random Forest | Tabular | 89.1 ± 0.7 | 47.3 ± 2.8 | 91.8 ± 1.2 | 41.9 ± 6.1 | 42.2 ± 6.1 | 74.4 ± 5.2 | 90.2 ± 0.6 | 82.3 ± 2.6 |
+| XGBoost | Tabular | 88.1 ± 0.8 | 48.0 ± 2.0 | 92.2 ± 1.1 | 47.2 ± 5.0 | 47.7 ± 5.0 | 83.6 ± 4.0 | 88.4 ± 0.7 | 86.0 ± 2.1 |
+| MLP | Tabular | 87.2 ± 1.0 | 44.3 ± 1.7 | 90.0 ± 2.3 | 46.5 ± 8.3 | 46.6 ± 8.4 | 77.4 ± 4.2 | 87.9 ± 0.8 | 82.7 ± 2.3 |
+| MLP (đặc trưng ảnh) | Image | 74.5 ± 3.8 | 17.3 ± 1.6 | 64.9 ± 1.1 | 11.9 ± 2.0 | 11.7 ± 1.9 | 40.4 ± 5.7 | 76.9 ± 4.3 | 58.6 ± 1.3 |
+| Early Fusion (MLP) | Multimodal | 91.0 ± 0.3 | 50.7 ± 3.4 | 91.3 ± 2.4 | 50.4 ± 5.3 | 50.2 ± 5.4 | 70.8 ± 8.8 | 92.5 ± 0.6 | 81.6 ± 4.2 |
+| Late Fusion (Ensemble) | Multimodal | 90.7 ± 0.7 | 49.0 ± 1.4 | 89.7 ± 1.8 | 42.5 ± 4.1 | 42.2 ± 4.1 | 68.0 ± 5.5 | 92.3 ± 1.0 | 80.1 ± 2.3 |
+| Crisp KG (không mờ) | Multimodal (KG) | 81.8 ± 1.1 | 39.3 ± 1.9 | 92.5 ± 1.3 | 54.0 ± 5.2 | 54.0 ± 5.3 | 89.8 ± 1.6 | 81.2 ± 1.1 | 85.5 ± 1.3 |
+| FKG-UM (Ảnh) | Unimodal FKG | 57.1 ± 2.6 | 15.0 ± 1.0 | 58.8 ± 2.3 | 8.8 ± 0.7 | 8.6 ± 0.7 | 57.8 ± 7.7 | 57.0 ± 3.3 | 57.4 ± 2.3 |
+| FKG-UM (Bảng) | Unimodal FKG | 78.9 ± 4.8 | 35.1 ± 3.2 | 91.5 ± 2.0 | 50.0 ± 8.6 | 51.2 ± 9.1 | 85.5 ± 12.3 | 78.4 ± 6.0 | 82.0 ± 3.5 |
+| **FKG-MM (đề xuất)** | **Multimodal FKG** | 83.2 ± 1.0 | 40.7 ± 1.3 | 92.5 ± 1.3 | 53.6 ± 5.5 | 53.5 ± 5.5 | 87.6 ± 1.8 | 82.9 ± 1.0 | 85.3 ± 1.1 |
+
+_ResNet-50, EfficientNet-B0, Joint Fusion, Cross-modal Attention cần ảnh gốc – không có trong bộ dữ liệu này._
+
+## Bảng 8: Ablation study mở rộng của FKG-MM
+
+| Variant | Image | Tabular | Fuzzy | Graph | Accuracy | AUC | AP | PR-AUC | BalAcc | F1 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Image-only | ✓ | – | ✓ | ✓ | 57.1 ± 2.6 | 58.8 ± 2.3 | 8.8 ± 0.7 | 8.6 ± 0.7 | 57.4 ± 2.3 | 15.0 ± 1.0 |
+| Tabular-only | – | ✓ | ✓ | ✓ | 78.9 ± 4.8 | 91.5 ± 2.0 | 50.0 ± 8.6 | 51.2 ± 9.1 | 82.0 ± 3.5 | 35.1 ± 3.2 |
+| Multimodal w/o FKG (Early Fusion MLP) | ✓ | ✓ | – | – | 91.0 ± 0.3 | 91.3 ± 2.4 | 50.4 ± 5.3 | 50.2 ± 5.4 | 81.6 ± 4.2 | 50.7 ± 3.4 |
+| Multimodal + Graph, không mờ (Crisp KG) | ✓ | ✓ | – | ✓ | 81.8 ± 1.1 | 92.5 ± 1.3 | 54.0 ± 5.2 | 54.0 ± 5.3 | 85.5 ± 1.3 | 39.3 ± 1.9 |
+| Multimodal + Mờ, không đồ thị | ✓ | ✓ | ✓ | – | 85.8 ± 0.5 | 93.6 ± 1.2 | 57.5 ± 6.2 | 57.4 ± 6.2 | 87.0 ± 2.3 | 44.9 ± 2.0 |
+| **Full FKG-MM** | ✓ | ✓ | ✓ | ✓ | 83.2 ± 1.0 | 92.5 ± 1.3 | 53.6 ± 5.5 | 53.5 ± 5.5 | 85.3 ± 1.1 | 40.7 ± 1.3 |
+
+## Trả lời câu hỏi thực nghiệm (AUC là độ đo chính; BalAcc bổ sung)
+
+### KB-M1 – FKG-MM có vượt đơn mô thức?
+
+- FKG-MM − FKG-UM (Bảng): AUC Δ = +1.0; thắng 4/5; p = 0.293; p_W = 0.188; AP Δ = +3.6; thắng 4/5; p = 0.433; p_W = 0.312; BalAcc Δ = +3.3; thắng 5/5; p = 0.249; p_W = 0.062
+- FKG-MM − FKG-UM (Ảnh): AUC Δ = +33.6; thắng 5/5; p = 0.000; p_W = 0.062; AP Δ = +44.8; thắng 5/5; p = 0.000; p_W = 0.062; BalAcc Δ = +27.8; thắng 5/5; p = 0.000; p_W = 0.062
+- FKG-MM − Logistic Regression (Tabular): AUC Δ = -0.4; thắng 1/5; p = 0.608; p_W = 0.438; AP Δ = -3.9; thắng 0/5; p = 0.140; p_W = 0.062; BalAcc Δ = +0.4; thắng 3/5; p = 0.708; p_W = 0.625
+- FKG-MM − MLP (Tabular): AUC Δ = +2.5; thắng 5/5; p = 0.128; p_W = 0.062; AP Δ = +7.1; thắng 5/5; p = 0.079; p_W = 0.062; BalAcc Δ = +2.6; thắng 5/5; p = 0.103; p_W = 0.062
+- FKG-MM − MLP (Image): AUC Δ = +27.6; thắng 5/5; p = 0.000; p_W = 0.062; AP Δ = +41.7; thắng 5/5; p = 0.001; p_W = 0.062; BalAcc Δ = +26.6; thắng 5/5; p = 0.000; p_W = 0.062
+
+### KB-M2 – cấu trúc FKG so với hợp nhất không dùng FKG
+
+- FKG-MM − Early Fusion (MLP): AUC Δ = +1.2; thắng 4/5; p = 0.318; p_W = 0.188; AP Δ = +3.2; thắng 3/5; p = 0.363; p_W = 0.312; BalAcc Δ = +3.6; thắng 4/5; p = 0.182; p_W = 0.125
+- FKG-MM − Late Fusion (Ensemble): AUC Δ = +2.8; thắng 5/5; p = 0.043; p_W = 0.062; AP Δ = +11.1; thắng 5/5; p = 0.044; p_W = 0.062; BalAcc Δ = +5.1; thắng 5/5; p = 0.028; p_W = 0.062
+
+### KB-M3 – số mức ngôn ngữ
+
+| Số mức | Acc | AUC | AP | PR-AUC | BalAcc | Sens. |
+|---|---|---|---|---|---|---|
+| FKG-MM, 3 mức | 79.9 ± 0.7 | 91.8 ± 0.9 | 46.0 ± 4.7 | 46.5 ± 4.5 | 82.9 ± 1.2 | 86.3 ± 2.7 |
+| FKG-MM, 5 mức | 83.2 ± 1.0 | 92.5 ± 1.3 | 53.6 ± 5.5 | 53.5 ± 5.5 | 85.3 ± 1.1 | 87.6 ± 1.8 |
+| FKG-MM, 7 mức | 85.0 ± 1.1 | 91.8 ± 1.3 | 50.2 ± 5.6 | 50.1 ± 5.6 | 85.5 ± 1.4 | 86.1 ± 2.8 |
+- FKG-MM, 3 mức − 5 mức: AUC Δ = -0.6; thắng 1/5; p = 0.123; p_W = 0.125
+- FKG-MM, 7 mức − 5 mức: AUC Δ = -0.7; thắng 1/5; p = 0.262; p_W = 0.188
+
+### KB-M4 – vai trò của mờ và đồ thị
+
+- Full FKG-MM − Multimodal + Graph, không mờ (Crisp KG): AUC Δ = -0.0; thắng 3/5; p = 0.944; p_W = 1.000; AP Δ = -0.4; thắng 2/5; p = 0.681; p_W = 0.625
+- Full FKG-MM − Multimodal + Mờ, không đồ thị: AUC Δ = -1.1; thắng 0/5; p = 0.092; p_W = 0.062; AP Δ = -3.9; thắng 0/5; p = 0.063; p_W = 0.062
+- Full FKG-MM − Multimodal w/o FKG (Early Fusion MLP): AUC Δ = +1.2; thắng 4/5; p = 0.318; p_W = 0.188; AP Δ = +3.2; thắng 3/5; p = 0.363; p_W = 0.312
+
+### KB-M5 – toán tử hợp nhất
+
+| Toán tử | Acc | AUC | AP | PR-AUC | BalAcc | Hạng AUC TB |
+|---|---|---|---|---|---|---|
+| FKG-MM (đề xuất) | 83.2 ± 1.0 | 92.5 ± 1.3 | 53.6 ± 5.5 | 53.5 ± 5.5 | 85.3 ± 1.1 | 2.6 |
+| FKG-MM (Filter) | 83.7 ± 0.9 | 92.5 ± 1.2 | 53.0 ± 5.1 | 52.8 ± 5.1 | 84.9 ± 0.9 | 2.2 |
+| FKG-MM (Hadamard) | 74.1 ± 0.8 | 69.9 ± 4.1 | 17.8 ± 2.6 | 17.7 ± 2.6 | 64.8 ± 2.8 | 5.0 |
+| FKG-MM (Tensor) | 83.8 ± 1.7 | 92.4 ± 0.9 | 52.6 ± 5.1 | 52.4 ± 5.2 | 85.1 ± 1.6 | 1.6 |
+| FKG-MM (Wrapper) | 81.9 ± 2.8 | 91.0 ± 2.4 | 47.6 ± 6.5 | 48.1 ± 5.9 | 84.2 ± 2.3 | 3.6 |
+
+Friedman p = 0.0066; Kendall's W = 0.71.
+
+### KB-M6 – rút gọn bằng FKGS
+
+| Phương pháp | Tỉ lệ luật | AUC | AP | PR-AUC | BalAcc | Rep | Thời gian chọn + xây (s) | So với đầy đủ (AUC) |
+|---|---|---|---|---|---|---|---|---|
+| FKG-MM đầy đủ | 100% luật | 92.5 ± 1.3 | 53.6 ± 5.5 | 53.5 ± 5.5 | 85.3 ± 1.1 | – | 7.781 | — |
+| Ngẫu nhiên phân tầng | 15% luật | 92.3 ± 1.2 | 53.1 ± 6.3 | 53.0 ± 6.3 | 85.6 ± 1.1 | 0.971 | 2.924 | Δ = -0.2; thắng 2/5; p = 0.551; p_W = 0.312 |
+| S-FKGS | 15% luật | 92.7 ± 1.0 | 54.3 ± 4.4 | 54.2 ± 4.4 | 84.0 ± 3.5 | 0.987 | 15.850 | Δ = +0.3; thắng 4/5; p = 0.463; p_W = 0.312 |
+| C-FKGS | 15% luật | 92.8 ± 1.1 | 54.5 ± 4.9 | 54.3 ± 4.8 | 78.5 ± 4.8 | 0.987 | 9.320 | Δ = +0.4; thắng 4/5; p = 0.404; p_W = 0.188 |
+| Ngẫu nhiên phân tầng | 20% luật | 92.2 ± 1.4 | 52.9 ± 6.6 | 52.8 ± 6.6 | 85.4 ± 1.0 | 0.977 | 3.310 | Δ = -0.2; thắng 1/5; p = 0.271; p_W = 0.188 |
+| S-FKGS | 20% luật | 92.7 ± 1.1 | 55.0 ± 5.8 | 54.9 ± 5.9 | 74.3 ± 4.5 | 0.991 | 16.936 | Δ = +0.2; thắng 4/5; p = 0.375; p_W = 0.188 |
+| C-FKGS | 20% luật | 92.6 ± 1.1 | 54.6 ± 4.8 | 54.4 ± 4.8 | 72.1 ± 5.8 | 0.991 | 9.889 | Δ = +0.2; thắng 3/5; p = 0.648; p_W = 0.625 |
+
+### Độ nhạy theo ε của FISA-GM-w (trung bình nhân có trọng số bộ ba)
+
+| ε | Acc | AUC | AP | PR-AUC | BalAcc |
+|---|---|---|---|---|---|
+| ε = 1e-12 | 83.4 ± 1.0 | 92.3 ± 1.3 | 53.5 ± 5.6 | 53.4 ± 5.5 | 85.3 ± 1.1 |
+| ε = 1e-09 | 83.2 ± 1.0 | 92.5 ± 1.3 | 53.6 ± 5.5 | 53.5 ± 5.5 | 85.3 ± 1.1 |
+| ε = 1e-06 | 83.1 ± 1.0 | 92.6 ± 1.2 | 53.7 ± 5.5 | 53.6 ± 5.5 | 85.3 ± 1.0 |

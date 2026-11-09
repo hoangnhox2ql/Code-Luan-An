@@ -1,8 +1,0 @@
-# Chương 3 chỉ cần CPU; không dùng PyTorch.
-numpy==2.2.6
-pandas==2.3.3
-scipy==1.16.2
-scikit-learn==1.7.2
-imbalanced-learn==0.14.2
-xgboost==3.4.1
-matplotlib==3.10.8
