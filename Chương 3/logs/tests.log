@@ -1,0 +1,92 @@
+
+===== 2026-11-07 06:25:57 /usr/bin/python3 -B -X utf8 -u -m unittest tests.test_ch3
+E
+======================================================================
+ERROR: test_ch3 (unittest.loader._FailedTest.test_ch3)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_ch3
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 141, in loadTestsFromName
+    module = __import__(module_name)
+ModuleNotFoundError: No module named 'tests.test_ch3'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+===== 2026-11-07 06:26:33 /usr/bin/python3 -B -X utf8 -u -m unittest tests.test_ch3
+E
+======================================================================
+ERROR: test_ch3 (unittest.loader._FailedTest.test_ch3)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_ch3
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 141, in loadTestsFromName
+    module = __import__(module_name)
+ModuleNotFoundError: No module named 'tests.test_ch3'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+
+===== 2026-11-07 06:52:23 /usr/bin/python3 -B -X utf8 -u -m unittest discover -s tests -p test_ch3.py -v
+test_binary_aware_fuzzifier_keeps_two_levels (test_ch3.AuditFixTests.test_binary_aware_fuzzifier_keeps_two_levels) ... ok
+test_clean_rules_dedup_conflict_and_tie (test_ch3.AuditFixTests.test_clean_rules_dedup_conflict_and_tie) ... ok
+test_core_dedup_conf_uses_the_cleaned_rule_base (test_ch3.AuditFixTests.test_core_dedup_conf_uses_the_cleaned_rule_base) ... [fold_01] xong (0.0 phút)
+[fold_01] xong (0.0 phút)
+ok
+test_core_default_is_gm_w_and_equals_the_audit_variant (test_ch3.AuditFixTests.test_core_default_is_gm_w_and_equals_the_audit_variant) ... ok
+test_fcm_fit_original_gives_two_levels_for_binary_and_matches_manual_pipeline (test_ch3.AuditFixTests.test_fcm_fit_original_gives_two_levels_for_binary_and_matches_manual_pipeline) ... [fold_01] xong (0.0 phút)
+ok
+test_unweighted_variant_equals_core_fisa_gm (test_ch3.AuditFixTests.test_unweighted_variant_equals_core_fisa_gm) ... ok
+test_weights_ignore_test_rows_and_smote_rows_and_drop_noise_triples (test_ch3.AuditFixTests.test_weights_ignore_test_rows_and_smote_rows_and_drop_noise_triples) ... ok
+test_geomean_formula_and_fisa_equivalence_with_cpp_translation (test_ch3.LayoutAndFisaTests.test_geomean_formula_and_fisa_equivalence_with_cpp_translation) ... ok
+test_nadeau_bengio_uses_the_fold_sizes_of_the_audit (test_ch3.LayoutAndFisaTests.test_nadeau_bengio_uses_the_fold_sizes_of_the_audit) ... ok
+test_pr_auc_metrics_are_ap_and_trapezoid_reported_separately (test_ch3.LayoutAndFisaTests.test_pr_auc_metrics_are_ap_and_trapezoid_reported_separately) ... ok
+test_predictions_are_saved_out_of_fold_and_reproduce_metrics_and_figures (test_ch3.LayoutAndFisaTests.test_predictions_are_saved_out_of_fold_and_reproduce_metrics_and_figures) ... [prepare] table fold 1: 13 features, 236 train rows (76 SMOTE), 0.6s
+[prepare] table fold 2: 13 features, 224 train rows (64 SMOTE), 0.1s
+[prepare] image fold 1: 7 features, 236 train rows (76 SMOTE), 0.0s
+[prepare] image fold 2: 7 features, 224 train rows (64 SMOTE), 0.0s
+[prepare] fusion fold 1: 16 features, 236 train rows (76 SMOTE), 0.1s
+[prepare] fusion fold 2: 16 features, 224 train rows (64 SMOTE), 0.1s
+[prepare] fusion_filter fold 1: 16 features, 236 train rows (76 SMOTE), 0.7s
+[prepare] fusion_filter fold 2: 16 features, 224 train rows (64 SMOTE), 0.7s
+[prepare] fusion_hadamard fold 1: 5 features, 236 train rows (76 SMOTE), 0.1s
+[prepare] fusion_hadamard fold 2: 5 features, 224 train rows (64 SMOTE), 0.0s
+[prepare] fusion_tensor fold 1: 12 features, 236 train rows (76 SMOTE), 0.0s
+[prepare] fusion_tensor fold 2: 12 features, 224 train rows (64 SMOTE), 0.0s
+[prepare] fusion_wrapper fold 1: 6 features, 236 train rows (76 SMOTE), 22.4s
+[prepare] fusion_wrapper fold 2: 6 features, 224 train rows (64 SMOTE), 21.8s
+[fold_01] xong (0.2 phút)
+[fold_02] xong (0.4 phút)
+ok
+test_report_shows_ap_and_pr_auc_columns (test_ch3.LayoutAndFisaTests.test_report_shows_ap_and_pr_auc_columns) ... ok
+test_smoke_layout_is_read_by_chapter3_core (test_ch3.LayoutAndFisaTests.test_smoke_layout_is_read_by_chapter3_core) ... [prepare] table fold 1: 13 features, 236 train rows (76 SMOTE), 0.1s
+[prepare] table fold 2: 13 features, 224 train rows (64 SMOTE), 0.1s
+[prepare] image fold 1: 7 features, 236 train rows (76 SMOTE), 0.0s
+[prepare] image fold 2: 7 features, 224 train rows (64 SMOTE), 0.0s
+[prepare] fusion fold 1: 16 features, 236 train rows (76 SMOTE), 0.1s
+[prepare] fusion fold 2: 16 features, 224 train rows (64 SMOTE), 0.1s
+[prepare] fusion_filter fold 1: 16 features, 236 train rows (76 SMOTE), 0.8s
+[prepare] fusion_filter fold 2: 16 features, 224 train rows (64 SMOTE), 0.8s
+[prepare] fusion_hadamard fold 1: 5 features, 236 train rows (76 SMOTE), 0.1s
+[prepare] fusion_hadamard fold 2: 5 features, 224 train rows (64 SMOTE), 0.1s
+[prepare] fusion_tensor fold 1: 12 features, 236 train rows (76 SMOTE), 0.1s
+[prepare] fusion_tensor fold 2: 12 features, 224 train rows (64 SMOTE), 0.1s
+[prepare] fusion_wrapper fold 1: 6 features, 236 train rows (76 SMOTE), 22.3s
+[prepare] fusion_wrapper fold 2: 6 features, 224 train rows (64 SMOTE), 21.4s
+ok
+test_all_seven_groups_equal_reference_on_real_brset_rows (test_ch3.ReferencePipelineTests.test_all_seven_groups_equal_reference_on_real_brset_rows) ... ok
+test_outputs_on_training_rows_do_not_depend_on_test_rows (test_ch3.ReferencePipelineTests.test_outputs_on_training_rows_do_not_depend_on_test_rows) ... ok
+test_smote_rows_are_positive_and_appended_after_real_rows (test_ch3.ReferencePipelineTests.test_smote_rows_are_positive_and_appended_after_real_rows) ... ok
+test_tensor_is_algorithm_3_5_with_rho_6 (test_ch3.ReferencePipelineTests.test_tensor_is_algorithm_3_5_with_rho_6) ... ok
+test_every_ported_function_and_constant_is_identical_to_the_reference (test_ch3.VerbatimPortTests.test_every_ported_function_and_constant_is_identical_to_the_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 267.236s
+
+OK
